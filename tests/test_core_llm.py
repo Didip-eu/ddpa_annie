@@ -79,6 +79,8 @@ def test_chat_completion_providers(monkeypatch):
     url, headers, payload = calls[0]
     assert url == "https://api.together.xyz/v1/chat/completions" and headers["Authorization"] == "Bearer secret"
     assert payload == {"model": "model-x", "messages": [{"role": "user", "content": "hello"}], "max_tokens": llm.MAX_TOKENS}
+    llm.complete("dhinfra", "model-x", "hello", "secret")
+    assert calls[1][2]["reasoning_effort"] == "none"
 
 
 def test_chat_completion_http_error(monkeypatch):

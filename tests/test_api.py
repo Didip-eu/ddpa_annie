@@ -29,7 +29,7 @@ def test_providers_report_which_keys_the_server_holds(client, monkeypatch):
     monkeypatch.setenv("DDP_ANNIE_OPENAI_KEY", "secret")
     body = client.get("/api/v1/annie/providers").json()
     assert {(p["id"], p["configured"]) for p in body["data"]} == {
-        ("anthropic", False), ("openai", True), ("together", False), ("huggingface", False)}
+        ("anthropic", False), ("openai", True), ("together", False), ("huggingface", False), ("dhinfra", False)}
     assert "secret" not in json.dumps(body)
 
 

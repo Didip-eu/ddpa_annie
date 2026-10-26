@@ -16,12 +16,16 @@ DEFAULT_MODELS = {
     "openai": "gpt-4o-mini",
     "together": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
     "huggingface": "HuggingFaceH4/zephyr-7b-alpha",
+    "dhinfra": "deepseek-v4.1-flash",
 }
 CHAT_COMPLETIONS = {
     "openai": "https://api.openai.com/v1/chat/completions",
     "together": "https://api.together.xyz/v1/chat/completions",
     "huggingface": "https://router.huggingface.co/v1/chat/completions",
+    "dhinfra": "https://api.dhinfra.uni-graz.at/v1/chat/completions",
 }
+# The DH infrastructure's models reason by default and spend all of MAX_TOKENS on a charter before they answer.
+REQUEST_OPTIONS = {"dhinfra": {"reasoning_effort": "none"}}
 MAX_TOKENS = 16000
 TIMEOUT_SECONDS = 300
 WORD = re.compile(r"\w+")
@@ -100,7 +104,8 @@ def complete(provider: str, model: str, text: str, key: str) -> str:
         return complete_anthropic(model, text, key)
     request = urllib.request.Request(
         CHAT_COMPLETIONS[provider],
-        data=json.dumps({"model": model, "messages": [{"role": "user", "content": text}], "max_tokens": MAX_TOKENS}).encode(),
+        data=json.dumps({"model": model, "messages": [{"role": "user", "content": text}], "max_tokens": MAX_TOKENS,
+                         **REQUEST_OPTIONS.get(provider, {})}).encode(),
         headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
     try:
         with urllib.request.urlopen(request, timeout=TIMEOUT_SECONDS) as response:

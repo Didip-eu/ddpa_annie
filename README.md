@@ -152,12 +152,13 @@ The desktop application above stays as it is. Its annotation logic is also avail
 platform of Monasterium NG (`ddp_api`, `ddp_web`), in three parts that live in this repository:
 
 - `annie_core/`: the logic, free of any GUI: propagation and dictionaries (`propagation.py`), session
-  memory, TF-IDF few-shot retrieval, the prompt and the four language model providers (`llm.py`).
+  memory, TF-IDF few-shot retrieval, the prompt and the five language model providers (`llm.py`).
   Offsets are characters of a text body.
 - `annie_api/`: an `APIRouter` with `GET /annie/providers`, `POST /annie/propagate` and
   `POST /annie/suggest`. The routes are stateless: the client sends the texts and their entities.
   The keys of the providers are read from `DDP_ANNIE_ANTHROPIC_KEY`, `DDP_ANNIE_OPENAI_KEY`,
-  `DDP_ANNIE_TOGETHER_KEY` and `DDP_ANNIE_HUGGINGFACE_KEY`.
+  `DDP_ANNIE_TOGETHER_KEY`, `DDP_ANNIE_HUGGINGFACE_KEY` and `DDP_ANNIE_DHINFRA_KEY` (the self-hosted
+  models of the University of Graz, `api.dhinfra.uni-graz.at`).
 - `web/`: a Svelte 5 library: the `Annotator` component, its store (annotations, tag schema and
   settings in the browser's `localStorage`) and the client of the routes. It annotates the `texts`
   of a `ddp_api` document, keyed by text id and re-anchored when the text's hash changes.
