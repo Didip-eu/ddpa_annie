@@ -146,6 +146,60 @@ Annotations are stored in standard JSON format:
       - Added demerge functionality and CoNLL / spaCy JSONL export.
   - **0.60 - 0.75**: Base features, read-only UI, session management, and visual flagging.
 
+## Web version for Monasterium NG
+
+The desktop application above stays as it is. Its annotation logic is also available for the web
+platform of Monasterium NG (`ddp_api`, `ddp_web`), in three parts that live in this repository:
+
+- `annie_core/`: the logic, free of any GUI: propagation and dictionaries (`propagation.py`), session
+  memory, TF-IDF few-shot retrieval, the prompt and the four language model providers (`llm.py`).
+  Offsets are characters of a text body.
+- `annie_api/`: an `APIRouter` with `GET /annie/providers`, `POST /annie/propagate` and
+  `POST /annie/suggest`. The routes are stateless: the client sends the texts and their entities.
+  The keys of the providers are read from `DDP_ANNIE_ANTHROPIC_KEY`, `DDP_ANNIE_OPENAI_KEY`,
+  `DDP_ANNIE_TOGETHER_KEY` and `DDP_ANNIE_HUGGINGFACE_KEY`.
+- `web/`: a Svelte 5 library: the `Annotator` component, its store (annotations, tag schema and
+  settings in the browser's `localStorage`) and the client of the routes. It annotates the `texts`
+  of a `ddp_api` document, keyed by text id and re-anchored when the text's hash changes.
+
+### Run and test
+
+    uv sync
+    uv run pytest
+    DDP_BROWSE_FILE=../ddp_etl/fsdb-builds/sample-store/browse.sqlite uv run uvicorn annie_api.dev:app
+
+    cd web
+    npm install
+    npm test
+    npm run check
+    npm run dev
+
+`annie_api.dev` stands in for `ddp_api`: the ANNIE routes and the documents of a browse file under
+`/api/v1`. The development page of `web/` forwards `/api/v1` to it on port 8000. The tests under
+`tests/test_*` other than `test_core_*` and `test_api` pin the behaviour of the desktop application;
+`test_core_*` check that `annie_core` finds the same entities.
+
+### Integrate
+
+In `ddp_api`, with this repository as a dependency: `v1.include_router(annie_api.router)`.
+In `ddp_web`, with `web/` as a dependency (`npm run package` builds it):
+
+    <script lang="ts">
+        import { Annotator } from 'annie';
+        let { data } = $props();
+    </script>
+    <Annotator texts={data.documents.flatMap((document) => document.texts)} />
+
+The annotator keeps its data in `localStorage`, so it renders in the browser only.
+
+### Differences from the desktop application
+
+- Session memory and model suggestions match terms with the propagation rule, so a term ending in
+  punctuation such as `Papst Nikolaus IV.` is found; tags the model invents are dropped.
+- Claude is called without `temperature`, which the Messages API no longer accepts, through the
+  `anthropic` SDK with the server-side refusal fallback; its default model is `claude-opus-5-5`.
+- Merged mentions share a group; relations connect groups.
+
 ## Cite
 
 ### APA Style
