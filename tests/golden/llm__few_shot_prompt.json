@@ -1,0 +1,22 @@
+[
+  "You are an expert medieval archivist performing Named Entity Recognition (NER). Extract entities strictly belonging to these tags: PER, LOC, INS, DAT, TIM, TITLE, REL, TAX, MEA, COM, EST, MON, NUM, LEG, NAT, ACTOR, PROP, TRANS.",
+  "Return ONLY a valid JSON array of objects with 'text' and 'tag' keys. Do not write markdown, explanations, or introductory text. Just the JSON array starting with [ and ending with ].",
+  "",
+  "### Example 1",
+  "Input:",
+  "ADG_Urk_P0306 Artolff von Lewbnegk übergibt in Erfüllung des Testaments seines Vaters bzw. Ruprecht und Andre Lewbnegkers der Liebfrauenkirche zu Gmünd bzw. ihren Zechmeister, Ulrich Froner und Gilg Hekch, ein Gut gelegen zu Plesnicz unterhalb des Weges (Leucz Weczenpacher) und eine Wiese gen. Pirchach, gelegen oberhalb von Peter in der Aw (Michel Haunsmid). 1448 Juli 16 2 Sig. pend. fehlen 1. Martein Züngel 2. Görg Prugkdarffer, Amtmann zu Gmünd PA Gmünd Orig. Perg. Hans Huber, Niclas Kopauner, Lienhart Petschacher, alle Bürger zu Gmünd",
+  "Output:",
+  "[{\"text\": \"Gmünd\", \"tag\": \"LOC\"}, {\"text\": \"Ulrich Froner\", \"tag\": \"PER\"}]",
+  "",
+  "### Example 2",
+  "Input:",
+  "ADG_Urk_P1303 Papst Benedikt XIV. beauftragt den Erzbischof von Salzburg, die Ehesache Buttolo von Werffenstein-Anna Maria Claudia von Linsee zu untersuchen und gegebenenfalls vom Ehehindernis des 4. Verwandtschaftsgrades zu dispensieren. 174.(radiert), Rom (vor 1741 Jänner 22) fehlt Papst Benedikt XIV. PA ? Orig. Perg.",
+  "Output:",
+  "[{\"text\": \"Papst\", \"tag\": \"TITLE\"}, {\"text\": \"Salzburg\", \"tag\": \"LOC\"}]",
+  "",
+  "### Target Task",
+  "Input:",
+  "ADG_Urk_P2335 Erzpriester und Vikar zu Gmünd, Anselm Vieweger, vidimiert auf Bitten der Dorothea von Weißbriach die Verleihung der Fastenordnung und der Dispens an Ulrich Rieder und weiteren 10 Personen durch Papst Nikolaus IV. (1442 Dezember 30). 1453 November 6 Sig. pend. PA Keutschach",
+  "Output:",
+  ""
+]

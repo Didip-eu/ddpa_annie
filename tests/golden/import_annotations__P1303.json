@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "end_char": 238,
+      "end_line": 1,
+      "id": "<id>",
+      "start_char": 14,
+      "start_line": 1,
+      "tag": "abstract",
+      "text": "Papst Benedikt XIV. beauftragt den Erzbischof von Salzburg, die Ehesache Buttolo von Werffenstein-Anna Maria Claudia von Linsee zu untersuchen und gegebenenfalls vom Ehehindernis des 4. Verwandtschaftsgrades zu dispensieren."
+    },
+    {
+      "end_char": 278,
+      "end_line": 1,
+      "id": "<id>",
+      "start_char": 239,
+      "start_line": 1,
+      "tag": "DAT",
+      "text": "174.(radiert), Rom (vor 1741 Jänner 22)"
+    }
+  ],
+  "tag_hierarchy": {
+    "ANALYTICAL Layer": [
+      "TITLE",
+      "REL",
+      "TAX",
+      "MEA",
+      "COM",
+      "EST",
+      "MON",
+      "NUM",
+      "LEG",
+      "NAT"
+    ],
+    "CORE Layer": [
+      "PER",
+      "LOC",
+      "INS",
+      "DAT",
+      "TIM"
+    ],
+    "Diplomatic": [
+      "abstract"
+    ],
+    "SPAN Layer": [
+      "ACTOR",
+      "PROP",
+      "TRANS"
+    ]
+  }
+}

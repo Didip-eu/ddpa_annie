@@ -1,0 +1,104 @@
+{
+  "annotations": [
+    {
+      "covered": "Bischof Heinrich bestätigt dem Kloster Millstatt den Zehent zu Gmünd.",
+      "end": 81,
+      "start": 12,
+      "tag": "abstract"
+    },
+    {
+      "covered": "Gmünd",
+      "end": 80,
+      "start": 75,
+      "tag": "LOC"
+    },
+    {
+      "covered": "1305 März 12",
+      "end": 101,
+      "start": 89,
+      "tag": "DAT"
+    },
+    {
+      "covered": "In nomine sancte et individue trinitatis.",
+      "end": 144,
+      "start": 103,
+      "tag": "invocatio"
+    },
+    {
+      "covered": "In nomine sancte et individue trinitatis.\nNos Heinricus deigratia episcopus",
+      "end": 178,
+      "start": 103,
+      "tag": "protocol"
+    },
+    {
+      "covered": "Nos Heinricus deigratia episcopus",
+      "end": 178,
+      "start": 145,
+      "tag": "intitulatio"
+    },
+    {
+      "covered": "notum facimus quod \"pro remedio anime\" fratres de Milstat\nnobis supplicaverunt",
+      "end": 257,
+      "start": 179,
+      "tag": "narratio"
+    },
+    {
+      "covered": "notum facimus quod \"pro remedio anime\" fratres de Milstat\nnobis supplicaverunt\ndamus decimam in Gemunde perpetuo.\nIn cuius rei testimonium sigillum nostrum appendimus.",
+      "end": 346,
+      "start": 179,
+      "tag": "tenor"
+    },
+    {
+      "covered": "Milstat",
+      "end": 236,
+      "start": 229,
+      "tag": "LOC"
+    },
+    {
+      "covered": "damus decimam in Gemunde perpetuo.",
+      "end": 292,
+      "start": 258,
+      "tag": "dispositio"
+    },
+    {
+      "covered": "In cuius rei testimonium sigillum nostrum appendimus.",
+      "end": 346,
+      "start": 293,
+      "tag": "corroboratio"
+    },
+    {
+      "covered": "Datum anno domini M o CCC o V o , IIII idus marcii .",
+      "end": 399,
+      "start": 347,
+      "tag": "datation"
+    },
+    {
+      "covered": "Datum anno domini M o CCC o V o , IIII idus marcii .",
+      "end": 399,
+      "start": 347,
+      "tag": "eschatocol"
+    },
+    {
+      "covered": "IIII idus marcii .",
+      "end": 399,
+      "start": 381,
+      "tag": "DAT"
+    }
+  ],
+  "source_id": "tag:www.monasterium.net,2011:/charter/TEST/SYNTH/SYNTH_0001",
+  "tags": [
+    "DAT",
+    "LOC",
+    "abstract",
+    "corroboratio",
+    "datation",
+    "dispositio",
+    "eschatocol",
+    "intitulatio",
+    "invocatio",
+    "narratio",
+    "protocol",
+    "tenor"
+  ],
+  "text": "SYNTH_0001\n\nBischof Heinrich bestätigt dem Kloster Millstatt den Zehent zu Gmünd.\n\nGmünd\n1305 März 12\n\nIn nomine sancte et individue trinitatis.\nNos Heinricus deigratia episcopus\nnotum facimus quod \"pro remedio anime\" fratres de Milstat\nnobis supplicaverunt\ndamus decimam in Gemunde perpetuo.\nIn cuius rei testimonium sigillum nostrum appendimus.\nDatum anno domini M o CCC o V o , IIII idus marcii ."
+}

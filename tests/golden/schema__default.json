@@ -1,0 +1,75 @@
+{
+  "relation_types": [
+    "spouse_of",
+    "works_at",
+    "located_in",
+    "born_on",
+    "produces"
+  ],
+  "tag_active_states": {
+    "ACTOR": true,
+    "COM": true,
+    "DAT": true,
+    "EST": true,
+    "INS": true,
+    "LEG": true,
+    "LOC": true,
+    "MEA": true,
+    "MON": true,
+    "NAT": true,
+    "NUM": true,
+    "PER": true,
+    "PROP": true,
+    "REL": true,
+    "TAX": true,
+    "TIM": true,
+    "TITLE": true,
+    "TRANS": true
+  },
+  "tag_hierarchy": {
+    "ANALYTICAL Layer": [
+      "TITLE",
+      "REL",
+      "TAX",
+      "MEA",
+      "COM",
+      "EST",
+      "MON",
+      "NUM",
+      "LEG",
+      "NAT"
+    ],
+    "CORE Layer": [
+      "PER",
+      "LOC",
+      "INS",
+      "DAT",
+      "TIM"
+    ],
+    "SPAN Layer": [
+      "ACTOR",
+      "PROP",
+      "TRANS"
+    ]
+  },
+  "tag_visible_states": {
+    "ACTOR": true,
+    "COM": true,
+    "DAT": true,
+    "EST": true,
+    "INS": true,
+    "LEG": true,
+    "LOC": true,
+    "MEA": true,
+    "MON": true,
+    "NAT": true,
+    "NUM": true,
+    "PER": true,
+    "PROP": true,
+    "REL": true,
+    "TAX": true,
+    "TIM": true,
+    "TITLE": true,
+    "TRANS": true
+  }
+}

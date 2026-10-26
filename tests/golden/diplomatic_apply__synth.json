@@ -1,0 +1,112 @@
+[
+  {
+    "end_char": 69,
+    "end_line": 3,
+    "id": "<id>",
+    "propagated": false,
+    "start_char": 0,
+    "start_line": 3,
+    "tag": "abstract",
+    "text": "Bischof Heinrich bestätigt dem Kloster Millstatt den Zehent zu Gmünd."
+  },
+  {
+    "end_char": 41,
+    "end_line": 8,
+    "id": "<id>",
+    "propagated": false,
+    "start_char": 0,
+    "start_line": 8,
+    "tag": "invocatio",
+    "text": "In nomine sancte et individue trinitatis."
+  },
+  {
+    "end_char": 33,
+    "end_line": 9,
+    "id": "<id>",
+    "propagated": false,
+    "start_char": 0,
+    "start_line": 8,
+    "tag": "protocol",
+    "text": "In nomine sancte et individue trinitatis.\nNos Heinricus deigratia episcopus"
+  },
+  {
+    "end_char": 52,
+    "end_line": 14,
+    "id": "<id>",
+    "propagated": false,
+    "start_char": 0,
+    "start_line": 8,
+    "tag": "tenor",
+    "text": "In nomine sancte et individue trinitatis.\nNos Heinricus deigratia episcopus\nnotum facimus quod \"pro remedio anime\" fratres de Milstat\nnobis supplicaverunt\ndamus decimam in Gemunde perpetuo.\nIn cuius rei testimonium sigillum nostrum appendimus.\nDatum anno domini M o CCC o V o , IIII idus marcii ."
+  },
+  {
+    "end_char": 33,
+    "end_line": 9,
+    "id": "<id>",
+    "propagated": false,
+    "start_char": 0,
+    "start_line": 9,
+    "tag": "intitulatio",
+    "text": "Nos Heinricus deigratia episcopus"
+  },
+  {
+    "end_char": 20,
+    "end_line": 11,
+    "id": "<id>",
+    "propagated": false,
+    "start_char": 0,
+    "start_line": 10,
+    "tag": "narratio",
+    "text": "notum facimus quod \"pro remedio anime\" fratres de Milstat\nnobis supplicaverunt"
+  },
+  {
+    "end_char": 53,
+    "end_line": 13,
+    "id": "<id>",
+    "propagated": false,
+    "start_char": 0,
+    "start_line": 10,
+    "tag": "tenor",
+    "text": "notum facimus quod \"pro remedio anime\" fratres de Milstat\nnobis supplicaverunt\ndamus decimam in Gemunde perpetuo.\nIn cuius rei testimonium sigillum nostrum appendimus."
+  },
+  {
+    "end_char": 34,
+    "end_line": 12,
+    "id": "<id>",
+    "propagated": false,
+    "start_char": 0,
+    "start_line": 12,
+    "tag": "dispositio",
+    "text": "damus decimam in Gemunde perpetuo."
+  },
+  {
+    "end_char": 53,
+    "end_line": 13,
+    "id": "<id>",
+    "propagated": false,
+    "start_char": 0,
+    "start_line": 13,
+    "tag": "corroboratio",
+    "text": "In cuius rei testimonium sigillum nostrum appendimus."
+  },
+  {
+    "end_char": 52,
+    "end_line": 14,
+    "id": "<id>",
+    "propagated": false,
+    "start_char": 0,
+    "start_line": 14,
+    "tag": "datation",
+    "text": "Datum anno domini M o CCC o V o , IIII idus marcii ."
+  },
+  {
+    "end_char": 52,
+    "end_line": 14,
+    "id": "<id>",
+    "propagated": false,
+    "start_char": 0,
+    "start_line": 14,
+    "tag": "eschatocol",
+    "text": "Datum anno domini M o CCC o V o , IIII idus marcii ."
+  }
+]

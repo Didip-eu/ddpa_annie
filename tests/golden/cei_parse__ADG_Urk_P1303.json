@@ -1,0 +1,22 @@
+{
+  "annotations": [
+    {
+      "covered": "Papst Benedikt XIV. beauftragt den Erzbischof von Salzburg, die Ehesache Buttolo von Werffenstein-Anna Maria Claudia von Linsee zu untersuchen und gegebenenfalls vom Ehehindernis des 4. Verwandtschaftsgrades zu dispensieren.",
+      "end": 238,
+      "start": 14,
+      "tag": "abstract"
+    },
+    {
+      "covered": "174.(radiert), Rom (vor 1741 Jänner 22)",
+      "end": 278,
+      "start": 239,
+      "tag": "DAT"
+    }
+  ],
+  "source_id": "tag:www.monasterium.net,2011:/charter/AT-ADG/PA/ADG_Urk_P1303",
+  "tags": [
+    "DAT",
+    "abstract"
+  ],
+  "text": "ADG_Urk_P1303 Papst Benedikt XIV. beauftragt den Erzbischof von Salzburg, die Ehesache Buttolo von Werffenstein-Anna Maria Claudia von Linsee zu untersuchen und gegebenenfalls vom Ehehindernis des 4. Verwandtschaftsgrades zu dispensieren. 174.(radiert), Rom (vor 1741 Jänner 22) fehlt Papst Benedikt XIV. PA ? Orig. Perg."
+}

@@ -1,0 +1,15 @@
+{
+  "charter_files": 905,
+  "empty_files": 328,
+  "parsed": 577,
+  "sha256": "abc3dc6166757a5af419e67601c66f08ff6d4dc242c6daf246d2069ee4f0f56a",
+  "tag_counts": {
+    "DAT": 6,
+    "abstract": 577
+  },
+  "text_length_min_median_max": [
+    70,
+    444,
+    1727
+  ]
+}
