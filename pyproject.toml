@@ -1,18 +1,21 @@
 [project]
 name = "ddpa_annie"
 version = "0.1.0"
-description = "ANNIE for Monasterium NG: the annotation logic (annie_core)"
+description = "ANNIE for Monasterium NG: the annotation logic (annie_core) and its API routes (annie_api)"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "anthropic>=1",
+    "fastapi>=0.141.1",
 ]
 
 [dependency-groups]
 dev = [
+    "httpx>=0.28.1",
     "pytest>=8",
     "pytest-cov",
     "requests",
+    "uvicorn>=0.53.0",
 ]
 
 [build-system]
@@ -20,4 +23,4 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["annie_core"]
+packages = ["annie_core", "annie_api"]
