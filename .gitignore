@@ -22,3 +22,6 @@ env/
 .idea/
 *.swp
 .DS_Store
+# Local data and analysis output
+example_data/
+.ua/
