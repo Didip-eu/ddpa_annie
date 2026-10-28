@@ -12,9 +12,9 @@ State: 2026-10-26, branch `feat/web-annotator`; checked against `ddp_api` 0.7.0
 ANNIE annotates the texts of medieval charters with named entities (persons, places, institutions,
 dates, ...) and directed relations between them, by hand and with help: propagation of known terms,
 dictionaries, a session memory and a language model. It started as a Tkinter desktop application
-(`annie/`, `annie.py`). This repository now also holds its logic as importable Python modules, API
-routes for `ddp_api`, and a Svelte component library for `ddp_web`, so that ANNIE runs inside the web
-platform of Monasterium NG as a single-user tool.
+(`annie_legacy/`, `annie.py`). This repository now also holds its logic as importable Python modules,
+API routes for `ddp_api`, and a Svelte component library for `ddp_web`, so that ANNIE runs inside the
+web platform of Monasterium NG as a single-user tool.
 
 ## 2. The platform around it
 
@@ -102,7 +102,7 @@ A fix there changes bodies and hashes; ANNIE then re-anchors its annotations (se
 | Language model keys | On the server, in environment variables; never in the browser. |
 | Claude | Through the official `anthropic` SDK, default `claude-opus-5-5`, server-side refusal fallback. |
 | Other providers | Their OpenAI-style chat completion endpoints, through the standard library. |
-| The desktop application | Stays as it is; its behaviour is pinned by tests and is the reference. |
+| The desktop application | Legacy, in `annie_legacy/`: no longer developed, kept as it is; its behaviour is pinned by tests and is the reference. |
 
 ### 4.3 Not in the first web version
 
@@ -126,7 +126,7 @@ ddp_api  --include_router-->  annie_api.router  --calls-->  annie_core (propagat
 | `annie_api` | `annie_api/` | `fastapi`, `annie_core` | `router`, an `APIRouter` with prefix `/annie`; `annie_api.dev`, a development app. |
 | web library | `web/src/lib/` | `svelte` (peer) | `Annotator` and its parts in `components/annie/`, the store and the API client in `annie/`; packaged by `svelte-package`. |
 | demo page | `web/src/routes/annotator/` | the library | Lists the documents of the development app; the clicked one is the working set. Not shipped. |
-| desktop app | `annie/`, `annie.py` | `tkinter`, `requests`, `torch` | The original application. |
+| desktop app | `annie_legacy/`, `annie.py` | `tkinter`, `requests`, `torch` | The original application, legacy: kept as the reference of the characterization and parity tests. |
 
 ## 6. Behaviour
 

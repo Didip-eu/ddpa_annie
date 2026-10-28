@@ -8,7 +8,7 @@ from unittest import mock
 
 import pytest
 
-import annie.ai.llm as llm_mod
+import annie_legacy.ai.llm as llm_mod
 from conftest import assert_golden, entity, open_session
 
 

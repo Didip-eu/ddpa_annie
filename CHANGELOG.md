@@ -10,3 +10,7 @@
 - `annie_core`, `annie_api`: the provider `dhinfra`, the self-hosted models of the University of Graz, default `deepseek-v4.1-flash`.
 - `web/`: the Svelte 5 annotator for `ddp_web`: entities, merge, relations, propagation, dictionaries and pre-annotation, kept in `localStorage`.
 - `web/`: a propagation pool: documents added to it receive the propagation of a text's entities besides its own document, kept in `localStorage`.
+
+### Changed
+
+- The desktop application is legacy: its package `annie/` is now `annie_legacy/` (`python -m annie_legacy`); `python annie.py` still starts it.

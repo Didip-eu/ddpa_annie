@@ -26,7 +26,7 @@ import pytest
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-# annie/ai/ensemble.py does a top-level ``import torch`` although the README
+# annie_legacy/ai/ensemble.py does a top-level ``import torch`` although the README
 # calls torch optional. Stub it so the logic can be tested without PyTorch.
 try:
     import torch  # noqa: F401
@@ -46,9 +46,10 @@ REAL_CHARTERS = ["ADG_Urk_P0306", "ADG_Urk_P1303", "ADG_Urk_P2335"]
 SYNTH_CHARTER = "SYNTH_full_tenor"
 
 DIALOG_MODULES = [
-    "annie.io.import_parser", "annie.io.files", "annie.io.session",
-    "annie.io.export", "annie.annotation.core", "annie.annotation.propagation",
-    "annie.annotation.manage", "annie.ai.llm", "annie.ai.ensemble", "annie.search",
+    "annie_legacy.io.import_parser", "annie_legacy.io.files", "annie_legacy.io.session",
+    "annie_legacy.io.export", "annie_legacy.annotation.core",
+    "annie_legacy.annotation.propagation", "annie_legacy.annotation.manage",
+    "annie_legacy.ai.llm", "annie_legacy.ai.ensemble", "annie_legacy.search",
 ]
 
 
@@ -158,7 +159,7 @@ UI_NOOPS = [
 
 
 def _make_headless_class():
-    from annie.app import TextAnnotator
+    from annie_legacy.app import TextAnnotator
 
     def create_layout(self):
         self.text_area = FakeText()
@@ -192,7 +193,7 @@ def dialogs(monkeypatch):
 
 @pytest.fixture
 def app(monkeypatch, tmp_path, dialogs):
-    import annie.app as app_mod
+    import annie_legacy.app as app_mod
     fake_tk = mock.MagicMock()
     fake_tk.StringVar = Var
     fake_tk.BooleanVar = Var
@@ -218,7 +219,7 @@ def tk_app(monkeypatch, tmp_path, dialogs):
     if not _has_display():
         pytest.skip("no display available for real Tk widgets")
     import tkinter as tk
-    from annie.app import TextAnnotator
+    from annie_legacy.app import TextAnnotator
     monkeypatch.chdir(tmp_path)
     monkeypatch.setattr(TextAnnotator, "_load_api_keys",
                         lambda self: [setattr(self, k, "") for k in

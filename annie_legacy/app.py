@@ -6,24 +6,24 @@ from tkinter import ttk
 import itertools
 import queue
 
-from annie.constants import SESSION_FILE_VERSION
-from annie.core import CoreMixin
-from annie.ui_state import UIStateMixin
-from annie.ui.menu import MenuMixin
-from annie.ui.layout import LayoutMixin
-from annie.ui.bindings import BindingsMixin
-from annie.io.files import FilesMixin
-from annie.io.session import SessionMixin
-from annie.io.api_keys import ApiKeysMixin
-from annie.io.export import ExportMixin
-from annie.io.import_parser import ImportMixin
-from annie.annotation.core import AnnotationMixin
-from annie.annotation.propagation import PropagationMixin
-from annie.annotation.manage import ManageMixin
-from annie.ai.base import AIBaseMixin
-from annie.ai.ensemble import AIMixin
-from annie.ai.llm import LLMMixin
-from annie.search import SearchMixin
+from annie_legacy.constants import SESSION_FILE_VERSION
+from annie_legacy.core import CoreMixin
+from annie_legacy.ui_state import UIStateMixin
+from annie_legacy.ui.menu import MenuMixin
+from annie_legacy.ui.layout import LayoutMixin
+from annie_legacy.ui.bindings import BindingsMixin
+from annie_legacy.io.files import FilesMixin
+from annie_legacy.io.session import SessionMixin
+from annie_legacy.io.api_keys import ApiKeysMixin
+from annie_legacy.io.export import ExportMixin
+from annie_legacy.io.import_parser import ImportMixin
+from annie_legacy.annotation.core import AnnotationMixin
+from annie_legacy.annotation.propagation import PropagationMixin
+from annie_legacy.annotation.manage import ManageMixin
+from annie_legacy.ai.base import AIBaseMixin
+from annie_legacy.ai.ensemble import AIMixin
+from annie_legacy.ai.llm import LLMMixin
+from annie_legacy.search import SearchMixin
 
 
 class TextAnnotator(

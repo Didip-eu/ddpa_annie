@@ -6,6 +6,10 @@ ANNIE is a lightweight, robust, Python-based desktop application designed for an
 
 ANNIE goes beyond manual annotation by integrating **Hybrid Ensemble AI** (combining Hugging Face models with local Session Memory) and a **Generative LLM Agent** powered by a native **RAG (Retrieval-Augmented Generation)** engine for highly accurate, context-aware pre-annotations.
 
+> The desktop application is legacy: its code lives in `annie_legacy/`, is no longer developed and is
+> kept as the reference the tests compare the web version against. See
+> [Web version for Monasterium NG](#web-version-for-monasterium-ng).
+
 <p align="center"\>
 <img src="annie.gif" width="400" /\>
 </p\>
@@ -148,8 +152,9 @@ Annotations are stored in standard JSON format:
 
 ## Web version for Monasterium NG
 
-The desktop application above stays as it is. Its annotation logic is also available for the web
-platform of Monasterium NG (`ddp_api`, `ddp_web`), in three parts that live in this repository:
+The desktop application above is legacy and stays as it is. Its annotation logic is also available
+for the web platform of Monasterium NG (`ddp_api`, `ddp_web`), in three parts that live in this
+repository:
 
 - `annie_core/`: the logic, free of any GUI: propagation and dictionaries (`propagation.py`), session
   memory, TF-IDF few-shot retrieval, the prompt and the five language model providers (`llm.py`).
