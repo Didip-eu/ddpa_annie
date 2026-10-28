@@ -1,4 +1,4 @@
-/** The annotations of the texts a user works on, the tag schema and the settings, kept in the browser's localStorage. */
+/** The annotations of the texts a user works on, the tag schema, the settings and the propagation pool, kept in the browser's localStorage. */
 import { overlaps, reanchor } from './spans';
 import type { Entity, Relation, Schema, Settings, Source, Span, Text, TextAnnotations } from './types';
 
@@ -26,19 +26,21 @@ export class AnnieStore {
 	schema = $state<Schema>(structuredClone(DEFAULT_SCHEMA));
 	settings = $state<Settings>({ ...DEFAULT_SETTINGS });
 	texts = $state<Record<string, TextAnnotations>>({});
+	pool = $state<Text[]>([]);
 	tags = $derived(Object.values(this.schema.layers).flat());
 
 	constructor(private storage: Storage = localStorage, private key = 'annie') {
 		const stored = storage.getItem(key);
 		if (!stored) return;
-		const { schema, settings, texts } = JSON.parse(stored);
+		const { schema, settings, texts, pool } = JSON.parse(stored);
 		this.schema = schema;
 		this.settings = { ...DEFAULT_SETTINGS, ...settings };
 		this.texts = texts;
+		this.pool = pool ?? [];
 	}
 
 	private save() {
-		this.storage.setItem(this.key, JSON.stringify({ schema: this.schema, settings: this.settings, texts: this.texts }));
+		this.storage.setItem(this.key, JSON.stringify({ schema: this.schema, settings: this.settings, texts: this.texts, pool: this.pool }));
 	}
 
 	/** The annotations of a text, moved onto its body when the body changed since; returns the entities that could not be moved. */
@@ -165,6 +167,12 @@ export class AnnieStore {
 
 	setSettings(settings: Partial<Settings>) {
 		Object.assign(this.settings, settings);
+		this.save();
+	}
+
+	/** Replaces the texts of other documents that propagation reaches besides the working set. */
+	setPool(pool: Text[]) {
+		this.pool = pool;
 		this.save();
 	}
 

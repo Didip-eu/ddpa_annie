@@ -28,11 +28,13 @@ beforeEach(() => {
 });
 
 describe('AnnieStore', () => {
-	it('keeps annotations across instances', () => {
+	it('keeps annotations and the pool across instances', () => {
 		store.open(text());
 		store.add(text(), 0, 20, 'PER');
+		store.setPool([text()]);
 		const reopened = new AnnieStore(storage as unknown as Storage);
 		expect(reopened.entities(text()).map((e) => [e.text, e.tag])).toEqual([['Artolff von Lewbnegk', 'PER']]);
+		expect(reopened.pool).toEqual([text()]);
 	});
 
 	it('rejects an exact duplicate and, when set, an overlap', () => {

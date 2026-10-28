@@ -22,7 +22,7 @@
 	const activeTag = $derived(tag && store.tags.includes(tag) ? tag : store.tags[0]);
 	let selected = $state<string[]>([]);
 	let pending = $state<[number, number] | null>(null);
-	let scope = $state<'text' | 'all'>('all');
+	let scope = $state<'text' | 'all'>('text');
 	let notice = $state('');
 	let busy = $state(false);
 	let providers = $state<Provider[]>([]);
@@ -32,6 +32,9 @@
 	const entities = $derived(current ? store.entities(current) : []);
 	const relations = $derived(current ? store.relations(current) : []);
 	const mentionCount = $derived(current?.mentions.filter((mention) => mention.start !== null).length ?? 0);
+	const pooled = $derived(texts.every((text) => store.pool.some((other) => other.id === text.id)));
+	const pooledDocuments = $derived(new Set(store.pool.map((text) => text.id.split(':')[0])).size);
+	const union = (first: Text[], second: Text[]) => [...new Map([...first, ...second].map((text) => [text.id, text])).values()];
 
 	$effect(() => {
 		const text = current;
@@ -87,7 +90,7 @@
 	}
 
 	const propagate = () => run(async () => {
-		const targets = scope === 'text' ? [current] : texts;
+		const targets = scope === 'text' ? [current] : union(texts, store.pool);
 		const added = await propagateTo(targets, currentTerms(), store.settings.allowOverlap, 'propagation');
 		return `Propagation added ${added} entities to ${targets.length} texts.`;
 	});
@@ -158,18 +161,6 @@
 	{#if current}
 		<aside>
 			<section class="actions">
-				<h3>Propagate</h3>
-				<select bind:value={scope} aria-label="Scope">
-					<option value="all">to all texts</option>
-					<option value="text">within this text</option>
-				</select>
-				<button disabled={busy || !entities.length} onclick={propagate}>Propagate this text's entities</button>
-				{#if mentionCount}<button onclick={() => (notice = `Accepted ${store.acceptMentions(current)} mentions of the source.`)}>Accept the source's {mentionCount} mentions</button>{/if}
-
-				<h3>Dictionary</h3>
-				<label class="file">Import and propagate <input type="file" accept=".txt,.tsv,text/plain" disabled={busy} onchange={importDictionary} /></label>
-				<button onclick={exportDictionary}>Export all entities as a dictionary</button>
-
 				<h3>Language model</h3>
 				<select value={store.settings.provider} onchange={(event) => store.setSettings({ provider: event.currentTarget.value, model: '' })} aria-label="Provider">
 					{#each providers as provider (provider.id)}
@@ -181,6 +172,24 @@
 				<label>Examples <input type="number" min="0" max="20" value={store.settings.exampleCount}
 					onchange={(event) => store.setSettings({ exampleCount: Number(event.currentTarget.value) })} /></label>
 				<button disabled={busy} onclick={suggest}>Pre-annotate this text</button>
+				<h3>Propagate</h3>
+				<select bind:value={scope} aria-label="Scope">
+					<option value="text">within this text</option>
+					<option value="all">to this document and the pool</option>
+				</select>
+				{#if pooled}
+					<button onclick={() => store.setPool(store.pool.filter((text) => !texts.some((own) => own.id === text.id)))}>Remove this document from the propagation pool</button>
+				{:else}
+					<button onclick={() => store.setPool(union(store.pool, texts))}>Add this document to the propagation pool</button>
+				{/if}
+				<button disabled={!store.pool.length} onclick={() => store.setPool([])}>Clear the pool</button>
+				<span class="note">The pool holds {pooledDocuments} documents.</span>
+				<button disabled={busy || !entities.length} onclick={propagate}>Propagate this text's entities</button>
+				{#if mentionCount}<button onclick={() => (notice = `Accepted ${store.acceptMentions(current)} mentions of the source.`)}>Accept the source's {mentionCount} mentions</button>{/if}
+
+				<h3>Dictionary</h3>
+				<label class="file">Import and propagate <input type="file" accept=".txt,.tsv,text/plain" disabled={busy} onchange={importDictionary} /></label>
+				<button onclick={exportDictionary}>Export all entities as a dictionary</button>
 			</section>
 
 			<EntityPanel {entities} {relations} relationTypes={store.schema.relations} bind:selected {color}

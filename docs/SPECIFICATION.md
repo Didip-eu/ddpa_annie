@@ -85,8 +85,9 @@ A fix there changes bodies and hashes; ANNIE then re-anchors its annotations (se
 
 - Core annotation: entity spans with a layered tag schema, overlapping and multi-label spans, merge and
   demerge of mentions (coreference), directed relations, accepting the source's mentions as entities.
-- Propagation of a text's entities within the text or to every text of the working set; dictionaries:
-  import (and propagate), export.
+- Propagation of a text's entities within the text, or to every text of the working set and of the
+  documents added to the propagation pool; dictionaries: import (and propagate), export. TBD: dictionary
+  import and the session memory of pre-annotation reach the working set only, not the pool.
 - Pre-annotation of a text from the session memory and a language model with TF-IDF-selected
   few-shot examples; providers Anthropic, OpenAI, Together AI, Hugging Face, the DH infrastructure of the University of Graz.
 
@@ -186,12 +187,13 @@ is gone is dropped, the user is told which, and relations that lose an end are d
 
 ### 6.7 Stored state
 
-`localStorage["annie"]` holds `{schema, settings, texts}`:
+`localStorage["annie"]` holds `{schema, settings, texts, pool}`:
 
 - `schema`: `{layers: {name: [tags]}, relations: [types]}`; the default is the desktop app's
   (CORE, ANALYTICAL, SPAN layers; `spouse_of`, `works_at`, `located_in`, `born_on`, `produces`).
 - `settings`: `{selection, allowOverlap, provider, model, exampleCount}`.
 - `texts`: `{text id: {hash, entities, relations}}`.
+- `pool`: the texts of the documents added to the propagation pool, bodies included.
 
 ## 7. API contract
 
@@ -259,7 +261,7 @@ types `Text`, `Entity`, `Relation`, `Schema`, `Settings`, `Span`.
 - Offsets: Python counts code points, JavaScript counts UTF-16 code units. A character outside the
   Basic Multilingual Plane before a span shifts the offsets the server returns. MUFI characters are in
   the BMP; others are rare in the corpus but not measured.
-- `localStorage` holds about 5 MB per origin; a large working set of long tenors can reach it, and
+- `localStorage` holds about 5 MB per origin; a large working set or pool of long tenors can reach it, and
   clearing the browser's data loses all annotations. There is no annotation export yet.
 - A text of 200,000 characters is sent whole with every propagation and suggestion, and the session
   memory sends every annotated text of the working set.

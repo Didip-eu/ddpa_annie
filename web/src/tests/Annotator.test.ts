@@ -1,5 +1,6 @@
 // @vitest-environment jsdom
 import { flushSync, mount, unmount } from 'svelte';
+import { SvelteMap } from 'svelte/reactivity';
 import { afterEach, describe, expect, it } from 'vitest';
 import { AnnieStore } from '$lib/annotations.svelte';
 import type { AnnieApi } from '$lib/api';
@@ -28,9 +29,9 @@ const fakeApi = (calls: unknown[]): AnnieApi => ({
 let component: ReturnType<typeof mount> | undefined;
 afterEach(() => component && unmount(component));
 
-function render(calls: unknown[] = []) {
+function render(calls: unknown[] = [], texts: () => Text[] = () => [FIRST, SECOND]) {
 	const store = new AnnieStore(new MemoryStorage() as unknown as Storage);
-	component = mount(Annotator, { target: document.body, props: { texts: [FIRST, SECOND], api: fakeApi(calls), store } });
+	component = mount(Annotator, { target: document.body, props: { get texts() { return texts(); }, api: fakeApi(calls), store } });
 	flushSync();
 	return store;
 }
@@ -60,12 +61,21 @@ describe('Annotator', () => {
 		expect(document.querySelector('.entity')!.textContent).toBe('Artolff von');
 	});
 
-	it('propagates the entities of the current text to all texts', async () => {
+	it('propagates the entities of the current text to its document and the documents of the pool', async () => {
 		const calls: unknown[] = [];
-		const store = render(calls);
+		const shown = new SvelteMap([['texts', [SECOND]]]);
+		const store = render(calls, () => shown.get('texts')!);
+		button('Add this document to the propagation pool').click();
+		flushSync();
+		expect(button('Remove this document from the propagation pool')).toBeDefined();
+		shown.set('texts', [FIRST]);
+		flushSync();
 		const start = FIRST.body.indexOf('Gmünd');
 		selectText(start, start + 5);
 		button('LOC').click();
+		const scope = document.querySelector<HTMLSelectElement>('[aria-label="Scope"]')!;
+		scope.value = 'all';
+		scope.dispatchEvent(new Event('change'));
 		flushSync();
 		button("Propagate this text's entities").click();
 		await new Promise((resolve) => setTimeout(resolve));
