@@ -124,7 +124,7 @@ ddp_api  --include_router-->  annie_api.router  --calls-->  annie_core (propagat
 | `annie_core` | `annie_core/` | `anthropic` | The logic, no GUI, no web framework; offsets are characters of a body. |
 | `annie_api` | `annie_api/` | `fastapi`, `annie_core` | `router`, an `APIRouter` with prefix `/annie`; `annie_api.dev`, a development app. |
 | web library | `web/src/lib/` | `svelte` (peer) | `Annotator` and its parts, the store, the API client; packaged by `svelte-package`. |
-| demo page | `web/src/routes/` | the library | Picks a working set from the development app; not shipped. |
+| demo page | `web/src/routes/` | the library | Lists the documents of the development app; the clicked one is the working set. Not shipped. |
 | desktop app | `annie/`, `annie.py` | `tkinter`, `requests`, `torch` | The original application. |
 
 ## 6. Behaviour
