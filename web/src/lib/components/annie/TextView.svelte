@@ -1,7 +1,7 @@
 <!-- A text body with its entities highlighted; reports a selection as character offsets and a click on an entity. -->
 <script lang="ts">
-	import { segments } from './spans';
-	import type { Entity } from './types';
+	import { segments } from '../../annie/spans';
+	import type { Entity } from '../../annie/types';
 
 	type Props = {
 		body: string;

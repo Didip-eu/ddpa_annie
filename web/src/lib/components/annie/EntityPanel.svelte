@@ -1,6 +1,6 @@
 <!-- The entities and relations of one text: select, delete, merge and demerge entities; add, flip and delete relations. -->
 <script lang="ts">
-	import type { Entity, Relation } from './types';
+	import type { Entity, Relation } from '../../annie/types';
 
 	type Props = {
 		entities: Entity[];

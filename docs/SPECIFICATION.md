@@ -124,8 +124,8 @@ ddp_api  --include_router-->  annie_api.router  --calls-->  annie_core (propagat
 |---|---|---|---|
 | `annie_core` | `annie_core/` | `anthropic` | The logic, no GUI, no web framework; offsets are characters of a body. |
 | `annie_api` | `annie_api/` | `fastapi`, `annie_core` | `router`, an `APIRouter` with prefix `/annie`; `annie_api.dev`, a development app. |
-| web library | `web/src/lib/` | `svelte` (peer) | `Annotator` and its parts, the store, the API client; packaged by `svelte-package`. |
-| demo page | `web/src/routes/` | the library | Lists the documents of the development app; the clicked one is the working set. Not shipped. |
+| web library | `web/src/lib/` | `svelte` (peer) | `Annotator` and its parts in `components/annie/`, the store and the API client in `annie/`; packaged by `svelte-package`. |
+| demo page | `web/src/routes/annotator/` | the library | Lists the documents of the development app; the clicked one is the working set. Not shipped. |
 | desktop app | `annie/`, `annie.py` | `tkinter`, `requests`, `torch` | The original application. |
 
 ## 6. Behaviour
@@ -241,8 +241,8 @@ types `Text`, `Entity`, `Relation`, `Schema`, `Settings`, `Span`.
 
 ### 9.2 ddp_web
 
-1. Add `web/` as a dependency once packaged (`npm run package`), or copy `web/src/lib` into
-   `src/lib/annie/`.
+1. Add `web/` as a dependency once packaged (`npm run package`), or copy `web/src/lib/annie/` and
+   `web/src/lib/components/annie/` to the same paths, keeping their relative imports.
 2. Place `<Annotator>` on a page with a working set: the texts of one document
    (`routes/documents/[id]`), or of the documents of a basket, which makes propagation across them
    meaningful.

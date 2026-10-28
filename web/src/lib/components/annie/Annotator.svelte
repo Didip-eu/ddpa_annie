@@ -1,13 +1,13 @@
 <!-- ANNIE in the browser: annotate the texts of a working set with entities and relations, propagate them, pre-annotate with a language model. -->
 <script lang="ts">
 	import { onMount, untrack } from 'svelte';
-	import { AnnieStore } from './annotations.svelte';
-	import { annieApi, type AnnieApi, type Provider } from './api';
-	import { readDictionary, writeDictionary } from './dictionary';
+	import { AnnieStore } from '../../annie/annotations.svelte';
+	import { annieApi, type AnnieApi, type Provider } from '../../annie/api';
+	import { readDictionary, writeDictionary } from '../../annie/dictionary';
 	import EntityPanel from './EntityPanel.svelte';
-	import { snap } from './spans';
+	import { snap } from '../../annie/spans';
 	import TextView from './TextView.svelte';
-	import type { Text } from './types';
+	import type { Text } from '../../annie/types';
 
 	type Props = { texts: Text[]; api?: AnnieApi; store?: AnnieStore };
 	let { texts, api = annieApi(), store = new AnnieStore() }: Props = $props();

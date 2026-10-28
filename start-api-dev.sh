@@ -1,0 +1,1 @@
+DDP_BROWSE_FILE=$HOME/work/ddp_etl/fsdb-builds/sample-store/browse.sqlite   uv run --env-file .env  uvicorn annie_api.dev:app --reload --port 8000

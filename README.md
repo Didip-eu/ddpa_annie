@@ -176,9 +176,9 @@ platform of Monasterium NG (`ddp_api`, `ddp_web`), in three parts that live in t
     npm run dev
 
 `annie_api.dev` stands in for `ddp_api`: the ANNIE routes and the documents of a browse file under
-`/api/v1`. The development page of `web/` forwards `/api/v1` to it on port 8000. The tests under
-`tests/test_*` other than `test_core_*` and `test_api` pin the behaviour of the desktop application;
-`test_core_*` check that `annie_core` finds the same entities.
+`/api/v1`. The development page of `web/`, at `/annotator`, forwards `/api/v1` to it on port 8000.
+The tests under `tests/test_*` other than `test_core_*` and `test_api` pin the behaviour of the
+desktop application; `test_core_*` check that `annie_core` finds the same entities.
 
 ### Integrate
 

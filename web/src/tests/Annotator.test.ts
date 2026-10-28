@@ -2,10 +2,10 @@
 import { flushSync, mount, unmount } from 'svelte';
 import { SvelteMap } from 'svelte/reactivity';
 import { afterEach, describe, expect, it } from 'vitest';
-import { AnnieStore } from '$lib/annotations.svelte';
-import type { AnnieApi } from '$lib/api';
-import Annotator from '$lib/Annotator.svelte';
-import type { Text } from '$lib/types';
+import { AnnieStore } from '$lib/annie/annotations.svelte';
+import type { AnnieApi } from '$lib/annie/api';
+import Annotator from '$lib/components/annie/Annotator.svelte';
+import type { Text } from '$lib/annie/types';
 
 class MemoryStorage {
 	items = new Map<string, string>();

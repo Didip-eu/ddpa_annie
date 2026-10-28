@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
-import { readDictionary, writeDictionary } from '$lib/dictionary';
-import { reanchor, segments, snap } from '$lib/spans';
-import type { Entity } from '$lib/types';
+import { readDictionary, writeDictionary } from '$lib/annie/dictionary';
+import { reanchor, segments, snap } from '$lib/annie/spans';
+import type { Entity } from '$lib/annie/types';
 
 const BODY = 'Artolff von Lewbnegk übergibt der Liebfrauenkirche zu Gmünd\nein Gut zu Plesnicz (Leucz Weczenpacher).';
 const entity = (start: number, end: number, tag: string, body = BODY): Entity => ({

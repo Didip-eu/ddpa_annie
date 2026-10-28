@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it } from 'vitest';
-import { AnnieStore } from '$lib/annotations.svelte';
-import type { Text } from '$lib/types';
+import { AnnieStore } from '$lib/annie/annotations.svelte';
+import type { Text } from '$lib/annie/types';
 
 class MemoryStorage {
 	items = new Map<string, string>();
