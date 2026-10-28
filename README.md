@@ -6,6 +6,10 @@ ANNIE is a lightweight, robust, Python-based desktop application designed for an
 
 ANNIE goes beyond manual annotation by integrating **Hybrid Ensemble AI** (combining Hugging Face models with local Session Memory) and a **Generative LLM Agent** powered by a native **RAG (Retrieval-Augmented Generation)** engine for highly accurate, context-aware pre-annotations.
 
+> The desktop application is legacy: its code lives in `annie_legacy/`, is no longer developed and is
+> kept as the reference the tests compare the web version against. See
+> [Web version for Monasterium NG](#web-version-for-monasterium-ng).
+
 <p align="center"\>
 <img src="annie.gif" width="400" /\>
 </p\>
@@ -145,6 +149,63 @@ Annotations are stored in standard JSON format:
       - Implemented multi-label and overlapping annotation support.
       - Added demerge functionality and CoNLL / spaCy JSONL export.
   - **0.60 - 0.75**: Base features, read-only UI, session management, and visual flagging.
+
+## Web version for Monasterium NG
+
+The desktop application above is legacy and stays as it is. Its annotation logic is also available
+for the web platform of Monasterium NG (`ddp_api`, `ddp_web`), in three parts that live in this
+repository:
+
+- `annie_core/`: the logic, free of any GUI: propagation and dictionaries (`propagation.py`), session
+  memory, TF-IDF few-shot retrieval, the prompt and the five language model providers (`llm.py`).
+  Offsets are characters of a text body.
+- `annie_api/`: an `APIRouter` with `GET /annie/providers`, `POST /annie/propagate` and
+  `POST /annie/suggest`. The routes are stateless: the client sends the texts and their entities.
+  The keys of the providers are read from `DDP_ANNIE_ANTHROPIC_KEY`, `DDP_ANNIE_OPENAI_KEY`,
+  `DDP_ANNIE_TOGETHER_KEY`, `DDP_ANNIE_HUGGINGFACE_KEY` and `DDP_ANNIE_DHINFRA_KEY` (the self-hosted
+  models of the University of Graz, `api.dhinfra.uni-graz.at`).
+- `web/`: Svelte 5 components for `ddp_web`: the `Annotator` component, its store (annotations, tag
+  schema and settings in the browser's `localStorage`) and the client of the routes. It annotates the
+  `texts` of a `ddp_api` document, keyed by text id and re-anchored when the text's hash changes.
+
+### Run and test
+
+    uv sync
+    uv run pytest
+    DDP_BROWSE_FILE=../ddp_etl/fsdb-builds/sample-store/browse.sqlite uv run uvicorn annie_api.dev:app
+
+    cd web
+    npm install
+    npm test
+    npm run check
+    npm run dev
+
+`annie_api.dev` stands in for `ddp_api`: the ANNIE routes and the documents of a browse file under
+`/api/v1`. The development page of `web/`, at `/annotator`, forwards `/api/v1` to it on port 8000.
+The tests under `tests/test_*` other than `test_core_*` and `test_api` pin the behaviour of the
+desktop application; `test_core_*` check that `annie_core` finds the same entities.
+
+### Integrate
+
+In `ddp_api`, with this repository as a dependency: `v1.include_router(annie_api.router)`.
+In `ddp_web`, with `web/src/lib/annie/` and `web/src/lib/components/annie/` copied to the same
+paths (`docs/HANDOVER_DDP_WEB.md`):
+
+    <script lang="ts">
+        import Annotator from '$lib/components/annie/Annotator.svelte';
+        let { data } = $props();
+    </script>
+    <Annotator texts={data.documents.flatMap((document) => document.texts)} />
+
+The annotator keeps its data in `localStorage`, so it renders in the browser only.
+
+### Differences from the desktop application
+
+- Session memory and model suggestions match terms with the propagation rule, so a term ending in
+  punctuation such as `Papst Nikolaus IV.` is found; tags the model invents are dropped.
+- Claude is called without `temperature`, which the Messages API no longer accepts, through the
+  `anthropic` SDK with the server-side refusal fallback; its default model is `claude-opus-5-5`.
+- Merged mentions share a group; relations connect groups.
 
 ## Cite
 

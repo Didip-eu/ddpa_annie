@@ -22,3 +22,8 @@ env/
 .idea/
 *.swp
 .DS_Store
+CLAUDE.md
+# Local data and analysis output
+example_data/
+.ua/
+

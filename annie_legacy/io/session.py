@@ -5,7 +5,7 @@ from tkinter import messagebox
 import json
 import traceback
 import os
-from annie.constants import SESSION_FILE_VERSION
+from annie_legacy.constants import SESSION_FILE_VERSION
 
 class SessionMixin:
     """Save/load session + schema + lifecycle."""

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SYNTHETIC test fixture (not real archival data).
+     The AT-ADG example corpus only contains regest-level charters
+     (cei:abstract, no transcribed cei:tenor). This file exercises the
+     diplomatic-part code paths: protocol / tenor / eschatocol sub-parts,
+     cei:lb, cei:abbr/@expan, cei:app/cei:lem, cei:quote, cei:sup,
+     skipped cei:note, placeName and dateRange inside the text. -->
+<atom:entry xmlns:atom="http://www.w3.org/2005/Atom">
+  <atom:id>tag:www.monasterium.net,2011:/charter/TEST/SYNTH/SYNTH_0001</atom:id>
+  <atom:content type="application/xml">
+    <cei:text xmlns:cei="http://www.monasterium.net/NS/cei" type="charter">
+      <cei:front/>
+      <cei:body>
+        <cei:idno id="SYNTH_0001">SYNTH_0001</cei:idno>
+        <cei:chDesc>
+          <cei:abstract>Bischof Heinrich bestätigt dem Kloster Millstatt den Zehent zu Gmünd.</cei:abstract>
+          <cei:issued>
+            <cei:placeName>Gmünd</cei:placeName>
+            <cei:dateRange from="13050312" to="13050312">1305 März 12</cei:dateRange>
+          </cei:issued>
+        </cei:chDesc>
+        <cei:tenor>
+          <cei:invocatio>In nomine sancte et individue trinitatis.</cei:invocatio>
+          <cei:intitulatio>Nos Heinricus <cei:abbr expan="dei">dei</cei:abbr> gratia episcopus</cei:intitulatio>
+          <cei:narratio>notum facimus quod <cei:quote>pro remedio anime</cei:quote> fratres de
+            <cei:placeName>Milstat</cei:placeName><cei:lb/>nobis supplicaverunt<cei:note>Randnotiz, wird übersprungen</cei:note></cei:narratio>
+          <cei:dispositio>damus decimam in <cei:app><cei:lem>Gemunde</cei:lem><cei:rdg>Gmunde</cei:rdg></cei:app> perpetuo.</cei:dispositio>
+          <cei:corroboratio>In cuius rei testimonium sigillum nostrum appendimus.</cei:corroboratio>
+          <cei:datatio>Datum anno domini M<cei:sup>o</cei:sup>CCC<cei:sup>o</cei:sup>V<cei:sup>o</cei:sup>, <cei:dateRange from="13050312" to="13050312">IIII idus marcii</cei:dateRange>.</cei:datatio>
+        </cei:tenor>
+      </cei:body>
+      <cei:back/>
+    </cei:text>
+  </atom:content>
+</atom:entry>

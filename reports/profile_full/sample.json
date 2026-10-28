@@ -1,0 +1,200 @@
+[
+ {
+  "stratum": "abstract_markup",
+  "archive": "IT-DAB",
+  "path": "IT-DAB/7305277d3b252612856d9e7c8d9b3a1a/70f765d6f6deafe8faaa46a888530feb/CH.cei.xml",
+  "chars": 416
+ },
+ {
+  "stratum": "abstract_markup",
+  "archive": "DE-StAW",
+  "path": "DE-StAW/2de8a0116c914d1e90da6336ad92a007/565ec85bef3308bfdc6488c21160eb1f/CH.cei.xml",
+  "chars": 456
+ },
+ {
+  "stratum": "abstract_markup",
+  "archive": "9b0f541dfdc50058c4d41085b778da20",
+  "path": "COLLECTIONS/9b0f541dfdc50058c4d41085b778da20/7df71aa7a44f858c6f6886f84861208e/CH.cei.xml",
+  "chars": 254
+ },
+ {
+  "stratum": "abstract_markup",
+  "archive": "DE-BayHStA",
+  "path": "DE-BayHStA/e9fec39f5439f47e5c5e15ca54708946/68a833a8a00c1ed8656ee1b4de5c1f02/CH.cei.xml",
+  "chars": 495
+ },
+ {
+  "stratum": "abstract_names",
+  "archive": "HU-MNL-DLCSLP",
+  "path": "HU-MNL-DLCSLP/86d8e189eb5807e2aae22cfc8799f336/2fa6754106f6fdf6d2e55eafc2d8ff7b/CH.cei.xml",
+  "chars": 16
+ },
+ {
+  "stratum": "abstract_names",
+  "archive": "HU-MNL-DLGYUJ",
+  "path": "HU-MNL-DLGYUJ/901eb95343ea68d23826e75f5edb8c75/550bf479c6f91cedfd59918ab7d60fe9/CH.cei.xml",
+  "chars": 489
+ },
+ {
+  "stratum": "abstract_names",
+  "archive": "SK-AMB",
+  "path": "SK-AMB/d86b26d7e2fecb92c02896d448f1471a/d2cd6a9ed1f3c9f619c5d50e62170880/CH.cei.xml",
+  "chars": 142
+ },
+ {
+  "stratum": "abstract_names",
+  "archive": "HU-MNL-DLKINL",
+  "path": "HU-MNL-DLKINL/dab94c9cbdf34bd35c06366bc54f94e4/970bd08914ee37856da3b16b18798788/CH.cei.xml",
+  "chars": 1402
+ },
+ {
+  "stratum": "abstract_plain",
+  "archive": "AT-StiAAdm",
+  "path": "AT-StiAAdm/fd14928e00fdf9fe95f7e346bdacab4c/75fe6aff2cce9bb5e695ead108b37ccd/CH.cei.xml",
+  "chars": 183
+ },
+ {
+  "stratum": "abstract_plain",
+  "archive": "DE-LANRWR",
+  "path": "DE-LANRWR/f8b4f58e43f7bc1fd819636803e92a81/163d7875bc78119dbbf488e86dda64c3/CH.cei.xml",
+  "chars": 470
+ },
+ {
+  "stratum": "abstract_plain",
+  "archive": "DE-BayHStA",
+  "path": "DE-BayHStA/03a849ee303c4c43afe306f9a414a5d3/65d607ca4df14ad10fd2f0aaea1d01ea/CH.cei.xml",
+  "chars": 564
+ },
+ {
+  "stratum": "abstract_plain",
+  "archive": "AT-AES",
+  "path": "AT-AES/fd5d0808707281748845a6bf394bc9cc/66524fdd347b2bb8ee3921862edc8e1b/CH.cei.xml",
+  "chars": 152
+ },
+ {
+  "stratum": "no_text",
+  "archive": "IT-SLA",
+  "path": "IT-SLA/33e48e37fe85208fd7bc3edfa7faf04b/2af384608ced889761b37d2dd2aafbe6/CH.cei.xml",
+  "chars": 0
+ },
+ {
+  "stratum": "no_text",
+  "archive": "IT-ASFi",
+  "path": "IT-ASFi/a9dae8cd51eaaeef3602a85f92f45776/6a287b5f2268186accc968cede0d7bfb/CH.cei.xml",
+  "chars": 0
+ },
+ {
+  "stratum": "no_text",
+  "archive": "IT-ASNA",
+  "path": "IT-ASNA/6bd170a20871141020b158c5fec602d8/a0a4939c4acbb636fa15a5260abdc7d9/CH.cei.xml",
+  "chars": 0
+ },
+ {
+  "stratum": "no_text",
+  "archive": "IT-BibVall",
+  "path": "IT-BibVall/beda870f9f9891f871112a9ad0cab98a/5860b4c7da6eaa4559b8dcf774b87480/CH.cei.xml",
+  "chars": 0
+ },
+ {
+  "stratum": "tenor_diplomatic",
+  "archive": "DE-ABP",
+  "path": "DE-ABP/60315709e964b134d7162951e4e604f8/b4dcd791888b29c66fe0a46bda9f3f11/CH.cei.xml",
+  "chars": 2494
+ },
+ {
+  "stratum": "tenor_diplomatic",
+  "archive": "619c9230394b598e299355792f8210c3",
+  "path": "COLLECTIONS/619c9230394b598e299355792f8210c3/9a4e86143b07107e8758762430ce40e1/CH.cei.xml",
+  "chars": 3549
+ },
+ {
+  "stratum": "tenor_diplomatic",
+  "archive": "36e2c862cfe1f825654b803d9465c060",
+  "path": "COLLECTIONS/36e2c862cfe1f825654b803d9465c060/5d21bf6f6653a13b140034c1e269b5bb/CH.cei.xml",
+  "chars": 4127
+ },
+ {
+  "stratum": "tenor_diplomatic",
+  "archive": "775f90b0b4fa61c4e8bfda3f0c1de922",
+  "path": "COLLECTIONS/775f90b0b4fa61c4e8bfda3f0c1de922/760ea31e4f78a63b9bbdf3a1fde18f11/CH.cei.xml",
+  "chars": 3180
+ },
+ {
+  "stratum": "tenor_markup",
+  "archive": "66633a700b0a20b1c0a46aec525cca25",
+  "path": "COLLECTIONS/66633a700b0a20b1c0a46aec525cca25/971d25176e46618013104db4641c791a/CH.cei.xml",
+  "chars": 205
+ },
+ {
+  "stratum": "tenor_markup",
+  "archive": "580d3f8aac8372af6cf3052f0ef2ed9a",
+  "path": "COLLECTIONS/580d3f8aac8372af6cf3052f0ef2ed9a/a00e477b559daf0f1dbd7a1e24d65be4/CH.cei.xml",
+  "chars": 6130
+ },
+ {
+  "stratum": "tenor_markup",
+  "archive": "1771b93c27e0ad127c082d16286b1dc2",
+  "path": "COLLECTIONS/1771b93c27e0ad127c082d16286b1dc2/3bb8d1ffb1b3284fb738cc518a131f66/CH.cei.xml",
+  "chars": 364
+ },
+ {
+  "stratum": "tenor_markup",
+  "archive": "cc1be497f4574b543dd1deefcfc52a92",
+  "path": "COLLECTIONS/cc1be497f4574b543dd1deefcfc52a92/f16b0b8d01c1ac05984a6dcf520dc38e/CH.cei.xml",
+  "chars": 4744
+ },
+ {
+  "stratum": "tenor_names",
+  "archive": "3a4c7c6d8492cf1d7c5d6f290ddd6b17",
+  "path": "COLLECTIONS/3a4c7c6d8492cf1d7c5d6f290ddd6b17/6c005d1b65be862ab518e631add6b526/CH.cei.xml",
+  "chars": 1346
+ },
+ {
+  "stratum": "tenor_names",
+  "archive": "AT-StiAKr",
+  "path": "AT-StiAKr/63d0bd1c0c530a1a8ac2b2129d143380/53ea9b1018ce45b924893fa626831242/CH.cei.xml",
+  "chars": 2516
+ },
+ {
+  "stratum": "tenor_names",
+  "archive": "2b5cb56d9ae2f6d95594704e6743b4c2",
+  "path": "COLLECTIONS/2b5cb56d9ae2f6d95594704e6743b4c2/d5869b89196c05e4454de2521ff1f5bf/CH.cei.xml",
+  "chars": 2098
+ },
+ {
+  "stratum": "tenor_names",
+  "archive": "DE-FWUBHGW",
+  "path": "DE-FWUBHGW/4761d02400aef50f88231308ff534bc3/4da4fd4cd947482227286e1db5031026/CH.cei.xml",
+  "chars": 4544
+ },
+ {
+  "stratum": "tenor_plain",
+  "archive": "35c5d886b6255d64047cbaf9157886d6",
+  "path": "COLLECTIONS/35c5d886b6255d64047cbaf9157886d6/bf6a7199d8341911b05772370f6ac1b3/CH.cei.xml",
+  "chars": 2115
+ },
+ {
+  "stratum": "tenor_plain",
+  "archive": "035307b2c341280e77c46fe71d9b61ce",
+  "path": "COLLECTIONS/035307b2c341280e77c46fe71d9b61ce/7b2093c98cb5222162dea7dcd2dd9ebb/CH.cei.xml",
+  "chars": 1022
+ },
+ {
+  "stratum": "tenor_plain",
+  "archive": "5a822d4d76efc50273cd1964f713490c",
+  "path": "COLLECTIONS/5a822d4d76efc50273cd1964f713490c/cc628ff944c0da84bb0fa9875c4d88de/CH.cei.xml",
+  "chars": 4672
+ },
+ {
+  "stratum": "tenor_plain",
+  "archive": "032bf56eaffba58c224ea4ea4543a3c8",
+  "path": "COLLECTIONS/032bf56eaffba58c224ea4ea4543a3c8/c9e4bb22b5b587703f367c205e608b68/CH.cei.xml",
+  "chars": 328
+ },
+ {
+  "stratum": "longest_text",
+  "archive": "b6f491b6385274394257545007dc2adb",
+  "path": "COLLECTIONS/b6f491b6385274394257545007dc2adb/2190d881cc966bea50af9ba544042350/CH.cei.xml",
+  "chars": 215907
+ }
+]

@@ -1,0 +1,244 @@
+{
+  "ai_label_mapping": {},
+  "ai_max_conf": 1.0,
+  "ai_min_conf": 0.9,
+  "allow_multilabel_overlap": true,
+  "annotations": {
+    "<tmp>/session/ADG_Urk_P0306.txt": {
+      "entities": [
+        {
+          "end_char": 34,
+          "end_line": 1,
+          "id": "<id>",
+          "start_char": 14,
+          "start_line": 1,
+          "tag": "PER",
+          "text": "Artolff von Lewbnegk"
+        },
+        {
+          "end_char": 151,
+          "end_line": 1,
+          "id": "<id>",
+          "start_char": 126,
+          "start_line": 1,
+          "tag": "INS",
+          "text": "Liebfrauenkirche zu Gmünd"
+        },
+        {
+          "end_char": 151,
+          "end_line": 1,
+          "id": "<id>",
+          "start_char": 146,
+          "start_line": 1,
+          "tag": "LOC",
+          "text": "Gmünd"
+        },
+        {
+          "end_char": 373,
+          "end_line": 1,
+          "id": "<id>",
+          "start_char": 361,
+          "start_line": 1,
+          "tag": "DAT",
+          "text": "1448 Juli 16"
+        }
+      ],
+      "relations": [
+        {
+          "head_id": "<id>",
+          "id": "<id>",
+          "tail_id": "<id>",
+          "type": "located_in"
+        }
+      ]
+    },
+    "<tmp>/session/ADG_Urk_P1303.txt": {
+      "entities": [
+        {
+          "end_char": 33,
+          "end_line": 1,
+          "id": "<id>",
+          "start_char": 14,
+          "start_line": 1,
+          "tag": "PER",
+          "text": "Papst Benedikt XIV."
+        },
+        {
+          "end_char": 72,
+          "end_line": 1,
+          "id": "<id>",
+          "start_char": 49,
+          "start_line": 1,
+          "tag": "TITLE",
+          "text": "Erzbischof von Salzburg"
+        },
+        {
+          "end_char": 72,
+          "end_line": 1,
+          "id": "<id>",
+          "start_char": 64,
+          "start_line": 1,
+          "tag": "LOC",
+          "text": "Salzburg"
+        }
+      ],
+      "relations": []
+    },
+    "<tmp>/session/ADG_Urk_P2335.txt": {
+      "entities": [
+        {
+          "end_char": 61,
+          "end_line": 1,
+          "id": "<id>",
+          "start_char": 46,
+          "start_line": 1,
+          "tag": "PER",
+          "text": "Anselm Vieweger"
+        },
+        {
+          "end_char": 246,
+          "end_line": 1,
+          "id": "<id>",
+          "start_char": 228,
+          "start_line": 1,
+          "tag": "DAT",
+          "text": "(1442 Dezember 30)"
+        }
+      ],
+      "relations": []
+    }
+  },
+  "current_ai_models": [],
+  "current_file_index": 0,
+  "extend_to_word": false,
+  "files_list": [
+    "<tmp>/session/ADG_Urk_P0306.txt",
+    "<tmp>/session/ADG_Urk_P1303.txt",
+    "<tmp>/session/ADG_Urk_P2335.txt"
+  ],
+  "last_used_ai_models": [],
+  "llm_few_shot_count": 3,
+  "llm_model": "claude-sonnet-4-6",
+  "llm_models": {
+    "Anthropic (Claude)": "claude-sonnet-4-6",
+    "Hugging Face": "HuggingFaceH4/zephyr-7b-alpha",
+    "OpenAI": "gpt-4o-mini",
+    "Together AI": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo"
+  },
+  "llm_provider": "Anthropic (Claude)",
+  "relation_types": [
+    "spouse_of",
+    "works_at",
+    "located_in",
+    "born_on",
+    "produces"
+  ],
+  "selection_mode": "word",
+  "tag_active_states": {
+    "ACTOR": true,
+    "COM": true,
+    "DAT": true,
+    "EST": true,
+    "INS": true,
+    "LEG": true,
+    "LOC": true,
+    "MEA": true,
+    "MON": true,
+    "NAT": true,
+    "NUM": true,
+    "PER": true,
+    "PROP": true,
+    "REL": true,
+    "TAX": true,
+    "TIM": true,
+    "TITLE": true,
+    "TRANS": true
+  },
+  "tag_colors": {
+    "ACTOR": "#e6e6fa",
+    "COM": "#add8e6",
+    "DAT": "#ffffcc",
+    "EST": "#f5f5dc",
+    "INS": "#ccffcc",
+    "LEG": "#ffebcd",
+    "LOC": "#ccccff",
+    "MEA": "#fffacd",
+    "MON": "#d3ffd3",
+    "NAT": "#e0ffff",
+    "NUM": "#fafad2",
+    "PER": "#ffcccc",
+    "PROP": "#ffe4e1",
+    "REL": "#ffe4e1",
+    "TAX": "#f0fff0",
+    "TIM": "#e6e6fa",
+    "TITLE": "#ccffff",
+    "TRANS": "#f0fff0"
+  },
+  "tag_hierarchy": {
+    "ANALYTICAL Layer": [
+      "TITLE",
+      "REL",
+      "TAX",
+      "MEA",
+      "COM",
+      "EST",
+      "MON",
+      "NUM",
+      "LEG",
+      "NAT"
+    ],
+    "CORE Layer": [
+      "PER",
+      "LOC",
+      "INS",
+      "DAT",
+      "TIM"
+    ],
+    "SPAN Layer": [
+      "ACTOR",
+      "PROP",
+      "TRANS"
+    ]
+  },
+  "tag_propagation_states": {
+    "ACTOR": true,
+    "COM": true,
+    "DAT": true,
+    "EST": true,
+    "INS": true,
+    "LEG": true,
+    "LOC": true,
+    "MEA": true,
+    "MON": true,
+    "NAT": true,
+    "NUM": true,
+    "PER": true,
+    "PROP": true,
+    "REL": true,
+    "TAX": true,
+    "TIM": true,
+    "TITLE": true,
+    "TRANS": true
+  },
+  "tag_visible_states": {
+    "ACTOR": true,
+    "COM": true,
+    "DAT": true,
+    "EST": true,
+    "INS": true,
+    "LEG": true,
+    "LOC": true,
+    "MEA": true,
+    "MON": true,
+    "NAT": true,
+    "NUM": true,
+    "PER": true,
+    "PROP": true,
+    "REL": true,
+    "TAX": true,
+    "TIM": true,
+    "TITLE": true,
+    "TRANS": true
+  },
+  "version": "1.14"
+}

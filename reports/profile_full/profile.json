@@ -1,0 +1,2837 @@
+{
+ "root": "/home/wood/work/ddp_etl/fsdb-builds/Full_2026-10-22",
+ "seconds": 333,
+ "charters": 793176,
+ "errors": {},
+ "duplicate_atom_ids": 0,
+ "totals": {
+  "charters": 793176,
+  "back_names": 169213,
+  "issued_place_filled": 271248,
+  "with_images": 591079,
+  "abstract_nonempty": 675666,
+  "tenor_nonempty": 77515,
+  "both_texts": 64520
+ },
+ "strata": {
+  "abstract_plain": 344690,
+  "abstract_names": 235263,
+  "no_text": 104515,
+  "tenor_plain": 55061,
+  "abstract_markup": 31193,
+  "tenor_markup": 21447,
+  "tenor_names": 807,
+  "tenor_diplomatic": 200
+ },
+ "text_chars": {
+  "abstract": {
+   "files": 675666,
+   "p50": 192,
+   "p90": 633,
+   "p99": 1858,
+   "max": 129493
+  },
+  "tenor": {
+   "files": 77515,
+   "p50": 1667,
+   "p90": 4811,
+   "p99": 15754,
+   "max": 215907
+  }
+ },
+ "inline_elements": {
+  "abstract": [
+   {
+    "element": "issuer",
+    "files": 238806,
+    "occurrences": 254611
+   },
+   {
+    "element": "recipient",
+    "files": 22842,
+    "occurrences": 24384
+   },
+   {
+    "element": "foreign",
+    "files": 22791,
+    "occurrences": 140111
+   },
+   {
+    "element": "persName",
+    "files": 18897,
+    "occurrences": 32662
+   },
+   {
+    "element": "lb",
+    "files": 17153,
+    "occurrences": 32237
+   },
+   {
+    "element": "hi",
+    "files": 12334,
+    "occurrences": 22894
+   },
+   {
+    "element": "placeName",
+    "files": 9548,
+    "occurrences": 17971
+   },
+   {
+    "element": "sup",
+    "files": 7328,
+    "occurrences": 23327
+   },
+   {
+    "element": "index",
+    "files": 6567,
+    "occurrences": 7492
+   },
+   {
+    "element": "name",
+    "files": 3166,
+    "occurrences": 5229
+   },
+   {
+    "element": "ref",
+    "files": 2404,
+    "occurrences": 3088
+   },
+   {
+    "element": "addName",
+    "files": 2064,
+    "occurrences": 3061
+   },
+   {
+    "element": "orgName",
+    "files": 1629,
+    "occurrences": 1769
+   },
+   {
+    "element": "rolename",
+    "files": 1569,
+    "occurrences": 1970
+   },
+   {
+    "element": "quote",
+    "files": 1456,
+    "occurrences": 8816
+   },
+   {
+    "element": "testis",
+    "files": 1044,
+    "occurrences": 7140
+   },
+   {
+    "element": "measure",
+    "files": 195,
+    "occurrences": 820
+   },
+   {
+    "element": "num",
+    "files": 194,
+    "occurrences": 846
+   },
+   {
+    "element": "geogName",
+    "files": 160,
+    "occurrences": 280
+   },
+   {
+    "element": "note",
+    "files": 151,
+    "occurrences": 702
+   },
+   {
+    "element": "date",
+    "files": 13,
+    "occurrences": 15
+   },
+   {
+    "element": "surname",
+    "files": 6,
+    "occurrences": 8
+   },
+   {
+    "element": "dateRange",
+    "files": 5,
+    "occurrences": 6
+   },
+   {
+    "element": "expan",
+    "files": 4,
+    "occurrences": 6
+   },
+   {
+    "element": "damage",
+    "files": 2,
+    "occurrences": 2
+   },
+   {
+    "element": "cit",
+    "files": 2,
+    "occurrences": 4
+   },
+   {
+    "element": "a",
+    "files": 1,
+    "occurrences": 1
+   },
+   {
+    "element": "c",
+    "files": 1,
+    "occurrences": 1
+   },
+   {
+    "element": "corr",
+    "files": 1,
+    "occurrences": 1
+   },
+   {
+    "element": "class",
+    "files": 1,
+    "occurrences": 1
+   },
+   {
+    "element": "unclear",
+    "files": 1,
+    "occurrences": 15
+   }
+  ],
+  "tenor": [
+   {
+    "element": "pTenor",
+    "files": 43983,
+    "occurrences": 345647
+   },
+   {
+    "element": "sup",
+    "files": 15111,
+    "occurrences": 210686
+   },
+   {
+    "element": "hi",
+    "files": 6419,
+    "occurrences": 10480
+   },
+   {
+    "element": "lb",
+    "files": 5056,
+    "occurrences": 34588
+   },
+   {
+    "element": "ref",
+    "files": 1995,
+    "occurrences": 4832
+   },
+   {
+    "element": "persName",
+    "files": 953,
+    "occurrences": 9920
+   },
+   {
+    "element": "placeName",
+    "files": 666,
+    "occurrences": 7494
+   },
+   {
+    "element": "foreign",
+    "files": 460,
+    "occurrences": 2081
+   },
+   {
+    "element": "damage",
+    "files": 390,
+    "occurrences": 2520
+   },
+   {
+    "element": "pb",
+    "files": 358,
+    "occurrences": 410
+   },
+   {
+    "element": "orgName",
+    "files": 313,
+    "occurrences": 1046
+   },
+   {
+    "element": "date",
+    "files": 225,
+    "occurrences": 270
+   },
+   {
+    "element": "add",
+    "files": 210,
+    "occurrences": 546
+   },
+   {
+    "element": "sic",
+    "files": 177,
+    "occurrences": 361
+   },
+   {
+    "element": "expan",
+    "files": 173,
+    "occurrences": 4870
+   },
+   {
+    "element": "datatio",
+    "files": 168,
+    "occurrences": 191
+   },
+   {
+    "element": "c",
+    "files": 165,
+    "occurrences": 9317
+   },
+   {
+    "element": "dispositio",
+    "files": 162,
+    "occurrences": 196
+   },
+   {
+    "element": "subscriptio",
+    "files": 151,
+    "occurrences": 395
+   },
+   {
+    "element": "handShift",
+    "files": 150,
+    "occurrences": 381
+   },
+   {
+    "element": "pict",
+    "files": 148,
+    "occurrences": 616
+   },
+   {
+    "element": "invocatio",
+    "files": 134,
+    "occurrences": 165
+   },
+   {
+    "element": "note",
+    "files": 132,
+    "occurrences": 850
+   },
+   {
+    "element": "setPhrase",
+    "files": 123,
+    "occurrences": 143
+   },
+   {
+    "element": "supplied",
+    "files": 118,
+    "occurrences": 383
+   },
+   {
+    "element": "pc",
+    "files": 117,
+    "occurrences": 3180
+   },
+   {
+    "element": "w",
+    "files": 116,
+    "occurrences": 22311
+   },
+   {
+    "element": "seg",
+    "files": 114,
+    "occurrences": 878
+   },
+   {
+    "element": "num",
+    "files": 108,
+    "occurrences": 364
+   },
+   {
+    "element": "index",
+    "files": 99,
+    "occurrences": 302
+   },
+   {
+    "element": "corr",
+    "files": 97,
+    "occurrences": 211
+   },
+   {
+    "element": "addName",
+    "files": 92,
+    "occurrences": 217
+   },
+   {
+    "element": "intitulatio",
+    "files": 83,
+    "occurrences": 85
+   },
+   {
+    "element": "unclear",
+    "files": 71,
+    "occurrences": 109
+   },
+   {
+    "element": "geogName",
+    "files": 69,
+    "occurrences": 106
+   },
+   {
+    "element": "measure",
+    "files": 53,
+    "occurrences": 105
+   },
+   {
+    "element": "del",
+    "files": 46,
+    "occurrences": 79
+   },
+   {
+    "element": "space",
+    "files": 43,
+    "occurrences": 122
+   },
+   {
+    "element": "quote",
+    "files": 41,
+    "occurrences": 85
+   },
+   {
+    "element": "rolename",
+    "files": 36,
+    "occurrences": 195
+   },
+   {
+    "element": "arenga",
+    "files": 31,
+    "occurrences": 33
+   },
+   {
+    "element": "figure",
+    "files": 31,
+    "occurrences": 47
+   },
+   {
+    "element": "figDesc",
+    "files": 28,
+    "occurrences": 30
+   },
+   {
+    "element": "surname",
+    "files": 25,
+    "occurrences": 49
+   },
+   {
+    "element": "corroboratio",
+    "files": 23,
+    "occurrences": 24
+   },
+   {
+    "element": "inscriptio",
+    "files": 20,
+    "occurrences": 21
+   },
+   {
+    "element": "term",
+    "files": 18,
+    "occurrences": 21
+   },
+   {
+    "element": "narratio",
+    "files": 17,
+    "occurrences": 18
+   },
+   {
+    "element": "name",
+    "files": 17,
+    "occurrences": 44
+   },
+   {
+    "element": "witDetail",
+    "files": 15,
+    "occurrences": 33
+   },
+   {
+    "element": "publicatio",
+    "files": 14,
+    "occurrences": 15
+   },
+   {
+    "element": "sanctio",
+    "files": 14,
+    "occurrences": 15
+   },
+   {
+    "element": "bibl",
+    "files": 14,
+    "occurrences": 29
+   },
+   {
+    "element": "author",
+    "files": 12,
+    "occurrences": 26
+   },
+   {
+    "element": "title",
+    "files": 12,
+    "occurrences": 27
+   },
+   {
+    "element": "witStart",
+    "files": 8,
+    "occurrences": 30
+   },
+   {
+    "element": "testis",
+    "files": 6,
+    "occurrences": 20
+   },
+   {
+    "element": "app",
+    "files": 6,
+    "occurrences": 27
+   },
+   {
+    "element": "surplus",
+    "files": 6,
+    "occurrences": 6
+   },
+   {
+    "element": "notariusSub",
+    "files": 4,
+    "occurrences": 5
+   }
+  ]
+ },
+ "inline_attributes": {
+  "abstract": {
+   "persName@key": 14267,
+   "hi@rend": 12150,
+   "placeName@rend": 2373,
+   "ref@target": 2366,
+   "placeName@type": 1714,
+   "index@indexName": 1241,
+   "orgName@key": 1223,
+   "rolename@type": 444,
+   "placeName@reg": 329,
+   "quote@type": 328,
+   "persName@certainty": 281,
+   "measure@type": 193,
+   "num@value": 193,
+   "foreign@n": 184,
+   "foreign@lang": 161,
+   "hi@facs": 157,
+   "index@lemma": 110,
+   "persName@reg": 95,
+   "recipient@lang": 58,
+   "ref@type": 39,
+   "persName@type": 31,
+   "geogName@type": 26,
+   "placeName@key": 25,
+   "num@rend": 22,
+   "issuer@n": 16,
+   "geogName@reg": 9,
+   "placeName@certainty": 8,
+   "date@value": 8,
+   "orgName@type": 7,
+   "index@type": 5,
+   "placeName@lang": 5,
+   "ref@id": 4,
+   "placeName@n": 3,
+   "dateRange@from": 3,
+   "dateRange@to": 3,
+   "persName@n": 2,
+   "recipient@n": 2,
+   "ref@n": 2,
+   "index@n": 2,
+   "orgName@reg": 2
+  },
+  "tenor": {
+   "hi@rend": 6397,
+   "ref@target": 1991,
+   "persName@key": 622,
+   "placeName@reg": 476,
+   "lb@n": 405,
+   "persName@reg": 391,
+   "placeName@key": 359,
+   "pTenor@facs": 341,
+   "pb@n": 338,
+   "placeName@id": 311,
+   "orgName@reg": 303,
+   "orgName@id": 301,
+   "persName@id": 296,
+   "orgName@key": 289,
+   "pb@id": 265,
+   "pb@facs": 265,
+   "foreign@lang": 216,
+   "date@value": 211,
+   "lb@facs": 178,
+   "lb@break": 174,
+   "ref@type": 136,
+   "pict@type": 135,
+   "subscriptio@type": 132,
+   "handShift@hand": 130,
+   "setPhrase@type": 117,
+   "w@id": 116,
+   "pc@id": 116,
+   "c@rend": 115,
+   "seg@id": 114,
+   "seg@type": 114,
+   "datatio@type": 110,
+   "num@value": 108,
+   "corr@type": 81,
+   "sic@corr": 78,
+   "pict@facs": 57,
+   "index@lemma": 54,
+   "measure@type": 52,
+   "add@hand": 49,
+   "c@type": 47,
+   "corr@sic": 47
+  }
+ },
+ "diplomatic_parts_in_tenor": {
+  "datatio": 168,
+  "dispositio": 162,
+  "invocatio": 134,
+  "intitulatio": 83,
+  "arenga": 31,
+  "corroboratio": 23,
+  "inscriptio": 20,
+  "narratio": 17,
+  "publicatio": 14,
+  "sanctio": 14
+ },
+ "tenor_direct_children": {
+  "pTenor": 43980,
+  "sup": 14533,
+  "lb": 3942,
+  "persName": 331,
+  "foreign": 205,
+  "pb": 158,
+  "damage": 93,
+  "datatio": 39,
+  "intitulatio": 39,
+  "placeName": 33,
+  "dispositio": 27,
+  "corroboratio": 19,
+  "supplied": 19,
+  "hi": 17,
+  "narratio": 17,
+  "inscriptio": 17,
+  "arenga": 15,
+  "ref": 15,
+  "publicatio": 14,
+  "expan": 14,
+  "invocatio": 13,
+  "subscriptio": 11,
+  "sanctio": 11,
+  "pict": 8,
+  "add": 7
+ },
+ "text_languages": {},
+ "archives": {
+  "IT-ASFi": {
+   "no_text": 69428,
+   "_total": 85183,
+   "abstract_names": 15434,
+   "abstract_plain": 321
+  },
+  "HU-MNL-DLCSLP": {
+   "abstract_names": 73773,
+   "_total": 74450,
+   "no_text": 499,
+   "abstract_plain": 178
+  },
+  "DE-BayHStA": {
+   "abstract_plain": 52429,
+   "_total": 63914,
+   "no_text": 4396,
+   "tenor_plain": 304,
+   "abstract_names": 1351,
+   "tenor_names": 1,
+   "abstract_markup": 4898,
+   "tenor_markup": 535
+  },
+  "HU-MNL-DLKINL": {
+   "abstract_names": 46593,
+   "_total": 47076,
+   "no_text": 317,
+   "abstract_plain": 166
+  },
+  "DE-LANRWW": {
+   "abstract_plain": 23794,
+   "_total": 23794
+  },
+  "CZ-NA": {
+   "abstract_plain": 20210,
+   "_total": 21497,
+   "tenor_plain": 97,
+   "abstract_markup": 389,
+   "tenor_markup": 402,
+   "abstract_names": 249,
+   "tenor_names": 150
+  },
+  "AT-HHStA": {
+   "abstract_plain": 20123,
+   "_total": 21317,
+   "abstract_names": 107,
+   "no_text": 17,
+   "tenor_markup": 617,
+   "tenor_names": 1,
+   "abstract_markup": 372,
+   "tenor_plain": 80
+  },
+  "DE-LANRWR": {
+   "abstract_plain": 16909,
+   "_total": 16909
+  },
+  "HU-MNL-DLGYUJ": {
+   "abstract_names": 14226,
+   "_total": 14459,
+   "no_text": 185,
+   "abstract_plain": 48
+  },
+  "AT-DOZA": {
+   "abstract_plain": 13537,
+   "_total": 14286,
+   "abstract_markup": 725,
+   "abstract_names": 17,
+   "tenor_markup": 1,
+   "tenor_diplomatic": 4,
+   "tenor_plain": 1,
+   "tenor_names": 1
+  },
+  "DE-HStAMa": {
+   "abstract_plain": 14072,
+   "_total": 14083,
+   "abstract_names": 10,
+   "tenor_plain": 1
+  },
+  "HU-MNL-DLEOKL": {
+   "abstract_names": 13245,
+   "_total": 13346,
+   "no_text": 84,
+   "abstract_plain": 17
+  },
+  "AT-KLA": {
+   "abstract_plain": 13009,
+   "_total": 13015,
+   "tenor_plain": 4,
+   "no_text": 1,
+   "abstract_markup": 1
+  },
+  "IT-DAB": {
+   "abstract_markup": 5663,
+   "_total": 11186,
+   "abstract_plain": 5522,
+   "tenor_plain": 1
+  },
+  "AT-VLA": {
+   "abstract_plain": 10063,
+   "_total": 10091,
+   "abstract_markup": 5,
+   "abstract_names": 1,
+   "no_text": 22
+  },
+  "HU-MNL-DLCSLA": {
+   "abstract_names": 9528,
+   "_total": 9603,
+   "no_text": 66,
+   "abstract_plain": 9
+  },
+  "NL-BHIC": {
+   "abstract_plain": 9226,
+   "_total": 9231,
+   "no_text": 5
+  },
+  "AT-WStLA": {
+   "abstract_names": 162,
+   "_total": 7801,
+   "abstract_plain": 921,
+   "abstract_markup": 4217,
+   "no_text": 28,
+   "tenor_plain": 2473
+  },
+  "DE-StAW": {
+   "abstract_markup": 1539,
+   "_total": 7288,
+   "abstract_plain": 12,
+   "no_text": 2,
+   "abstract_names": 5735
+  },
+  "AT-ADG": {
+   "abstract_plain": 7237,
+   "_total": 7239,
+   "tenor_plain": 2
+  },
+  "5523352d43fd75f00c8a65d4b70ad5f7": {
+   "abstract_names": 6332,
+   "_total": 6332
+  },
+  "AT-NOeLA": {
+   "abstract_plain": 6309,
+   "_total": 6313,
+   "tenor_plain": 3,
+   "abstract_names": 1
+  },
+  "IT-ASNA": {
+   "no_text": 6238,
+   "_total": 6247,
+   "tenor_plain": 3,
+   "abstract_plain": 6
+  },
+  "SK-SNA": {
+   "abstract_names": 1496,
+   "_total": 6145,
+   "no_text": 4597,
+   "tenor_names": 1,
+   "abstract_plain": 50,
+   "tenor_diplomatic": 1
+  },
+  "66633a700b0a20b1c0a46aec525cca25": {
+   "tenor_markup": 6037,
+   "_total": 6037
+  },
+  "DE-StALB": {
+   "abstract_plain": 5482,
+   "_total": 5484,
+   "abstract_names": 2
+  },
+  "AT-StiASP": {
+   "abstract_plain": 5225,
+   "_total": 5351,
+   "abstract_markup": 61,
+   "abstract_names": 44,
+   "no_text": 19,
+   "tenor_names": 2
+  },
+  "40278b4bf39fb0734df37d1a16201517": {
+   "tenor_plain": 5348,
+   "_total": 5348
+  },
+  "SK-AMB": {
+   "abstract_names": 5175,
+   "_total": 5177,
+   "tenor_markup": 1,
+   "tenor_diplomatic": 1
+  },
+  "CH-StiASG": {
+   "abstract_plain": 1209,
+   "_total": 5064,
+   "no_text": 2877,
+   "tenor_markup": 970,
+   "tenor_plain": 7,
+   "abstract_markup": 1
+  },
+  "AT-StiASF": {
+   "tenor_markup": 413,
+   "_total": 4988,
+   "abstract_plain": 4323,
+   "tenor_plain": 219,
+   "abstract_markup": 32,
+   "abstract_names": 1
+  },
+  "9b0f541dfdc50058c4d41085b778da20": {
+   "abstract_names": 2440,
+   "_total": 4675,
+   "abstract_markup": 1515,
+   "no_text": 393,
+   "abstract_plain": 255,
+   "tenor_plain": 44,
+   "tenor_markup": 14,
+   "tenor_names": 14
+  },
+  "AT-StiASL": {
+   "abstract_names": 3156,
+   "_total": 4481,
+   "abstract_plain": 1050,
+   "no_text": 110,
+   "abstract_markup": 165
+  },
+  "DE-AVBautzen": {
+   "abstract_plain": 4427,
+   "_total": 4433,
+   "no_text": 6
+  },
+  "AT-StiAMB": {
+   "abstract_plain": 4160,
+   "_total": 4208,
+   "no_text": 46,
+   "abstract_names": 1,
+   "tenor_markup": 1
+  },
+  "CZ-MZA": {
+   "abstract_plain": 4134,
+   "_total": 4166,
+   "no_text": 30,
+   "tenor_plain": 1,
+   "tenor_names": 1
+  },
+  "AT-StiAL": {
+   "tenor_markup": 715,
+   "_total": 3982,
+   "tenor_plain": 1539,
+   "abstract_plain": 1662,
+   "abstract_names": 57,
+   "tenor_diplomatic": 4,
+   "abstract_markup": 4,
+   "tenor_names": 1
+  },
+  "b8ea5e463086fba64d344e8cf5fd0a6f": {
+   "abstract_names": 3833,
+   "_total": 3833
+  },
+  "ES-AHN": {
+   "abstract_plain": 3650,
+   "_total": 3660,
+   "tenor_diplomatic": 3,
+   "no_text": 2,
+   "abstract_names": 5
+  },
+  "DE-ULBST": {
+   "abstract_names": 3576,
+   "_total": 3651,
+   "no_text": 64,
+   "abstract_plain": 11
+  },
+  "AT-StiAHe": {
+   "abstract_plain": 2942,
+   "_total": 3381,
+   "tenor_plain": 123,
+   "abstract_names": 19,
+   "tenor_markup": 297
+  },
+  "9301468a2715e590ffc3ba72235b7ec8": {
+   "tenor_markup": 1660,
+   "_total": 3320,
+   "abstract_plain": 421,
+   "tenor_plain": 918,
+   "abstract_markup": 319,
+   "abstract_names": 1,
+   "tenor_diplomatic": 1
+  },
+  "AT-StiAK": {
+   "tenor_markup": 351,
+   "_total": 3255,
+   "abstract_plain": 2542,
+   "abstract_names": 3,
+   "abstract_markup": 111,
+   "tenor_plain": 248
+  },
+  "HU-VFL": {
+   "abstract_names": 3208,
+   "_total": 3234,
+   "no_text": 26
+  },
+  "DE-LHAKO": {
+   "abstract_plain": 3129,
+   "_total": 3134,
+   "abstract_names": 1,
+   "no_text": 3,
+   "tenor_plain": 1
+  },
+  "AT-AES": {
+   "abstract_plain": 2989,
+   "_total": 3115,
+   "abstract_names": 1,
+   "tenor_markup": 107,
+   "tenor_plain": 17,
+   "tenor_diplomatic": 1
+  },
+  "AT-StiAG": {
+   "abstract_markup": 230,
+   "_total": 3047,
+   "abstract_names": 1855,
+   "abstract_plain": 255,
+   "tenor_markup": 652,
+   "tenor_plain": 55
+  },
+  "AT-StiAR": {
+   "abstract_plain": 2597,
+   "_total": 2934,
+   "tenor_plain": 164,
+   "tenor_markup": 137,
+   "abstract_markup": 31,
+   "abstract_names": 4,
+   "tenor_diplomatic": 1
+  },
+  "AT-StiAWilten": {
+   "abstract_names": 2695,
+   "_total": 2737,
+   "tenor_plain": 18,
+   "abstract_plain": 24
+  },
+  "DE-EAF": {
+   "abstract_names": 2508,
+   "_total": 2618,
+   "abstract_plain": 110
+  },
+  "AT-StiAM": {
+   "abstract_markup": 1956,
+   "_total": 2597,
+   "abstract_names": 279,
+   "abstract_plain": 358,
+   "tenor_markup": 2,
+   "tenor_plain": 2
+  },
+  "DE-StAAm": {
+   "abstract_names": 769,
+   "_total": 2580,
+   "abstract_plain": 1809,
+   "no_text": 1,
+   "tenor_diplomatic": 1
+  },
+  "AT-StiAStP": {
+   "abstract_plain": 2557,
+   "_total": 2579,
+   "tenor_plain": 16,
+   "no_text": 3,
+   "abstract_names": 1,
+   "abstract_markup": 1,
+   "tenor_markup": 1
+  },
+  "AT-SLA": {
+   "abstract_plain": 2549,
+   "_total": 2568,
+   "no_text": 19
+  },
+  "CH-StaASG": {
+   "abstract_plain": 1685,
+   "_total": 2492,
+   "no_text": 484,
+   "tenor_markup": 319,
+   "tenor_names": 2,
+   "abstract_markup": 1,
+   "abstract_names": 1
+  },
+  "DE-StaASpeyer": {
+   "abstract_plain": 2476,
+   "_total": 2487,
+   "abstract_names": 7,
+   "tenor_plain": 3,
+   "abstract_markup": 1
+  },
+  "CZ-SOAT": {
+   "abstract_plain": 2415,
+   "_total": 2430,
+   "no_text": 12,
+   "tenor_plain": 3
+  },
+  "IT-BSNSP": {
+   "no_text": 2020,
+   "_total": 2415,
+   "abstract_names": 231,
+   "abstract_markup": 104,
+   "abstract_plain": 58,
+   "tenor_plain": 1,
+   "tenor_diplomatic": 1
+  },
+  "AT-OOeLA": {
+   "abstract_plain": 1563,
+   "_total": 2412,
+   "tenor_markup": 440,
+   "tenor_plain": 256,
+   "abstract_markup": 43,
+   "no_text": 109,
+   "tenor_diplomatic": 1
+  },
+  "AT-StiAKr": {
+   "abstract_plain": 2027,
+   "_total": 2399,
+   "abstract_names": 51,
+   "tenor_plain": 163,
+   "tenor_markup": 131,
+   "tenor_names": 2,
+   "abstract_markup": 24,
+   "tenor_diplomatic": 1
+  },
+  "AT-StiAStams": {
+   "abstract_plain": 2359,
+   "_total": 2364,
+   "tenor_markup": 1,
+   "tenor_plain": 4
+  },
+  "HU-MNL-DLINTI": {
+   "abstract_names": 2326,
+   "_total": 2337,
+   "no_text": 10,
+   "abstract_plain": 1
+  },
+  "AT-StiAW": {
+   "abstract_plain": 1542,
+   "_total": 2060,
+   "tenor_plain": 279,
+   "tenor_markup": 188,
+   "abstract_markup": 42,
+   "abstract_names": 7,
+   "no_text": 2
+  },
+  "DE-StABa": {
+   "abstract_plain": 1991,
+   "_total": 1992,
+   "abstract_names": 1
+  },
+  "IT-SLA": {
+   "no_text": 965,
+   "_total": 1981,
+   "abstract_plain": 1016
+  },
+  "AT-StiAAdm": {
+   "abstract_plain": 1958,
+   "_total": 1960,
+   "tenor_plain": 2
+  },
+  "57a4e0418f44a431ab2fab13571df2af": {
+   "no_text": 1930,
+   "_total": 1945,
+   "abstract_plain": 10,
+   "abstract_markup": 5
+  },
+  "DE-GLAK": {
+   "abstract_plain": 1791,
+   "_total": 1798,
+   "no_text": 7
+  },
+  "IT-StiAMB": {
+   "abstract_plain": 1587,
+   "_total": 1789,
+   "abstract_names": 202
+  },
+  "032bf56eaffba58c224ea4ea4543a3c8": {
+   "tenor_plain": 1771,
+   "_total": 1771
+  },
+  "DE-UAHD": {
+   "abstract_plain": 1760,
+   "_total": 1760
+  },
+  "AT-HKA": {
+   "abstract_plain": 1719,
+   "_total": 1723,
+   "abstract_names": 1,
+   "tenor_plain": 3
+  },
+  "AT-DAW": {
+   "no_text": 1374,
+   "_total": 1696,
+   "abstract_plain": 310,
+   "tenor_plain": 12
+  },
+  "3a4c7c6d8492cf1d7c5d6f290ddd6b17": {
+   "tenor_names": 291,
+   "_total": 1666,
+   "tenor_plain": 1369,
+   "no_text": 5,
+   "tenor_markup": 1
+  },
+  "d72e917f43afccedb15da09ba52ed963": {
+   "abstract_plain": 1654,
+   "_total": 1654
+  },
+  "HU-PBFL": {
+   "abstract_plain": 643,
+   "_total": 1640,
+   "tenor_markup": 82,
+   "tenor_plain": 912,
+   "no_text": 1,
+   "abstract_markup": 2
+  },
+  "AT-StiALi": {
+   "abstract_names": 1486,
+   "_total": 1604,
+   "abstract_markup": 104,
+   "abstract_plain": 13,
+   "tenor_plain": 1
+  },
+  "DE-StASGD": {
+   "abstract_plain": 1600,
+   "_total": 1600
+  },
+  "DE-HStASt": {
+   "abstract_plain": 1575,
+   "_total": 1575
+  },
+  "EE-Rahvusarhiiv": {
+   "abstract_plain": 1567,
+   "_total": 1567
+  },
+  "AT-StiASch": {
+   "abstract_plain": 1448,
+   "_total": 1561,
+   "abstract_markup": 16,
+   "tenor_markup": 72,
+   "abstract_names": 4,
+   "tenor_plain": 21
+  },
+  "EE-TLA": {
+   "abstract_plain": 1534,
+   "_total": 1534
+  },
+  "AT-StiAZ": {
+   "abstract_markup": 975,
+   "_total": 1505,
+   "tenor_plain": 7,
+   "abstract_plain": 234,
+   "abstract_names": 288,
+   "tenor_markup": 1
+  },
+  "AT-DASP": {
+   "abstract_markup": 806,
+   "_total": 1478,
+   "abstract_plain": 542,
+   "abstract_names": 116,
+   "tenor_plain": 12,
+   "tenor_markup": 2
+  },
+  "AT-StaAB": {
+   "abstract_plain": 1459,
+   "_total": 1476,
+   "no_text": 16,
+   "tenor_plain": 1
+  },
+  "DE-GAUnivGoet": {
+   "abstract_names": 697,
+   "_total": 1457,
+   "abstract_plain": 238,
+   "no_text": 494,
+   "abstract_markup": 10,
+   "tenor_plain": 15,
+   "tenor_diplomatic": 1,
+   "tenor_markup": 2
+  },
+  "421766915ef1bc553b2b484c3b8c7a1f": {
+   "abstract_markup": 938,
+   "_total": 1397,
+   "abstract_plain": 424,
+   "no_text": 9,
+   "tenor_plain": 14,
+   "abstract_names": 9,
+   "tenor_markup": 3
+  },
+  "AT-StiAH": {
+   "tenor_plain": 474,
+   "_total": 1367,
+   "abstract_plain": 480,
+   "tenor_markup": 405,
+   "abstract_names": 7,
+   "abstract_markup": 1
+  },
+  "DE-StaAWo": {
+   "abstract_plain": 1299,
+   "_total": 1324,
+   "abstract_names": 22,
+   "abstract_markup": 2,
+   "tenor_markup": 1
+  },
+  "35ab2d23adde5b8b1f5df9d29dd8d44f": {
+   "tenor_plain": 1239,
+   "_total": 1322,
+   "abstract_plain": 83
+  },
+  "IT-StiAI": {
+   "abstract_plain": 1271,
+   "_total": 1271
+  },
+  "4a7708a6382693e123c92edf0bed3f0b": {
+   "tenor_plain": 1196,
+   "_total": 1232,
+   "abstract_plain": 36
+  },
+  "DE-ABP": {
+   "abstract_plain": 1206,
+   "_total": 1216,
+   "tenor_diplomatic": 6,
+   "no_text": 3,
+   "abstract_names": 1
+  },
+  "4fbb726afef11e15b9312538769d42c4": {
+   "abstract_names": 1200,
+   "_total": 1200
+  },
+  "AT-DAL": {
+   "abstract_plain": 986,
+   "_total": 1188,
+   "abstract_names": 197,
+   "tenor_plain": 4,
+   "tenor_markup": 1
+  },
+  "DE-LANRWOL": {
+   "abstract_plain": 1178,
+   "_total": 1178
+  },
+  "SI-PAM": {
+   "abstract_names": 1144,
+   "_total": 1164,
+   "tenor_plain": 11,
+   "tenor_diplomatic": 1,
+   "no_text": 3,
+   "abstract_plain": 5
+  },
+  "DE-StaAMainz": {
+   "abstract_names": 1161,
+   "_total": 1163,
+   "tenor_plain": 2
+  },
+  "AT-StiAFiecht": {
+   "no_text": 1131,
+   "_total": 1134,
+   "abstract_plain": 2,
+   "tenor_markup": 1
+  },
+  "DE-StaAWuerzburg": {
+   "abstract_plain": 1046,
+   "_total": 1129,
+   "abstract_markup": 81,
+   "no_text": 2
+  },
+  "DE-BAM": {
+   "abstract_plain": 312,
+   "_total": 1112,
+   "abstract_markup": 384,
+   "abstract_names": 416
+  },
+  "d076374eeab37d317e1bdb5279e236a0": {
+   "tenor_plain": 1088,
+   "_total": 1089,
+   "tenor_diplomatic": 1
+  },
+  "CZ-SOAP": {
+   "abstract_plain": 1073,
+   "_total": 1081,
+   "abstract_names": 1,
+   "abstract_markup": 1,
+   "no_text": 6
+  },
+  "AT-StAKrems": {
+   "abstract_plain": 1000,
+   "_total": 1076,
+   "abstract_names": 73,
+   "tenor_plain": 1,
+   "no_text": 1,
+   "abstract_markup": 1
+  },
+  "AT-StiASei": {
+   "abstract_plain": 741,
+   "_total": 1055,
+   "tenor_plain": 292,
+   "tenor_markup": 21,
+   "tenor_names": 1
+  },
+  "DE-AKR": {
+   "no_text": 324,
+   "_total": 1049,
+   "tenor_plain": 417,
+   "abstract_plain": 297,
+   "tenor_names": 2,
+   "abstract_names": 3,
+   "tenor_markup": 5,
+   "tenor_diplomatic": 1
+  },
+  "CH-KAE": {
+   "abstract_names": 387,
+   "_total": 1040,
+   "abstract_plain": 639,
+   "tenor_plain": 7,
+   "abstract_markup": 4,
+   "tenor_markup": 1,
+   "tenor_names": 1,
+   "tenor_diplomatic": 1
+  },
+  "a438ae472b0c4e052621cdf7864a72a0": {
+   "tenor_plain": 993,
+   "_total": 999,
+   "abstract_plain": 6
+  },
+  "IT-ASPz": {
+   "no_text": 996,
+   "_total": 996
+  },
+  "AT-StiAA": {
+   "tenor_plain": 178,
+   "_total": 987,
+   "tenor_markup": 57,
+   "abstract_plain": 669,
+   "abstract_markup": 43,
+   "abstract_names": 39,
+   "no_text": 1
+  },
+  "AT-StiAScho": {
+   "abstract_plain": 476,
+   "_total": 967,
+   "tenor_markup": 260,
+   "tenor_plain": 204,
+   "abstract_names": 26,
+   "abstract_markup": 1
+  },
+  "ca40691d03763e246e591a58ea33c295": {
+   "abstract_markup": 471,
+   "_total": 912,
+   "tenor_markup": 436,
+   "abstract_plain": 2,
+   "tenor_diplomatic": 1,
+   "tenor_plain": 2
+  },
+  "AT-StiARein": {
+   "abstract_plain": 892,
+   "_total": 895,
+   "no_text": 2,
+   "abstract_names": 1
+  },
+  "AT-DAGS": {
+   "abstract_plain": 883,
+   "_total": 883
+  },
+  "edb753ce5229c07b954ec36c186d0274": {
+   "tenor_markup": 824,
+   "_total": 874,
+   "tenor_plain": 42,
+   "abstract_plain": 8
+  },
+  "HU-MNL-DLVEPO": {
+   "abstract_names": 842,
+   "_total": 846,
+   "no_text": 4
+  },
+  "DE-StAN": {
+   "abstract_plain": 830,
+   "_total": 830
+  },
+  "74ca5275958f9eabb03010ea009512c9": {
+   "abstract_markup": 369,
+   "_total": 822,
+   "tenor_markup": 449,
+   "tenor_plain": 3,
+   "abstract_plain": 1
+  },
+  "40de9cdecfaf5f4f0ae186cd63aa4f45": {
+   "no_text": 799,
+   "_total": 802,
+   "abstract_names": 3
+  },
+  "CZ-APH": {
+   "abstract_markup": 473,
+   "_total": 802,
+   "abstract_plain": 327,
+   "tenor_plain": 2
+  },
+  "d4420fef4730d12f4e58218a6df5aef7": {
+   "abstract_names": 782,
+   "_total": 782
+  },
+  "a0182e19062b8f50eb354e7963845517": {
+   "tenor_markup": 501,
+   "_total": 769,
+   "abstract_markup": 266,
+   "tenor_plain": 2
+  },
+  "ccf8d7626dd69606dab98306736b9dee": {
+   "tenor_plain": 430,
+   "_total": 749,
+   "tenor_markup": 318,
+   "tenor_names": 1
+  },
+  "cbeb5bd79bc772a9fdf5ef1d20a2faff": {
+   "tenor_markup": 447,
+   "_total": 743,
+   "abstract_markup": 296
+  },
+  "AT-StiASchl": {
+   "tenor_plain": 717,
+   "_total": 739,
+   "abstract_plain": 21,
+   "tenor_diplomatic": 1
+  },
+  "5a822d4d76efc50273cd1964f713490c": {
+   "tenor_plain": 733,
+   "_total": 738,
+   "abstract_plain": 5
+  },
+  "1703a7d66a173af17f745c14011d5ed2": {
+   "abstract_plain": 737,
+   "_total": 737
+  },
+  "6e41c2a37966f578d5312005756bd43c": {
+   "abstract_plain": 173,
+   "_total": 725,
+   "tenor_plain": 552
+  },
+  "DE-StadtA-BOR-W": {
+   "no_text": 708,
+   "_total": 721,
+   "abstract_plain": 13
+  },
+  "5bc3182ffb614ff807b2a41d1e907aae": {
+   "abstract_markup": 232,
+   "_total": 721,
+   "tenor_markup": 486,
+   "tenor_plain": 1,
+   "abstract_plain": 2
+  },
+  "d895cdd8939114588fba3e17a5cc2b36": {
+   "tenor_plain": 719,
+   "_total": 719
+  },
+  "b0b2080b17009e000f7276f8db18e955": {
+   "tenor_plain": 718,
+   "_total": 718
+  },
+  "38e0084f9d7a79987b16b02ca0cf6723": {
+   "abstract_plain": 703,
+   "_total": 703
+  },
+  "AT-StiAV": {
+   "abstract_plain": 372,
+   "_total": 696,
+   "tenor_plain": 322,
+   "no_text": 1,
+   "abstract_names": 1
+  },
+  "b9a389f9fe672d1a59ad859a73558bfa": {
+   "tenor_plain": 673,
+   "_total": 689,
+   "abstract_plain": 16
+  },
+  "DE-ASP": {
+   "abstract_plain": 669,
+   "_total": 682,
+   "no_text": 13
+  },
+  "DE-HAS": {
+   "abstract_plain": 492,
+   "_total": 677,
+   "abstract_names": 96,
+   "tenor_plain": 89
+  },
+  "9010d19ec44cf1bdaf74e541a7b09308": {
+   "tenor_plain": 655,
+   "_total": 674,
+   "tenor_names": 2,
+   "no_text": 10,
+   "abstract_plain": 6,
+   "tenor_diplomatic": 1
+  },
+  "0401e938ea24b8351119609dbe01eba3": {
+   "tenor_plain": 551,
+   "_total": 657,
+   "abstract_plain": 99,
+   "no_text": 7
+  },
+  "HU-MNL-DLBIRL": {
+   "abstract_names": 649,
+   "_total": 655,
+   "abstract_plain": 2,
+   "no_text": 4
+  },
+  "DE-UBHD": {
+   "abstract_names": 630,
+   "_total": 644,
+   "tenor_diplomatic": 2,
+   "no_text": 11,
+   "tenor_markup": 1
+  },
+  "94ee363d8766e9b9cde4da6dba22a53e": {
+   "abstract_plain": 498,
+   "_total": 637,
+   "tenor_markup": 82,
+   "tenor_plain": 42,
+   "abstract_markup": 15
+  },
+  "8370e53a70f14b36d69c21d319c62473": {
+   "abstract_markup": 159,
+   "_total": 595,
+   "tenor_markup": 435,
+   "tenor_plain": 1
+  },
+  "5ad9207124e324ea1f28ffd496639584": {
+   "tenor_plain": 588,
+   "_total": 588
+  },
+  "580d3f8aac8372af6cf3052f0ef2ed9a": {
+   "tenor_markup": 497,
+   "_total": 586,
+   "abstract_markup": 80,
+   "abstract_plain": 2,
+   "tenor_plain": 7
+  },
+  "DE-StAM": {
+   "abstract_plain": 579,
+   "_total": 580,
+   "no_text": 1
+  },
+  "c9a8514d19a594db297d55d65b4a58c3": {
+   "tenor_plain": 577,
+   "_total": 578,
+   "abstract_plain": 1
+  },
+  "DE-StadtAFulda": {
+   "abstract_plain": 575,
+   "_total": 575
+  },
+  "17ce0cac60abc899aab411f9d841a43d": {
+   "tenor_markup": 408,
+   "_total": 571,
+   "abstract_markup": 163
+  },
+  "cc1be497f4574b543dd1deefcfc52a92": {
+   "tenor_markup": 447,
+   "_total": 570,
+   "abstract_markup": 117,
+   "abstract_plain": 5,
+   "tenor_plain": 1
+  },
+  "7602cbc7afd5635bffe429414ab5280c": {
+   "tenor_plain": 561,
+   "_total": 562,
+   "no_text": 1
+  },
+  "2a573c08860df384ec1347efc7132968": {
+   "no_text": 560,
+   "_total": 560
+  },
+  "SI-NSAL": {
+   "abstract_plain": 547,
+   "_total": 548,
+   "tenor_names": 1
+  },
+  "AT-StaAKbg": {
+   "abstract_names": 492,
+   "_total": 543,
+   "abstract_plain": 51
+  },
+  "RO-ANR": {
+   "abstract_names": 529,
+   "_total": 542,
+   "abstract_plain": 9,
+   "no_text": 4
+  },
+  "2a14ec13d9d5d6f990982ac7b8320d8f": {
+   "tenor_plain": 537,
+   "_total": 537
+  },
+  "1c5255c81398f233465e6b9d95ad8835": {
+   "no_text": 530,
+   "_total": 531,
+   "abstract_markup": 1
+  },
+  "606a05ee217b5bf478482e8af2a899ca": {
+   "tenor_plain": 527,
+   "_total": 527
+  },
+  "34f705a80f811168f1e281c189b81833": {
+   "tenor_plain": 524,
+   "_total": 524
+  },
+  "CZ-KAVB": {
+   "abstract_plain": 209,
+   "_total": 519,
+   "tenor_plain": 214,
+   "tenor_markup": 96
+  },
+  "6f975e8ee325a5e1d5d489011de2bff7": {
+   "abstract_markup": 322,
+   "_total": 519,
+   "tenor_markup": 98,
+   "abstract_plain": 94,
+   "tenor_plain": 5
+  },
+  "635a69684d0acdce911c51d3949a584c": {
+   "abstract_markup": 305,
+   "_total": 519,
+   "abstract_plain": 214
+  },
+  "61edb743ec7fbdd705268d264a252362": {
+   "tenor_plain": 485,
+   "_total": 512,
+   "abstract_plain": 27
+  },
+  "f295a52ac9a9d2ebe5d42c5e7f2085b0": {
+   "tenor_plain": 506,
+   "_total": 511,
+   "tenor_diplomatic": 1,
+   "abstract_plain": 4
+  },
+  "AT-StiANK": {
+   "abstract_markup": 348,
+   "_total": 510,
+   "abstract_names": 48,
+   "abstract_plain": 111,
+   "tenor_plain": 3
+  },
+  "3077ccd12159c13f9a6d8c9e60bc36f8": {
+   "tenor_plain": 501,
+   "_total": 501
+  },
+  "3a5116379c7178196f0867075c150291": {
+   "abstract_plain": 492,
+   "_total": 494,
+   "abstract_markup": 2
+  },
+  "AT-StaAR": {
+   "abstract_plain": 484,
+   "_total": 494,
+   "tenor_plain": 10
+  },
+  "AT-StaAWY": {
+   "abstract_plain": 487,
+   "_total": 491,
+   "no_text": 4
+  },
+  "IT-ASC": {
+   "abstract_plain": 486,
+   "_total": 486
+  },
+  "ES-ACC": {
+   "abstract_plain": 460,
+   "_total": 486,
+   "no_text": 1,
+   "abstract_names": 25
+  },
+  "09f43b2c58f56f5bd825e6f13474cfba": {
+   "tenor_markup": 420,
+   "_total": 485,
+   "abstract_markup": 62,
+   "tenor_plain": 2,
+   "abstract_plain": 1
+  },
+  "CZ-SOAPraha": {
+   "abstract_plain": 479,
+   "_total": 479
+  },
+  "DE-UAM": {
+   "abstract_names": 457,
+   "_total": 470,
+   "no_text": 10,
+   "abstract_plain": 3
+  },
+  "AT-ATF": {
+   "abstract_plain": 462,
+   "_total": 462
+  },
+  "f6bec458ff1eb0be3a131bc655f78c9f": {
+   "tenor_plain": 460,
+   "_total": 460
+  },
+  "59abd70e300ea6ca24116448705f9e74": {
+   "tenor_plain": 459,
+   "_total": 459
+  },
+  "89a91a9f230619a3ac9022dcff0b8b59": {
+   "tenor_plain": 454,
+   "_total": 455,
+   "abstract_plain": 1
+  },
+  "34147ce5a60d978ee26559e2a6e01106": {
+   "tenor_plain": 452,
+   "_total": 455,
+   "tenor_markup": 2,
+   "abstract_plain": 1
+  },
+  "d26d47da4159350a64daa2e23be65270": {
+   "tenor_plain": 436,
+   "_total": 448,
+   "no_text": 1,
+   "abstract_plain": 11
+  },
+  "DE-ZAEKPf": {
+   "abstract_plain": 339,
+   "_total": 446,
+   "tenor_plain": 107
+  },
+  "aff6437512ce876fede4463a86d87dbf": {
+   "abstract_markup": 421,
+   "_total": 444,
+   "abstract_names": 6,
+   "abstract_plain": 17
+  },
+  "26967739d012767f47d3b9b6c997e95e": {
+   "tenor_plain": 392,
+   "_total": 437,
+   "abstract_plain": 45
+  },
+  "DE-BAH": {
+   "tenor_plain": 428,
+   "_total": 433,
+   "tenor_markup": 1,
+   "tenor_diplomatic": 3,
+   "tenor_names": 1
+  },
+  "39911c07d05f46ff1e946912c0d57918": {
+   "tenor_plain": 416,
+   "_total": 416
+  },
+  "7b838116fe40414b4d472d61ce7971bf": {
+   "tenor_plain": 415,
+   "_total": 416,
+   "abstract_plain": 1
+  },
+  "bccc727b33a29219001872d869288904": {
+   "abstract_plain": 371,
+   "_total": 411,
+   "tenor_plain": 40
+  },
+  "4597838421ef6eab2870c88c86dfd1d4": {
+   "tenor_plain": 395,
+   "_total": 395
+  },
+  "AT-UAW": {
+   "abstract_markup": 365,
+   "_total": 391,
+   "abstract_plain": 26
+  },
+  "EE-AM": {
+   "abstract_plain": 388,
+   "_total": 388
+  },
+  "64617aba43db2226ae48440b6f3d1118": {
+   "tenor_plain": 386,
+   "_total": 387,
+   "abstract_plain": 1
+  },
+  "04b6c667c5d72f2faa0a175c0161dc35": {
+   "tenor_plain": 376,
+   "_total": 377,
+   "tenor_markup": 1
+  },
+  "AT-StiAGe": {
+   "abstract_plain": 338,
+   "_total": 376,
+   "tenor_markup": 24,
+   "tenor_plain": 9,
+   "abstract_markup": 3,
+   "tenor_diplomatic": 1,
+   "tenor_names": 1
+  },
+  "35c5d886b6255d64047cbaf9157886d6": {
+   "tenor_plain": 365,
+   "_total": 368,
+   "abstract_plain": 1,
+   "tenor_markup": 2
+  },
+  "3a0db761ace007e9c17b450fbfc92053": {
+   "tenor_plain": 364,
+   "_total": 364
+  },
+  "7181f54de70c69a78b40fbf237af927b": {
+   "tenor_plain": 361,
+   "_total": 361
+  },
+  "29cdd443af7f1a541c4e2e7f4a88ef03": {
+   "tenor_plain": 360,
+   "_total": 360
+  },
+  "0faefdabfcee939ce249bf0aab157228": {
+   "tenor_plain": 354,
+   "_total": 359,
+   "abstract_plain": 5
+  },
+  "7ec7089b034639309c110fe48161cf47": {
+   "tenor_plain": 338,
+   "_total": 344,
+   "tenor_diplomatic": 6
+  },
+  "f35e52b0c91fcaea457467ae61b8eb5a": {
+   "tenor_markup": 169,
+   "_total": 343,
+   "abstract_plain": 93,
+   "tenor_plain": 75,
+   "abstract_markup": 6
+  },
+  "IT-ASBN": {
+   "abstract_plain": 342,
+   "_total": 343,
+   "no_text": 1
+  },
+  "62964ee1e7f5bd733f057b34713a8c1e": {
+   "tenor_plain": 329,
+   "_total": 340,
+   "abstract_plain": 7,
+   "no_text": 4
+  },
+  "b07eb295a55377164c3ab5eef499a1b8": {
+   "tenor_plain": 327,
+   "_total": 327
+  },
+  "aa947d009b974b0b4b48cb192e4dee7e": {
+   "no_text": 324,
+   "_total": 325,
+   "abstract_names": 1
+  },
+  "AT-AWMK": {
+   "abstract_plain": 314,
+   "_total": 319,
+   "abstract_names": 5
+  },
+  "4fda783fd301acfa878a3317ab23081c": {
+   "tenor_plain": 317,
+   "_total": 317
+  },
+  "2b5cb56d9ae2f6d95594704e6743b4c2": {
+   "tenor_names": 299,
+   "_total": 317,
+   "abstract_names": 2,
+   "abstract_plain": 14,
+   "no_text": 1,
+   "tenor_plain": 1
+  },
+  "CZ-DABB": {
+   "abstract_names": 313,
+   "_total": 316,
+   "abstract_plain": 3
+  },
+  "7c86ee2b94cdd75cf4de4c17f19334fc": {
+   "tenor_plain": 270,
+   "_total": 312,
+   "abstract_plain": 1,
+   "tenor_markup": 36,
+   "abstract_markup": 5
+  },
+  "76d5c20433af4082b306f586e76bcc7e": {
+   "tenor_plain": 283,
+   "_total": 309,
+   "abstract_plain": 26
+  },
+  "fc1df942b3310e213dd919a91ec97353": {
+   "tenor_plain": 300,
+   "_total": 305,
+   "abstract_plain": 5
+  },
+  "01abda93f9d67c96ce53c303103fcb3c": {
+   "abstract_markup": 286,
+   "_total": 303,
+   "abstract_plain": 6,
+   "no_text": 8,
+   "abstract_names": 2,
+   "tenor_plain": 1
+  },
+  "d959b72df891692c7b92df2d144b337a": {
+   "no_text": 302,
+   "_total": 302
+  },
+  "AT-StaAD": {
+   "abstract_plain": 254,
+   "_total": 298,
+   "no_text": 43,
+   "tenor_plain": 1
+  },
+  "bd77a3178eb0f8405c504d249f2fc9c4": {
+   "tenor_plain": 286,
+   "_total": 293,
+   "abstract_plain": 7
+  },
+  "48b1a70b5b6e0f248e59cd9df2114433": {
+   "tenor_plain": 293,
+   "_total": 293
+  },
+  "b9c3990ba96362c2c5d7ad841e0c9b1e": {
+   "tenor_plain": 290,
+   "_total": 293,
+   "abstract_plain": 3
+  },
+  "AT-StaLois": {
+   "abstract_plain": 293,
+   "_total": 293
+  },
+  "b5a0c8459e4bdce5318b2cb9bc3ace8c": {
+   "tenor_plain": 284,
+   "_total": 284
+  },
+  "eb3d760d2805a22e8d0e45d5ec07e60a": {
+   "abstract_names": 185,
+   "_total": 278,
+   "abstract_markup": 89,
+   "abstract_plain": 3,
+   "no_text": 1
+  },
+  "IT-ASBa": {
+   "no_text": 278,
+   "_total": 278
+  },
+  "3356a9dca2039177bfd453136d4372f9": {
+   "tenor_plain": 277,
+   "_total": 277
+  },
+  "d6f61452d91c7f9ed9e9165e78a01ca6": {
+   "tenor_plain": 277,
+   "_total": 277
+  },
+  "4a6d1be43eff55a90723f5dc83e95298": {
+   "tenor_plain": 274,
+   "_total": 276,
+   "abstract_plain": 1,
+   "tenor_markup": 1
+  },
+  "4a33a5fa9c1a4d9aed6a540d14cda4d1": {
+   "tenor_plain": 274,
+   "_total": 276,
+   "abstract_plain": 2
+  },
+  "11b1427894e9f943b65495bb16e2f519": {
+   "abstract_names": 276,
+   "_total": 276
+  },
+  "f0fc203bd24c8b0d2ddf4da62bb73074": {
+   "abstract_plain": 274,
+   "_total": 274
+  },
+  "AT-PfAWY": {
+   "abstract_plain": 271,
+   "_total": 271
+  },
+  "77d1af4724ed5bf69180105c278b1342": {
+   "tenor_plain": 267,
+   "_total": 267
+  },
+  "65682736698e9db7c89e09877785be6f": {
+   "abstract_plain": 267,
+   "_total": 267
+  },
+  "FR-AnF": {
+   "abstract_names": 262,
+   "_total": 267,
+   "abstract_plain": 5
+  },
+  "IT-BST": {
+   "abstract_names": 262,
+   "_total": 263,
+   "no_text": 1
+  },
+  "34ac8b87cb5f74a5ce6876d822fc0bd9": {
+   "tenor_plain": 262,
+   "_total": 262
+  },
+  "NL-RASG": {
+   "tenor_plain": 191,
+   "_total": 262,
+   "abstract_plain": 69,
+   "no_text": 2
+  },
+  "b6ab8eb4e9c72382d8cf43c0cc7d6b82": {
+   "tenor_plain": 259,
+   "_total": 259
+  },
+  "55006933d37be4b8de271e93dfed65b5": {
+   "tenor_markup": 37,
+   "_total": 259,
+   "abstract_markup": 163,
+   "abstract_names": 50,
+   "tenor_plain": 9
+  },
+  "0293eef001f962be5515ff684ec12eaf": {
+   "tenor_plain": 257,
+   "_total": 257
+  },
+  "IT-ASDRCB": {
+   "abstract_plain": 251,
+   "_total": 252,
+   "tenor_names": 1
+  },
+  "727bc157acd354d7104ed84e2ad787a1": {
+   "tenor_plain": 249,
+   "_total": 249
+  },
+  "DE-BPSFulda": {
+   "abstract_plain": 248,
+   "_total": 248
+  },
+  "AT-StaAWei": {
+   "abstract_plain": 246,
+   "_total": 248,
+   "tenor_plain": 2
+  },
+  "CZ-ZAO": {
+   "abstract_plain": 246,
+   "_total": 246
+  },
+  "90d4fac52557dfaec0918fdcb3a9be76": {
+   "tenor_plain": 245,
+   "_total": 245
+  },
+  "DE-HLBFulda": {
+   "abstract_plain": 241,
+   "_total": 241
+  },
+  "82d55f7bb75bbaa295b659dce36e36be": {
+   "tenor_plain": 234,
+   "_total": 234
+  },
+  "171cef988e4989eafe96c699898efdf5": {
+   "tenor_plain": 185,
+   "_total": 232,
+   "abstract_plain": 47
+  },
+  "7876299049e398b8c72c852588253735": {
+   "tenor_plain": 229,
+   "_total": 230,
+   "abstract_plain": 1
+  },
+  "DE-LMUHGW": {
+   "no_text": 72,
+   "_total": 227,
+   "abstract_names": 102,
+   "abstract_plain": 51,
+   "abstract_markup": 2
+  },
+  "035307b2c341280e77c46fe71d9b61ce": {
+   "tenor_plain": 226,
+   "_total": 226
+  },
+  "9d77fdc138974e5355b01e4c12d92ccc": {
+   "tenor_plain": 222,
+   "_total": 222
+  },
+  "16f418abf8aadf15fb82969e07fd5242": {
+   "tenor_plain": 221,
+   "_total": 221
+  },
+  "ba8b29507525407a6e5a06cd814e4a25": {
+   "tenor_plain": 219,
+   "_total": 219
+  },
+  "2a0478f28722155d0fb8bf51ae5cdd8d": {
+   "tenor_plain": 211,
+   "_total": 212,
+   "no_text": 1
+  },
+  "SI-ZAL": {
+   "no_text": 212,
+   "_total": 212
+  },
+  "cda3f4a98cb7ea8a86ea510b486917bf": {
+   "tenor_plain": 207,
+   "_total": 207
+  },
+  "1d5872bf9c1e7d998417770188533081": {
+   "tenor_plain": 205,
+   "_total": 205
+  },
+  "3c5aa789f3fb8794e7f5bf7dc48a489a": {
+   "tenor_plain": 203,
+   "_total": 203
+  },
+  "cf66621d7172b6c33964229fd3467e3c": {
+   "tenor_plain": 200,
+   "_total": 200
+  },
+  "CZ-UKP": {
+   "abstract_plain": 195,
+   "_total": 197,
+   "tenor_plain": 1,
+   "tenor_diplomatic": 1
+  },
+  "569b127fba44e8a9cac198385b135960": {
+   "tenor_plain": 196,
+   "_total": 196
+  },
+  "HU-MNL-DLBLKI": {
+   "abstract_names": 187,
+   "_total": 196,
+   "abstract_plain": 3,
+   "no_text": 6
+  },
+  "57fbcfd1b1229155ba552e981675ce05": {
+   "tenor_plain": 194,
+   "_total": 194
+  },
+  "88ee8004c11440cdabf3b20b27a9d840": {
+   "tenor_plain": 174,
+   "_total": 194,
+   "no_text": 18,
+   "abstract_plain": 2
+  },
+  "DE-StaALohr": {
+   "abstract_markup": 177,
+   "_total": 194,
+   "abstract_plain": 16,
+   "abstract_names": 1
+  },
+  "c30f52eba9fb289b19a93c7b56b0c4b7": {
+   "no_text": 176,
+   "_total": 188,
+   "abstract_names": 9,
+   "abstract_plain": 1,
+   "abstract_markup": 1,
+   "tenor_plain": 1
+  },
+  "b3195f800482a78ce38d9aba4b6ad778": {
+   "no_text": 186,
+   "_total": 187,
+   "abstract_markup": 1
+  },
+  "bfa80580779130db2f81278bcf0d6910": {
+   "tenor_plain": 176,
+   "_total": 183,
+   "abstract_plain": 4,
+   "no_text": 3
+  },
+  "bd07cb31d39d49464fd3e8584f20bc7f": {
+   "tenor_plain": 182,
+   "_total": 182
+  },
+  "941c1b5b4621939a444720916db0998f": {
+   "tenor_plain": 180,
+   "_total": 180
+  },
+  "HU-MNL-DLREGL": {
+   "abstract_names": 174,
+   "_total": 176,
+   "no_text": 2
+  },
+  "HR-DAPA": {
+   "abstract_plain": 173,
+   "_total": 173
+  },
+  "0c2b1407dc93fb4683fefbef3b583776": {
+   "abstract_plain": 163,
+   "_total": 168,
+   "tenor_plain": 4,
+   "no_text": 1
+  },
+  "1c2849dc71ef4b12a89ed806f30828ba": {
+   "tenor_plain": 165,
+   "_total": 168,
+   "abstract_plain": 3
+  },
+  "AT-StiAMt": {
+   "abstract_plain": 139,
+   "_total": 168,
+   "abstract_names": 23,
+   "abstract_markup": 4,
+   "tenor_plain": 1,
+   "tenor_markup": 1
+  },
+  "FR-ADCO": {
+   "abstract_markup": 13,
+   "_total": 165,
+   "abstract_plain": 152
+  },
+  "3854156657504bd4e02c89e09b128979": {
+   "abstract_markup": 142,
+   "_total": 164,
+   "abstract_plain": 22
+  },
+  "DE-LKAEKKW": {
+   "abstract_plain": 157,
+   "_total": 164,
+   "tenor_plain": 7
+  },
+  "ddfd7812c396120f150c9f4d41f74c1c": {
+   "tenor_plain": 163,
+   "_total": 163
+  },
+  "be9cf3571182050bec122a03b2aa51ad": {
+   "abstract_names": 163,
+   "_total": 163
+  },
+  "44d2e2a1bac5c779589b1133832f3946": {
+   "tenor_plain": 161,
+   "_total": 161
+  },
+  "a996d5806e920295955b22267b76df8d": {
+   "tenor_plain": 157,
+   "_total": 157
+  },
+  "DE-ABSP": {
+   "abstract_plain": 155,
+   "_total": 155
+  },
+  "91d44f4c1213522ce3b459cb3544001c": {
+   "tenor_plain": 155,
+   "_total": 155
+  },
+  "DE-StadtASchorndorf": {
+   "abstract_plain": 151,
+   "_total": 152,
+   "abstract_names": 1
+  },
+  "AT-StaABdW": {
+   "tenor_markup": 135,
+   "_total": 150,
+   "tenor_plain": 13,
+   "abstract_plain": 2
+  },
+  "5646af2bcb53872cf4a5b225101f1c68": {
+   "tenor_plain": 148,
+   "_total": 148
+  },
+  "e3bd52041ee135bfba5fad76e71cce13": {
+   "no_text": 144,
+   "_total": 144
+  },
+  "06b544656a39429187db6064980d9f8f": {
+   "tenor_plain": 142,
+   "_total": 142
+  },
+  "688085ee7a3a4b36180275ef2ba2902a": {
+   "tenor_plain": 142,
+   "_total": 142
+  },
+  "DE-AHGM": {
+   "abstract_names": 138,
+   "_total": 140,
+   "tenor_plain": 1,
+   "abstract_plain": 1
+  },
+  "fac7b736b7b8e293dede35966b0452bb": {
+   "abstract_plain": 87,
+   "_total": 139,
+   "tenor_plain": 52
+  },
+  "fc9be8121dbab2dde1db98f2adb1fb22": {
+   "tenor_plain": 135,
+   "_total": 136,
+   "no_text": 1
+  },
+  "f8ee9e47229b9b19763c4453347ea8e7": {
+   "tenor_plain": 135,
+   "_total": 136,
+   "tenor_markup": 1
+  },
+  "1771b93c27e0ad127c082d16286b1dc2": {
+   "tenor_markup": 116,
+   "_total": 134,
+   "tenor_names": 18
+  },
+  "85567c7f41e4e6b612fd5dcdcc60d1bd": {
+   "tenor_plain": 134,
+   "_total": 134
+  },
+  "c5c08c6952bf148419f380b70eb471f2": {
+   "abstract_plain": 123,
+   "_total": 131,
+   "abstract_names": 2,
+   "no_text": 3,
+   "tenor_plain": 3
+  },
+  "9fafde2bd83ad5dd8e392857e4597d1f": {
+   "tenor_plain": 127,
+   "_total": 127
+  },
+  "HU-MFL": {
+   "no_text": 118,
+   "_total": 124,
+   "abstract_plain": 2,
+   "tenor_plain": 4
+  },
+  "AT-SchlAWei": {
+   "abstract_plain": 120,
+   "_total": 122,
+   "tenor_plain": 2
+  },
+  "AT-MAYbbsitz": {
+   "abstract_plain": 122,
+   "_total": 122
+  },
+  "d1574c4eddb8e7db5fbf456d41a61b55": {
+   "tenor_plain": 117,
+   "_total": 119,
+   "abstract_plain": 1,
+   "tenor_names": 1
+  },
+  "HR-HDA": {
+   "tenor_plain": 10,
+   "_total": 117,
+   "tenor_names": 1,
+   "abstract_names": 52,
+   "abstract_plain": 53,
+   "tenor_markup": 1
+  },
+  "40b73ea6781646236c2c4fa62cdbc184": {
+   "tenor_plain": 116,
+   "_total": 116
+  },
+  "abb8de494e558c5c3735aa9261c6268d": {
+   "tenor_plain": 109,
+   "_total": 109
+  },
+  "36e2c862cfe1f825654b803d9465c060": {
+   "tenor_diplomatic": 108,
+   "_total": 109,
+   "tenor_names": 1
+  },
+  "9384fcec67ad102abda626de62cc2edb": {
+   "tenor_plain": 107,
+   "_total": 107
+  },
+  "AT-PfAWei": {
+   "abstract_plain": 99,
+   "_total": 105,
+   "tenor_plain": 5,
+   "tenor_markup": 1
+  },
+  "AT-StaAZ": {
+   "tenor_markup": 24,
+   "_total": 103,
+   "tenor_plain": 48,
+   "abstract_names": 25,
+   "abstract_markup": 1,
+   "abstract_plain": 5
+  },
+  "eab6d9269c322c9f415c5bebfb3967e1": {
+   "no_text": 100,
+   "_total": 102,
+   "abstract_names": 1,
+   "abstract_markup": 1
+  },
+  "AT-StAHorn": {
+   "abstract_plain": 102,
+   "_total": 102
+  },
+  "91d816ebf0c22e1f818abd0c246db009": {
+   "tenor_plain": 98,
+   "_total": 98
+  },
+  "22a5f3447af3460a8e6528db6706a139": {
+   "tenor_plain": 95,
+   "_total": 95
+  },
+  "21bb1d73202f4e851bc8ade195902b33": {
+   "no_text": 92,
+   "_total": 92
+  },
+  "dd485841e9874153070486e5facdb2ed": {
+   "tenor_plain": 91,
+   "_total": 92,
+   "abstract_plain": 1
+  },
+  "9f1706021602e38f5b66201b9eb034a7": {
+   "tenor_plain": 91,
+   "_total": 91
+  },
+  "e8d76966c81742b8153b863d9f571376": {
+   "tenor_plain": 89,
+   "_total": 90,
+   "abstract_plain": 1
+  },
+  "daa80f258831cfb12bbfba38c33a0574": {
+   "tenor_plain": 88,
+   "_total": 88
+  },
+  "DE-FWUBHGW": {
+   "tenor_plain": 6,
+   "_total": 88,
+   "tenor_names": 5,
+   "abstract_names": 69,
+   "tenor_diplomatic": 1,
+   "abstract_plain": 3,
+   "tenor_markup": 4
+  },
+  "4504d46a1e737453531bf495a9d72ff5": {
+   "tenor_plain": 66,
+   "_total": 86,
+   "tenor_markup": 14,
+   "abstract_plain": 4,
+   "abstract_markup": 2
+  },
+  "AT-StaATr": {
+   "abstract_plain": 85,
+   "_total": 85
+  },
+  "b6f491b6385274394257545007dc2adb": {
+   "tenor_plain": 82,
+   "_total": 84,
+   "tenor_markup": 2
+  },
+  "CZ-ANM": {
+   "abstract_names": 77,
+   "_total": 80,
+   "abstract_plain": 3
+  },
+  "IT-BibVall": {
+   "no_text": 77,
+   "_total": 79,
+   "abstract_names": 2
+  },
+  "IT-APC": {
+   "abstract_names": 77,
+   "_total": 78,
+   "tenor_plain": 1
+  },
+  "9aada57621ad3f7732c70f662e92e498": {
+   "tenor_plain": 74,
+   "_total": 77,
+   "no_text": 2,
+   "abstract_plain": 1
+  },
+  "69a3c2fd2aff0862311627989ba2c54f": {
+   "tenor_plain": 76,
+   "_total": 76
+  },
+  "1ebbc8ae8c0d284c8103fde06769f6e2": {
+   "abstract_plain": 76,
+   "_total": 76
+  },
+  "AT-DAWST": {
+   "no_text": 75,
+   "_total": 75
+  },
+  "IT-ASCA": {
+   "abstract_plain": 11,
+   "_total": 75,
+   "abstract_names": 64
+  },
+  "60381229f53899e928cbf8bd9f82b2f0": {
+   "no_text": 75,
+   "_total": 75
+  },
+  "9df8366c9919a21e29d8d79c1d4cae94": {
+   "tenor_plain": 74,
+   "_total": 74
+  },
+  "RO-ZAEKR": {
+   "abstract_plain": 73,
+   "_total": 73
+  },
+  "43bc2c66d8f9add61c8a4b32db533878": {
+   "tenor_plain": 70,
+   "_total": 71,
+   "abstract_plain": 1
+  },
+  "463f799743cb77e446763afb610c0621": {
+   "tenor_plain": 69,
+   "_total": 69
+  },
+  "9641405ee3f73ae0bfddf4c9ac7f5326": {
+   "abstract_names": 68,
+   "_total": 68
+  },
+  "SI-GMK": {
+   "abstract_plain": 68,
+   "_total": 68
+  },
+  "3f29ed94c2eaa3a02500efda35983b0b": {
+   "tenor_plain": 67,
+   "_total": 67
+  },
+  "ccb895cbe740579843883d5023172440": {
+   "tenor_plain": 60,
+   "_total": 63,
+   "abstract_plain": 3
+  },
+  "7b993852e13d8012549ee3268b898e29": {
+   "abstract_plain": 61,
+   "_total": 63,
+   "abstract_names": 1,
+   "tenor_plain": 1
+  },
+  "DE-AEK": {
+   "tenor_plain": 62,
+   "_total": 62
+  },
+  "996d9bd46c109de7c161339ef8c86635": {
+   "tenor_plain": 41,
+   "_total": 56,
+   "abstract_plain": 6,
+   "no_text": 9
+  },
+  "78e9e68c3f5522eb950bcc571216d33c": {
+   "abstract_plain": 54,
+   "_total": 54
+  },
+  "b7fe10bea93af6608f61fbe911cd36fc": {
+   "abstract_plain": 52,
+   "_total": 52
+  },
+  "8a2a49af26b121a93a65750e728b5b90": {
+   "tenor_plain": 49,
+   "_total": 51,
+   "abstract_plain": 2
+  },
+  "94e186ed88c2f1bf81c743bf3b15955e": {
+   "tenor_plain": 43,
+   "_total": 50,
+   "abstract_plain": 7
+  },
+  "RS-AV": {
+   "abstract_names": 49,
+   "_total": 50,
+   "abstract_plain": 1
+  },
+  "eea706269aa6f8a3acb56dedc4363f71": {
+   "no_text": 47,
+   "_total": 47
+  },
+  "59ca77a2bbca185b7f66e4e6770c929c": {
+   "tenor_plain": 45,
+   "_total": 45
+  },
+  "de7a351dc9592e68ef3f331ca4088f71": {
+   "tenor_plain": 40,
+   "_total": 43,
+   "abstract_plain": 3
+  },
+  "253f82b053f324fa83dbf915dea4fc60": {
+   "tenor_plain": 42,
+   "_total": 43,
+   "tenor_names": 1
+  },
+  "AT-StaAScheibbs": {
+   "no_text": 8,
+   "_total": 43,
+   "abstract_plain": 35
+  },
+  "fe4a12ffc85ef4af6d731f875ed3f3ad": {
+   "abstract_plain": 41,
+   "_total": 42,
+   "tenor_names": 1
+  },
+  "3d6a399af7b0dedf8a7a0585f837b32a": {
+   "tenor_plain": 39,
+   "_total": 39
+  },
+  "eb1e713483ce2a5537b7a9ea0de13276": {
+   "tenor_plain": 38,
+   "_total": 38
+  },
+  "5286bc7340d7df4bbada055bf53347f6": {
+   "abstract_plain": 37,
+   "_total": 37
+  },
+  "2460814b65450a6b43eba3157095af10": {
+   "tenor_plain": 33,
+   "_total": 33
+  },
+  "AT-MAWeyer": {
+   "abstract_plain": 33,
+   "_total": 33
+  },
+  "SI-ARS": {
+   "abstract_plain": 31,
+   "_total": 33,
+   "tenor_markup": 2
+  },
+  "a8d816f60f41bf14ec1371eeabf81818": {
+   "tenor_plain": 32,
+   "_total": 32
+  },
+  "234bfd11a33a8454ddfdfc5bf989464d": {
+   "abstract_plain": 8,
+   "_total": 32,
+   "abstract_names": 24
+  },
+  "fbb2494d0341ee4390f5420a269be93a": {
+   "abstract_plain": 31,
+   "_total": 31
+  },
+  "619c9230394b598e299355792f8210c3": {
+   "tenor_diplomatic": 30,
+   "_total": 30
+  },
+  "HU-MNL-DLMAKL": {
+   "abstract_names": 27,
+   "_total": 28,
+   "abstract_plain": 1
+  },
+  "88e1eaa86fec44c11e87e55c4a07d6fb": {
+   "abstract_plain": 26,
+   "_total": 26
+  },
+  "AT-MAGresten": {
+   "abstract_plain": 22,
+   "_total": 26,
+   "abstract_names": 3,
+   "tenor_names": 1
+  },
+  "SI-ZAC": {
+   "abstract_plain": 25,
+   "_total": 25
+  },
+  "7bae2321957755c8adf713e84e493f95": {
+   "tenor_plain": 23,
+   "_total": 23
+  },
+  "6d754f05b45fa1834184c8f3b603efb7": {
+   "abstract_plain": 23,
+   "_total": 23
+  },
+  "28aa6f40ba3d4ff63bc78be089e12765": {
+   "abstract_plain": 18,
+   "_total": 22,
+   "abstract_markup": 3,
+   "tenor_diplomatic": 1
+  },
+  "4637105a7daf0dd5fea64c457302f37e": {
+   "tenor_plain": 22,
+   "_total": 22
+  },
+  "PL-APL": {
+   "tenor_plain": 20,
+   "_total": 20
+  },
+  "HU-BFL": {
+   "tenor_plain": 4,
+   "_total": 20,
+   "abstract_plain": 16
+  },
+  "48f65b6faebeae9e4b88598517d2b88e": {
+   "tenor_markup": 13,
+   "_total": 17,
+   "tenor_plain": 4
+  },
+  "1616b59913bd124d80bbb63edd379423": {
+   "tenor_plain": 16,
+   "_total": 16
+  },
+  "HR-DAZD": {
+   "abstract_plain": 16,
+   "_total": 16
+  },
+  "b13e6f87bda16622dab40553a1404cbf": {
+   "no_text": 15,
+   "_total": 15
+  },
+  "775f90b0b4fa61c4e8bfda3f0c1de922": {
+   "tenor_diplomatic": 1,
+   "_total": 15,
+   "abstract_plain": 12,
+   "tenor_plain": 2
+  },
+  "20d99e9dfae52bc86a2a7a01e32e11d8": {
+   "no_text": 15,
+   "_total": 15
+  },
+  "dbd83d94c3c27965c66c2054461af5e8": {
+   "tenor_plain": 14,
+   "_total": 14
+  },
+  "8afdf6743d6eea993934213cd3bfe407": {
+   "tenor_plain": 14,
+   "_total": 14
+  },
+  "AT-MVKu": {
+   "abstract_names": 1,
+   "_total": 12,
+   "abstract_plain": 11
+  },
+  "94b3bb719dd468fa35162584ef31af5d": {
+   "tenor_plain": 12,
+   "_total": 12
+  },
+  "IT-SNS": {
+   "abstract_plain": 11,
+   "_total": 11
+  },
+  "9d9dcfc40f02d6fd8036806b4d8247d5": {
+   "tenor_plain": 10,
+   "_total": 10
+  },
+  "ac08645a3107ae9efc5d8759becbd2a7": {
+   "no_text": 7,
+   "_total": 8,
+   "abstract_plain": 1
+  },
+  "RS-IAGNS": {
+   "abstract_plain": 8,
+   "_total": 8
+  },
+  "52fc608d53f7eb3358e96515f469bb7d": {
+   "tenor_diplomatic": 7,
+   "_total": 7
+  },
+  "81eef661531f6a4fc47551bf26090725": {
+   "no_text": 7,
+   "_total": 7
+  },
+  "AT-StiAMh": {
+   "abstract_markup": 1,
+   "_total": 7,
+   "tenor_markup": 5,
+   "tenor_plain": 1
+  },
+  "164acef39d43a0288dbd666cab403761": {
+   "tenor_plain": 5,
+   "_total": 6,
+   "tenor_diplomatic": 1
+  },
+  "b3c584863ff698c3c5f6956b4a40f89f": {
+   "tenor_plain": 5,
+   "_total": 5
+  },
+  "994b527863f118065ab50880243e37c3": {
+   "tenor_plain": 5,
+   "_total": 5
+  },
+  "6fe7a5e8a826e79426d8b7895f90a24a": {
+   "tenor_diplomatic": 1,
+   "_total": 4,
+   "abstract_plain": 1,
+   "no_text": 1,
+   "abstract_names": 1
+  },
+  "dc154e53b967fa65d33aca60c8bfc726": {
+   "no_text": 3,
+   "_total": 3
+  },
+  "1fb1d9c7ff0b53c930617f4808732a46": {
+   "no_text": 3,
+   "_total": 3
+  },
+  "aadaa0e3872f75194766a877ced97cc4": {
+   "abstract_names": 2,
+   "_total": 3,
+   "abstract_plain": 1
+  },
+  "HU-PLE": {
+   "tenor_markup": 3,
+   "_total": 3
+  },
+  "5428dbd40018c9aeae2d8b2e3174cd54": {
+   "no_text": 2,
+   "_total": 2
+  },
+  "4de5ee799d28bfbee70e3ee8212283b3": {
+   "no_text": 2,
+   "_total": 2
+  },
+  "79c1daf92358568f4740c37a6fbe95f2": {
+   "tenor_diplomatic": 1,
+   "_total": 2,
+   "no_text": 1
+  },
+  "abb64e4841f5334a4753f9275b39617e": {
+   "abstract_names": 1,
+   "_total": 2,
+   "abstract_plain": 1
+  },
+  "8352e81932bfe01f6db63bc429338a0b": {
+   "no_text": 2,
+   "_total": 2
+  },
+  "769ddcab872c58144ba7ec00222b06eb": {
+   "no_text": 2,
+   "_total": 2
+  },
+  "MK-DARM": {
+   "abstract_plain": 1,
+   "_total": 1
+  },
+  "HU-MNL-DLHLYL": {
+   "abstract_names": 1,
+   "_total": 1
+  },
+  "e9d11076ff3378b12eb76def0f980bb3": {
+   "no_text": 1,
+   "_total": 1
+  },
+  "eecd0b864c9da3abc8cf1df0dffbbfcc": {
+   "tenor_names": 1,
+   "_total": 1
+  },
+  "c05cb199553fdc3b7ddbcde84be47d4e": {
+   "abstract_markup": 1,
+   "_total": 1
+  },
+  "fdb3052a91291477029af7bfcdc9cb4a": {
+   "no_text": 1,
+   "_total": 1
+  },
+  "f2e28ba68c79542b446698089312b961": {
+   "abstract_markup": 1,
+   "_total": 1
+  },
+  "772cff216df2436356b2ad6843860c10": {
+   "tenor_diplomatic": 1,
+   "_total": 1
+  },
+  "HU-MNL-DLERKL": {
+   "abstract_names": 1,
+   "_total": 1
+  }
+ }
+}
