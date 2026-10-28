@@ -164,9 +164,9 @@ repository:
   The keys of the providers are read from `DDP_ANNIE_ANTHROPIC_KEY`, `DDP_ANNIE_OPENAI_KEY`,
   `DDP_ANNIE_TOGETHER_KEY`, `DDP_ANNIE_HUGGINGFACE_KEY` and `DDP_ANNIE_DHINFRA_KEY` (the self-hosted
   models of the University of Graz, `api.dhinfra.uni-graz.at`).
-- `web/`: a Svelte 5 library: the `Annotator` component, its store (annotations, tag schema and
-  settings in the browser's `localStorage`) and the client of the routes. It annotates the `texts`
-  of a `ddp_api` document, keyed by text id and re-anchored when the text's hash changes.
+- `web/`: Svelte 5 components for `ddp_web`: the `Annotator` component, its store (annotations, tag
+  schema and settings in the browser's `localStorage`) and the client of the routes. It annotates the
+  `texts` of a `ddp_api` document, keyed by text id and re-anchored when the text's hash changes.
 
 ### Run and test
 
@@ -188,10 +188,11 @@ desktop application; `test_core_*` check that `annie_core` finds the same entiti
 ### Integrate
 
 In `ddp_api`, with this repository as a dependency: `v1.include_router(annie_api.router)`.
-In `ddp_web`, with `web/` as a dependency (`npm run package` builds it):
+In `ddp_web`, with `web/src/lib/annie/` and `web/src/lib/components/annie/` copied to the same
+paths (`docs/HANDOVER_DDP_WEB.md`):
 
     <script lang="ts">
-        import { Annotator } from 'annie';
+        import Annotator from '$lib/components/annie/Annotator.svelte';
         let { data } = $props();
     </script>
     <Annotator texts={data.documents.flatMap((document) => document.texts)} />

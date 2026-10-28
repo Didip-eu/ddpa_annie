@@ -13,7 +13,7 @@ ANNIE annotates the texts of medieval charters with named entities (persons, pla
 dates, ...) and directed relations between them, by hand and with help: propagation of known terms,
 dictionaries, a session memory and a language model. It started as a Tkinter desktop application
 (`annie_legacy/`, `annie.py`). This repository now also holds its logic as importable Python modules,
-API routes for `ddp_api`, and a Svelte component library for `ddp_web`, so that ANNIE runs inside the
+API routes for `ddp_api`, and Svelte components for `ddp_web`, so that ANNIE runs inside the
 web platform of Monasterium NG as a single-user tool.
 
 ## 2. The platform around it
@@ -124,8 +124,8 @@ ddp_api  --include_router-->  annie_api.router  --calls-->  annie_core (propagat
 |---|---|---|---|
 | `annie_core` | `annie_core/` | `anthropic` | The logic, no GUI, no web framework; offsets are characters of a body. |
 | `annie_api` | `annie_api/` | `fastapi`, `annie_core` | `router`, an `APIRouter` with prefix `/annie`; `annie_api.dev`, a development app. |
-| web library | `web/src/lib/` | `svelte` (peer) | `Annotator` and its parts in `components/annie/`, the store and the API client in `annie/`; packaged by `svelte-package`. |
-| demo page | `web/src/routes/annotator/` | the library | Lists the documents of the development app; the clicked one is the working set. Not shipped. |
+| web components | `web/src/lib/` | `svelte` | `Annotator` and its parts in `components/annie/`, the store and the API client in `annie/`; copied into `ddp_web` at the same paths. |
+| demo page | `web/src/routes/annotator/` | the components | Lists the documents of the development app; the clicked one is the working set. Not shipped. |
 | desktop app | `annie_legacy/`, `annie.py` | `tkinter`, `requests`, `torch` | The original application, legacy: kept as the reference of the characterization and parity tests. |
 
 ## 6. Behaviour
@@ -216,10 +216,11 @@ Routes of `annie_api.router`, under `/api/v1` once included:
   readable list is 503 `unavailable`; a malformed request is 422 `invalid_request` (from `ddp_api`'s
   handler once included).
 
-## 8. Frontend library contract
+## 8. Frontend contract
 
-`import { Annotator, AnnieStore, annieApi, readDictionary, writeDictionary } from 'annie'` and the
-types `Text`, `Entity`, `Relation`, `Schema`, `Settings`, `Span`.
+Under `src/lib/`: `components/annie/Annotator.svelte`; `AnnieStore` in `annie/annotations.svelte`,
+`annieApi` in `annie/api`, `readDictionary` and `writeDictionary` in `annie/dictionary`, and the types
+`Text`, `Entity`, `Relation`, `Schema`, `Settings`, `Span` in `annie/types`.
 
 - `<Annotator texts={Text[]} api? store? />`: `texts` is the working set; `api` defaults to
   `annieApi(fetch, '/api/v1')`; `store` defaults to a store on `localStorage`.
@@ -241,8 +242,8 @@ types `Text`, `Entity`, `Relation`, `Schema`, `Settings`, `Span`.
 
 ### 9.2 ddp_web
 
-1. Add `web/` as a dependency once packaged (`npm run package`), or copy `web/src/lib/annie/` and
-   `web/src/lib/components/annie/` to the same paths, keeping their relative imports.
+1. Copy `web/src/lib/annie/` and `web/src/lib/components/annie/` to the same paths, keeping their
+   relative imports (`HANDOVER_DDP_WEB.md`).
 2. Place `<Annotator>` on a page with a working set: the texts of one document
    (`routes/documents/[id]`), or of the documents of a basket, which makes propagation across them
    meaningful.

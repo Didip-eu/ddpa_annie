@@ -1,7 +1,8 @@
 <!-- The development page: pick a document of the development API and annotate its texts. -->
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { Annotator, type Text } from '$lib';
+	import Annotator from '$lib/components/annie/Annotator.svelte';
+	import type { Text } from '$lib/annie/types';
 
 	const CURRENT_DOCUMENT = 'annie-demo-document';
 	let listed = $state<{ id: string; identifier: string | null }[]>([]);
