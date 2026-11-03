@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atom:entry xmlns:atom="http://www.w3.org/2005/Atom"><atom:id>tag:www.monasterium.net,2011:/charter/Fontenay/x1177_d1e227098</atom:id><atom:title/><atom:published>2026-01-27T09:04:13.292+01:00</atom:published><atom:updated>2026-01-27T09:04:13.292+01:00</atom:updated><atom:author><atom:email>niklas.tscherne@gmail.com</atom:email></atom:author><app:control xmlns:app="http://www.w3.org/2007/app"><app:draft>no</app:draft></app:control><atom:content type="application/xml"><cei:text xmlns:cei="http://www.monasterium.net/NS/cei" type="charter">
+                <cei:front>
+                    <cei:publicationStmt>
+                        <cei:p>See the header of the teiCorpus</cei:p>
+                    </cei:publicationStmt>
+                    <cei:encodingDesc/>
+                </cei:front>
+                <cei:body>
+                    <cei:idno id="x1177_d1e227098">x1177_d1e227098</cei:idno>
+                    <cei:chDesc>
+                        <cei:issued>
+                            <cei:date value="11771231">1177</cei:date>
+                        </cei:issued>
+                        <cei:abstract>Régeste</cei:abstract>
+                        <cei:witListPar>
+                            <cei:witness n="A">
+                                <cei:bibl n="A" key="#zoteroItem_F8IX67YY">
+                                    <cei:title>Vente aux enchères publiques d'une collection
+                                        importante de Chartes : documents historiques, titres
+                                        nobiliaires, etc. provenant du Cabinet de M.de
+                                        M.</cei:title>.<cei:imprint>
+                                        <cei:pubPlace>Paris</cei:pubPlace>, <cei:publisher>Jacques
+                                            Charavay aîné</cei:publisher>, 1867, <cei:note type="url">http://bibnum.enc.sorbonne.fr/tires-a-part/0000005542185</cei:note>
+                                    </cei:imprint>
+                                    <cei:scope>p. 16 n° 19</cei:scope>
+                                    <cei:note>Original perdu, attesté dans la collection de Magny en
+                                        1867</cei:note>
+                                </cei:bibl>
+                            </cei:witness>
+                            <cei:witness n="B">
+                                <cei:bibl>Cartulaire 1, fol. 28<cei:hi rend="superscript">r-v</cei:hi> (Abbatia, 13) ; table : « <cei:hi rend="italic">XIII. Carta Osmundi et Odonis de
+                                        Marmania</cei:hi> »</cei:bibl>
+                            </cei:witness>
+                            <cei:witness n="C">
+                                <cei:bibl>ADCO 15 H 10* (cart. 201<cei:hi rend="superscript">bis</cei:hi>), fol. 48<cei:hi rend="superscript">v</cei:hi>-49<cei:hi rend="superscript">v</cei:hi>
+                                    (Marmagne. Z)</cei:bibl>
+                            </cei:witness>
+                            <cei:witness n="b">
+                                <cei:hi rend="background(red)">A COLLATIONNER</cei:hi>
+                            </cei:witness>
+                            <cei:witness n="v">
+                                <cei:hi rend="background(green)">voir autre acte mettant en place le
+                                    cens 110@</cei:hi>
+                            </cei:witness>
+                            <cei:witness n="l">
+                                <cei:hi rend="background(green)">lescheria : locus palustris, cf. </cei:hi>
+                                <cei:bibl>
+                                    <cei:ref>http://gallica.bnf.fr/ark:/12148/bpt6k117579q.swfv.f67</cei:ref>
+                                </cei:bibl>
+                                <cei:hi rend="background(green)">@</cei:hi>
+                            </cei:witness>
+                        </cei:witListPar>
+                        <cei:diplomaticAnalysis>
+                            <cei:listBibl>
+                                <cei:bibl>ADCO 15 H 1, fol. <cei:hi rend="background(red)">@</cei:hi> (Marmagne. Z)</cei:bibl>
+                                <cei:bibl>ADCO 15 H 2, fol. <cei:hi rend="background(red)">@</cei:hi> (Marmagne. Z)</cei:bibl>
+                                <cei:bibl>ADCO 15 H 4, p. 99 (IX. 5. 12) : « sceau de cire jaune à
+                                    queue de peau jaune pendant ».</cei:bibl>
+                            </cei:listBibl>
+                        </cei:diplomaticAnalysis>
+                    </cei:chDesc>
+                    <cei:tenor>
+                        <cei:pTenor>Ego <cei:persName key="FontenayPersons:324645" id="d1e155081" reg="Étienne II, évêque d'Autun (1171-1189)">Stephanus, Dei gratia
+                                    <cei:placeName key="stutzmann_himanis#319548" id="d1e155083" reg="Autun (Saône-et-Loire, Autun)">Eduensis</cei:placeName>
+                                episcopus</cei:persName>, notum fieri volo presentibus et futuris
+                            quod <cei:persName key="FontenayPersons:d1e24066" id="d1e155087">Osmundus</cei:persName> et <cei:persName key="FontenayPersons:d1e24072" id="d1e155090">Odo frater ejus de
+                                    <cei:placeName key="stutzmann_himanis#324475" id="d1e155092" reg="Marmagne (Côte-d'Or, Montbard)">Marmania</cei:placeName>
+                            </cei:persName> dederunt in elemosinam perpetuam ecclesie <cei:orgName key="stutzmann_himanis#282689" id="d1e155095" reg="abbaye Notre-Dame de Fontenay (1119 -)">Fonteneti</cei:orgName>
+                            laudantibus sororibus suis <cei:persName key="FontenayPersons:d1e24078" id="d1e155098">Adelina</cei:persName> et <cei:persName key="FontenayPersons:d1e24084" id="d1e155102">Petronilla</cei:persName>
+                            <cei:num value="99999999">xx</cei:num>
+                            <cei:hi rend="superscript">ti </cei:hi>solidos quos annuatim dabant eis
+                            monachi <cei:orgName key="stutzmann_himanis#282689" id="d1e155109" reg="abbaye Notre-Dame de Fontenay (1119 -)">Fonteneti</cei:orgName>
+                            in martio pro omnibus querelis quas tam pater eorum quam ipsi habuerant
+                            adversus eamdem domum <cei:orgName key="stutzmann_himanis#282689" id="d1e155112" reg="abbaye Notre-Dame de Fontenay (1119 -)">Fonteneti</cei:orgName>. Calumpniati enim fuerant eis decimas in
+                            terris quas excolebant in territorio <cei:placeName key="stutzmann_himanis#324450" id="d1e155115" reg="Fain-lès-Montbard (Côte-d'Or, Montbard)">Fanii</cei:placeName>,
+                            partem etiam orti subtus abbatiam et pratum sub chimino <cei:placeName key="stutzmann_himanis#324450" id="d1e155118" reg="Fain-lès-Montbard (Côte-d'Or, Montbard)">Fanii</cei:placeName>
+                            ubi miles jacet, et<cei:hi rend="background(yellow)">
+                                leschariam</cei:hi> desuper <cei:placeName key="stutzmann_himanis#324450" id="d1e155125" reg="Fain-lès-Montbard (Côte-d'Or, Montbard)">Fanium</cei:placeName>, et terram supra eamdem lescheriam ubi salices
+                            edificate erant, et omnes vineas quas monachi tenebant in territorio
+                                <cei:placeName key="stutzmann_himanis#324450" id="d1e155128" reg="Fain-lès-Montbard (Côte-d'Or, Montbard)">Fanii</cei:placeName>,
+                            vineam scilicet <cei:persName key="FontenayPersons:d1e24091" id="d1e155131">Rainaldi <cei:addName>Esbrasati</cei:addName>
+                            </cei:persName>, vineam <cei:persName key="FontenayPersons:d1e24097" id="d1e155136">Odonis <cei:addName>
+                                    <cei:foreign lang="">Brandun</cei:foreign>
+                                </cei:addName>
+                            </cei:persName>, vineam <cei:persName key="FontenayPersons:d1e24103" id="d1e155142">Varnerii <cei:addName>
+                                    <cei:foreign lang="">Viticot</cei:foreign>
+                                </cei:addName>
+                            </cei:persName> et terram quam habebat ad censum pro duobus nummis in
+                            costa <cei:placeName key="stutzmann_himanis#324489" id="d1e155149" reg="Morville (Côte-d'Or, Montbard)">Morville</cei:placeName>.
+                            Quicquid in his omnibus juris habebant <cei:persName key="FontenayPersons:d1e24109" id="d1e155152">Osmundus</cei:persName> et <cei:persName key="FontenayPersons:d1e24115" id="d1e155155">Odo</cei:persName>
+                            ecclesie <cei:orgName key="stutzmann_himanis#282689" id="d1e155158" reg="abbaye Notre-Dame de Fontenay (1119 -)">Fonteneti</cei:orgName>
+                            concesserunt ad censum <cei:num value="99999999">xx</cei:num>
+                            <cei:hi rend="superscript">ti</cei:hi> solidorum quos postea predicte
+                            ecclesie sicut prediximus in elemosinam dederunt et mansum in quo
+                            grangia eorum erat quod tenuerunt <cei:persName key="FontenayPersons:d1e24121" id="d1e155167">Andreas</cei:persName>
+                            et <cei:persName key="FontenayPersons:d1e24128" id="d1e155170">Felix</cei:persName> et quicquid habebant a rivo de <cei:placeName key="stutzmann_himanis#325253" id="d1e155173" reg="Correson">
+                                <cei:foreign lang="">Curtresum</cei:foreign>
+                            </cei:placeName>
+                            <cei:hi rend="italic"> </cei:hi>usque ad finagium <cei:placeName key="stutzmann_himanis#324475" id="d1e155179" reg="Marmagne (Côte-d'Or, Montbard)">Marmanie</cei:placeName> a
+                            chimino sursum et quicquid habebant in <cei:placeName key="stutzmann_himanis#325295" id="d1e155182" reg="Grenchessania">Grenchessania</cei:placeName> in bosco et in plano. Hoc totum
+                            factum est laudantibus sororibus eorum et sciendum quod pro hac
+                            elemosina habuerunt de beneficio ecclesie <cei:num value="99999999">xxx</cei:num>
+                            <cei:hi rend="superscript">ta</cei:hi> libras. Unde testes sunt monachi
+                                <cei:orgName key="stutzmann_himanis#282689" id="d1e155191" reg="abbaye Notre-Dame de Fontenay (1119 -)">Fonteneti</cei:orgName>
+                            <cei:persName key="FontenayPersons:d1e24134" id="d1e155193">Willermus de
+                                    <cei:placeName key="stutzmann_himanis#324331" id="d1e155195" reg="Nesle-et-Massoult (Côte-d'Or, Montbard)">
+                                    <cei:foreign lang="">Naille</cei:foreign>
+                                </cei:placeName>
+                            </cei:persName>, <cei:persName key="FontenayPersons:d1e24140" id="d1e155199">Willermus de <cei:placeName key="stutzmann_himanis#325251" id="d1e155201" reg="Corabœuf (Côte-d'Or, Arnay-le-Duc)">Curte
+                                    Rabodi</cei:placeName>
+                            </cei:persName> et <cei:persName key="FontenayPersons:d1e24146" id="d1e155204">Hugo frater ejus</cei:persName>, <cei:persName key="FontenayPersons:324623" id="d1e155207" reg="Eudes, archiprêtre de Touillon (1173-1200)">Odo archipresbiter
+                                    <cei:placeName key="stutzmann_himanis#324370" id="d1e155209" reg="Touillon (Côte-d'Or, Montbard)">Tullionis</cei:placeName>
+                            </cei:persName>, <cei:persName key="FontenayPersons:d1e24152" id="d1e155213">Umbertus capellanus de <cei:placeName key="stutzmann_himanis#324350" id="d1e155215" reg="Ravières (Yonne, Tonnerrois)">Raveriis</cei:placeName>
+                            </cei:persName>, <cei:persName key="FontenayPersons:d1e24158" id="d1e155218">Stephanus <cei:addName>Villanus</cei:addName>
+                            </cei:persName> et <cei:persName key="FontenayPersons:d1e24165" id="d1e155223">Petrus <cei:addName>
+                                    <cei:foreign lang="">Allerez</cei:foreign>
+                                </cei:addName>
+                            </cei:persName>. Hec omnia se fecisse, dedisse et laudasse coram me
+                            recognoverunt duo supradicti fratres <cei:persName key="FontenayPersons:d1e24171" id="d1e155229">Osmundus</cei:persName> et <cei:persName key="FontenayPersons:d1e24177" id="d1e155232">Odo</cei:persName> et
+                            ut sigillo nostro confirmarem postulaverunt. Proinde ut ista in posterum
+                            stabili firmitate conserventur cartam presentem sigilli nostri munimine
+                            confirmamus et omnes qui de hiis ecclesiam <cei:orgName key="stutzmann_himanis#282689" id="d1e155235" reg="abbaye Notre-Dame de Fontenay (1119 -)">Fonteneti</cei:orgName>
+                            in aliquo vexare aut dampnum aliquid ausi fuerint inferre donec
+                            resipiscant anathemate dampnamus, amen. Actum anno incarnationis domini
+                            nostri Ihesu Christi millesimo centesimo <cei:hi rend="smallcaps">lxx°
+                                vii°</cei:hi>.</cei:pTenor>
+                    </cei:tenor>
+                </cei:body>
+            </cei:text></atom:content></atom:entry>

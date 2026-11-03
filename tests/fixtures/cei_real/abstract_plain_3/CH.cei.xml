@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atom:entry xmlns:atom="http://www.w3.org/2005/Atom"><atom:id>tag:www.monasterium.net,2011:/charter/DE-BayHStA/HochstiftFreising/Hochstift_Freising_Urkunden_2256</atom:id><atom:title/><atom:published>2026-02-11T21:47:22.334+01:00</atom:published><atom:updated>2026-02-11T21:47:22.334+01:00</atom:updated><atom:author><atom:email>niklas.tscherne@gmail.com</atom:email></atom:author><app:control xmlns:app="http://www.w3.org/2007/app"><app:draft>no</app:draft></app:control><atom:content type="application/xml"><cei:text xmlns:cei="http://www.monasterium.net/NS/cei" type="charter">
+        <cei:front/>
+        <cei:body>
+          <cei:idno id="Hochstift_Freising_Urkunden&#xA;____________2256">Hochstift Freising Urkunden
+            2256</cei:idno>
+          <cei:chDesc>
+            <cei:abstract>Bischof Johann Franz von Freising bekundet, dass er nach seiner
+              bestätigten Wahl zum Bischof und dem dadurch eingetretenen Haupt- und Nebenfall im
+              Hochstift Freising dem Maximilian Herr von Pelkofen ("Pelckhoven") und Hohenbuchbach
+              auf Moosach, kurbayerischem Revisionsrat und Truchseß in München, als Gewalthaber und
+              Lehenträger der drei Töchter des Ladislaus Schrenk von Notzing zu Egmating namens
+              Maria Sibilla Theresia, Maria Sidonia Rosalia und Maria Johanna Petronilla den
+              Aislmayr Hof in Egmating zu Lehen verliehen hat; S: Bischof Johann Franz von
+              Freising</cei:abstract>
+            <cei:issued>
+              <cei:date value="16970523">1697 Mai 23</cei:date>
+              <cei:placeName>Freising</cei:placeName>
+            </cei:issued>
+            <cei:witnessOrig>
+              <cei:traditioForm>Or.</cei:traditioForm>
+              <cei:archIdentifier>
+                <cei:settlement>München</cei:settlement>
+                <cei:region>Bayern</cei:region>
+                <cei:country>Deutschland</cei:country>
+                <cei:arch>Bayerisches Hauptstaatsarchiv</cei:arch>
+                <cei:archFond>Hochstift Freising</cei:archFond>
+                <cei:idno n="Bestellnummer">2256</cei:idno>
+                <cei:ref target="https://www.gda.bayern.de/show/fcc21207-f2b7-4e0d-acfe-50794d0367fd/1"/>
+              </cei:archIdentifier>
+              <cei:physicalDesc>
+                <cei:condition n="Gesamtbewertung">0. kein Schaden (vorlegbar; verfilmbar und
+                  digitalisierbar)</cei:condition>
+                <cei:material>Perg.</cei:material>
+              </cei:physicalDesc>
+              <cei:auth>
+                <cei:sealDesc>ein ursprünglich an Pressel anhängendes Sekretsiegel abgegangen;
+                  Unterfertigung des Ausstellers</cei:sealDesc>
+              </cei:auth>
+            <cei:figure><cei:graphic url="http://images.monasterium.net/img/DE-BayHStA/HochstiftFreising/fcc21207-f2b7-4e0d-acfe-50794d0367fd/fcc21207-f2b7-4e0d-acfe-50794d0367fd_0001.jpg"/></cei:figure><cei:figure><cei:graphic url="http://images.monasterium.net/img/DE-BayHStA/HochstiftFreising/fcc21207-f2b7-4e0d-acfe-50794d0367fd/fcc21207-f2b7-4e0d-acfe-50794d0367fd_0002.jpg"/></cei:figure></cei:witnessOrig>
+            <cei:diplomaticAnalysis/>
+            <cei:lang_MOM>dt.</cei:lang_MOM>
+          </cei:chDesc>
+        </cei:body>
+        <cei:back/>
+      </cei:text></atom:content></atom:entry>

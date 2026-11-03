@@ -26,10 +26,9 @@ def client(monkeypatch):
 
 
 def test_providers_report_which_keys_the_server_holds(client, monkeypatch):
-    monkeypatch.setenv("DDP_ANNIE_OPENAI_KEY", "secret")
+    monkeypatch.setenv("DDP_ANNIE_DHINFRA_KEY", "secret")
     body = client.get("/api/v1/annie/providers").json()
-    assert {(p["id"], p["configured"]) for p in body["data"]} == {
-        ("anthropic", False), ("openai", True), ("together", False), ("huggingface", False), ("dhinfra", False)}
+    assert {(p["id"], p["configured"]) for p in body["data"]} == {("dhinfra", True)}
     assert "secret" not in json.dumps(body)
 
 
@@ -44,11 +43,11 @@ def test_propagate_per_text(client):
 def test_suggest_without_key_is_unavailable(client):
     response = client.post("/api/v1/annie/suggest", json={"text": {"id": "a", "body": BODY}, "tags": ["LOC"]})
     assert response.status_code == 503
-    assert response.json()["error"]["code"] == "unavailable" and "DDP_ANNIE_ANTHROPIC_KEY" in response.json()["error"]["message"]
+    assert response.json()["error"]["code"] == "unavailable" and "DDP_ANNIE_DHINFRA_KEY" in response.json()["error"]["message"]
 
 
 def test_suggest_marks_the_source(client, monkeypatch):
-    monkeypatch.setenv("DDP_ANNIE_ANTHROPIC_KEY", "k")
+    monkeypatch.setenv("DDP_ANNIE_DHINFRA_KEY", "k")
     requested = {}
     monkeypatch.setattr(llm, "complete", lambda provider, model, text, key: requested.update(model=model) or
                         '[{"text": "Artolff von Lewbnegk", "tag": "PER"}]')
@@ -56,17 +55,17 @@ def test_suggest_marks_the_source(client, monkeypatch):
     body = client.post("/api/v1/annie/suggest", json={"text": {"id": "a", "body": BODY}, "examples": examples, "tags": ["LOC", "PER"]}).json()
     assert [(s["text"], s["tag"], s["source"]) for s in body["data"]] == [
         ("Gmünd", "LOC", "memory"), ("Gmünd", "LOC", "memory"), ("Artolff von Lewbnegk", "PER", "llm")]
-    assert requested["model"] == "claude-opus-5-5"
+    assert requested["model"] == "deepseek-v4.1-flash"
 
 
 def test_provider_failure_is_unavailable(client, monkeypatch):
-    monkeypatch.setenv("DDP_ANNIE_OPENAI_KEY", "k")
+    monkeypatch.setenv("DDP_ANNIE_DHINFRA_KEY", "k")
 
     def fail(provider, model, text, key):
-        raise llm.ProviderError("openai answered 401: bad key")
+        raise llm.ProviderError("dhinfra answered 401: bad key")
     monkeypatch.setattr(llm, "complete", fail)
-    response = client.post("/api/v1/annie/suggest", json={"text": {"id": "a", "body": BODY}, "tags": ["LOC"], "provider": "openai"})
-    assert response.status_code == 503 and response.json()["error"]["message"] == "openai answered 401: bad key"
+    response = client.post("/api/v1/annie/suggest", json={"text": {"id": "a", "body": BODY}, "tags": ["LOC"], "provider": "dhinfra"})
+    assert response.status_code == 503 and response.json()["error"]["message"] == "dhinfra answered 401: bad key"
 
 
 def test_unknown_provider_is_rejected(client):

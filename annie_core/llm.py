@@ -7,21 +7,12 @@ import urllib.error
 import urllib.request
 from collections import Counter
 
-import anthropic
-
 from annie_core.propagation import Entity, propagate, remembered
 
 DEFAULT_MODELS = {
-    "anthropic": "claude-opus-5-5",
-    "openai": "gpt-4o-mini",
-    "together": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
-    "huggingface": "HuggingFaceH4/zephyr-7b-alpha",
     "dhinfra": "deepseek-v4.1-flash",
 }
 CHAT_COMPLETIONS = {
-    "openai": "https://api.openai.com/v1/chat/completions",
-    "together": "https://api.together.xyz/v1/chat/completions",
-    "huggingface": "https://router.huggingface.co/v1/chat/completions",
     "dhinfra": "https://api.dhinfra.uni-graz.at/v1/chat/completions",
 }
 # The DH infrastructure's models reason by default and spend all of MAX_TOKENS on a charter before they answer.
@@ -100,8 +91,6 @@ def suggest(body: str, existing: list[Entity], examples: list[tuple[str, list[En
 
 def complete(provider: str, model: str, text: str, key: str) -> str:
     """The provider's answer to one user message."""
-    if provider == "anthropic":
-        return complete_anthropic(model, text, key)
     request = urllib.request.Request(
         CHAT_COMPLETIONS[provider],
         data=json.dumps({"model": model, "messages": [{"role": "user", "content": text}], "max_tokens": MAX_TOKENS,
@@ -115,18 +104,3 @@ def complete(provider: str, model: str, text: str, key: str) -> str:
     except urllib.error.URLError as error:
         raise ProviderError(f"{provider} cannot be reached: {error.reason}") from error
 
-
-def complete_anthropic(model: str, text: str, key: str) -> str:
-    """Claude's answer to one user message; a refusal falls back server-side to the model the API picks."""
-    client = anthropic.Anthropic(api_key=key, timeout=TIMEOUT_SECONDS)
-    try:
-        message = client.beta.messages.create(
-            model=model, max_tokens=MAX_TOKENS, messages=[{"role": "user", "content": text}],
-            betas=["server-side-fallback-2026-07-01"], fallbacks="default")
-    except anthropic.APIStatusError as error:
-        raise ProviderError(f"anthropic answered {error.status_code}: {error.message}") from error
-    except anthropic.APIConnectionError as error:
-        raise ProviderError(f"anthropic cannot be reached: {error}") from error
-    if message.stop_reason == "refusal":
-        raise ProviderError("Claude declined to annotate this text.")
-    return "".join(block.text for block in message.content if block.type == "text")

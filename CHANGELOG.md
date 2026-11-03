@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Removed
+
+- `annie_core`, `annie_api`, `web/`: the providers `anthropic`, `openai`, `together` and `huggingface`; `dhinfra` is the only provider and the default.
+
 ## 0.1.0
 
 ### Added

@@ -4,9 +4,7 @@ import io
 import json
 import urllib.error
 from pathlib import Path
-from types import SimpleNamespace
 
-import anthropic
 import pytest
 
 from annie_core import llm
@@ -62,63 +60,30 @@ def test_suggest_puts_memory_before_the_model(monkeypatch, session):
     sent = []
     monkeypatch.setattr(llm, "complete", lambda provider, model, text, key: sent.append(text) or
                         '[{"text": "gmünd", "tag": "INS"}, {"text": "Anselm Vieweger", "tag": "PER"}, {"text": "Rom", "tag": "UNKNOWN"}]')
-    memory, proposed = llm.suggest(target, [], examples, ["LOC", "PER", "TITLE", "INS"], "anthropic", "m", "k", 2, True)
+    memory, proposed = llm.suggest(target, [], examples, ["LOC", "PER", "TITLE", "INS"], "dhinfra", "m", "k", 2, True)
     assert sorted((e.text, e.tag) for e in memory) == [("Gmünd", "LOC"), ("Papst", "TITLE")]
     assert [(e.text, e.tag) for e in proposed] == [("Anselm Vieweger", "PER")]
     assert sent[0].count("### Example") == 2
 
 
-def test_chat_completion_providers(monkeypatch):
+def test_chat_completion(monkeypatch):
     calls = []
 
     def urlopen(request, timeout):
         calls.append((request.full_url, request.headers, json.loads(request.data)))
         return io.BytesIO(json.dumps({"choices": [{"message": {"content": "[]"}}]}).encode())
     monkeypatch.setattr(llm.urllib.request, "urlopen", urlopen)
-    assert llm.complete("together", "model-x", "hello", "secret") == "[]"
+    assert llm.complete("dhinfra", "model-x", "hello", "secret") == "[]"
     url, headers, payload = calls[0]
-    assert url == "https://api.together.xyz/v1/chat/completions" and headers["Authorization"] == "Bearer secret"
-    assert payload == {"model": "model-x", "messages": [{"role": "user", "content": "hello"}], "max_tokens": llm.MAX_TOKENS}
-    llm.complete("dhinfra", "model-x", "hello", "secret")
-    assert calls[1][2]["reasoning_effort"] == "none"
+    assert url == "https://api.dhinfra.uni-graz.at/v1/chat/completions" and headers["Authorization"] == "Bearer secret"
+    assert payload == {"model": "model-x", "messages": [{"role": "user", "content": "hello"}], "max_tokens": llm.MAX_TOKENS,
+                       "reasoning_effort": "none"}
 
 
 def test_chat_completion_http_error(monkeypatch):
     def urlopen(request, timeout):
         raise urllib.error.HTTPError(request.full_url, 401, "Unauthorized", {}, io.BytesIO(b'{"error": "bad key"}'))
     monkeypatch.setattr(llm.urllib.request, "urlopen", urlopen)
-    with pytest.raises(llm.ProviderError, match="openai answered 401"):
-        llm.complete("openai", "m", "hello", "k")
+    with pytest.raises(llm.ProviderError, match="dhinfra answered 401"):
+        llm.complete("dhinfra", "m", "hello", "k")
 
-
-class FakeAnthropic:
-    """Records the request and answers with the given message."""
-
-    def __init__(self, message, sent):
-        self.beta = SimpleNamespace(messages=SimpleNamespace(create=lambda **request: sent.append(request) or message))
-
-
-def test_anthropic_call_uses_the_refusal_fallback(monkeypatch):
-    sent = []
-    message = SimpleNamespace(stop_reason="end_turn", content=[SimpleNamespace(type="thinking"), SimpleNamespace(type="text", text="[]")])
-    monkeypatch.setattr(llm.anthropic, "Anthropic", lambda api_key, timeout: FakeAnthropic(message, sent))
-    assert llm.complete("anthropic", "claude-opus-5-5", "hello", "k") == "[]"
-    assert sent[0]["fallbacks"] == "default" and sent[0]["betas"] == ["server-side-fallback-2026-07-01"]
-    assert "temperature" not in sent[0]
-
-
-def test_anthropic_refusal_is_a_provider_error(monkeypatch):
-    message = SimpleNamespace(stop_reason="refusal", content=[])
-    monkeypatch.setattr(llm.anthropic, "Anthropic", lambda api_key, timeout: FakeAnthropic(message, []))
-    with pytest.raises(llm.ProviderError, match="declined"):
-        llm.complete("anthropic", "claude-opus-5-5", "hello", "k")
-
-
-def test_anthropic_status_error_is_a_provider_error(monkeypatch):
-    def create(**request):
-        response = SimpleNamespace(status_code=529, headers={}, request=None)
-        raise anthropic.APIStatusError("overloaded", response=response, body=None)
-    client = SimpleNamespace(beta=SimpleNamespace(messages=SimpleNamespace(create=create)))
-    monkeypatch.setattr(llm.anthropic, "Anthropic", lambda api_key, timeout: client)
-    with pytest.raises(llm.ProviderError, match="anthropic answered 529"):
-        llm.complete("anthropic", "claude-opus-5-5", "hello", "k")

@@ -10,7 +10,7 @@ from pydantic import BaseModel, Field
 from annie_core import llm
 from annie_core.propagation import Entity, propagate
 
-type Provider = Literal["anthropic", "openai", "together", "huggingface", "dhinfra"]
+type Provider = Literal["dhinfra"]
 KEY_VARIABLES = {provider: f"DDP_ANNIE_{provider.upper()}_KEY" for provider in llm.DEFAULT_MODELS}
 UNAVAILABLE = {503: {"description": "The provider has no key on this server, cannot be reached, or answered no entity list"}}
 
@@ -49,7 +49,7 @@ class SuggestionRequest(BaseModel):
     text: Text
     examples: list[Text] = Field([], description="annotated texts: the session memory and the pool of few-shot examples")
     tags: list[str]
-    provider: Provider = "anthropic"
+    provider: Provider = "dhinfra"
     model: str | None = Field(None, description="the provider's default model when not given")
     example_count: int = Field(3, ge=0, le=20)
     allow_overlap: bool = True

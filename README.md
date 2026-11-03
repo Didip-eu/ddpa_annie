@@ -157,13 +157,12 @@ for the web platform of Monasterium NG (`ddp_api`, `ddp_web`), in three parts th
 repository:
 
 - `annie_core/`: the logic, free of any GUI: propagation and dictionaries (`propagation.py`), session
-  memory, TF-IDF few-shot retrieval, the prompt and the five language model providers (`llm.py`).
+  memory, TF-IDF few-shot retrieval, the prompt and the language model provider (`llm.py`).
   Offsets are characters of a text body.
 - `annie_api/`: an `APIRouter` with `GET /annie/providers`, `POST /annie/propagate` and
   `POST /annie/suggest`. The routes are stateless: the client sends the texts and their entities.
-  The keys of the providers are read from `DDP_ANNIE_ANTHROPIC_KEY`, `DDP_ANNIE_OPENAI_KEY`,
-  `DDP_ANNIE_TOGETHER_KEY`, `DDP_ANNIE_HUGGINGFACE_KEY` and `DDP_ANNIE_DHINFRA_KEY` (the self-hosted
-  models of the University of Graz, `api.dhinfra.uni-graz.at`).
+  The key of the provider, the self-hosted models of the University of Graz
+  (`api.dhinfra.uni-graz.at`), is read from `DDP_ANNIE_DHINFRA_KEY`.
 - `web/`: Svelte 5 components for `ddp_web`: the `Annotator` component, its store (annotations, tag
   schema and settings in the browser's `localStorage`) and the client of the routes. It annotates the
   `texts` of a `ddp_api` document, keyed by text id and re-anchored when the text's hash changes.
@@ -203,8 +202,7 @@ The annotator keeps its data in `localStorage`, so it renders in the browser onl
 
 - Session memory and model suggestions match terms with the propagation rule, so a term ending in
   punctuation such as `Papst Nikolaus IV.` is found; tags the model invents are dropped.
-- Claude is called without `temperature`, which the Messages API no longer accepts, through the
-  `anthropic` SDK with the server-side refusal fallback; its default model is `claude-opus-5-5`.
+- The only language model provider is the DH infrastructure of the University of Graz.
 - Merged mentions share a group; relations connect groups.
 
 ## Cite

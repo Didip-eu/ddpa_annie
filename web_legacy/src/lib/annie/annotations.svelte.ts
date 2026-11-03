@@ -10,7 +10,7 @@ export const DEFAULT_SCHEMA: Schema = {
 	},
 	relations: ['spouse_of', 'works_at', 'located_in', 'born_on', 'produces']
 };
-const DEFAULT_SETTINGS: Settings = { selection: 'word', allowOverlap: true, provider: 'anthropic', model: '', exampleCount: 3 };
+const DEFAULT_SETTINGS: Settings = { selection: 'word', allowOverlap: true, provider: 'dhinfra', model: '', exampleCount: 3 };
 // The tag a mention of the platform's source data becomes when accepted, by the mention's kind.
 export const MENTION_TAGS: Record<string, string> = { person: 'PER', location: 'LOC', group: 'INS' };
 

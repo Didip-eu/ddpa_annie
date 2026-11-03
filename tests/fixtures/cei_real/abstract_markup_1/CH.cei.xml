@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atom:entry xmlns:atom="http://www.w3.org/2005/Atom"><atom:id>tag:www.monasterium.net,2011:/charter/IT-DAB/HA/1523</atom:id><atom:title/><atom:published>2025-04-29T10:04:06.304+02:00</atom:published><atom:updated>2025-04-29T10:04:06.304+02:00</atom:updated><atom:author><atom:email>daniel.jeller@monasterium.net</atom:email></atom:author><app:control xmlns:app="http://www.w3.org/2007/app"><app:draft>no</app:draft></app:control><atom:content type="application/xml"><cei:text xmlns:cei="http://www.monasterium.net/NS/cei" type="charter">
+        <cei:front/>
+        <cei:body>
+          <cei:idno id="Urk_1523">Urk. 1523</cei:idno>
+          <cei:chDesc>
+            <cei:abstract>Fabian Schiesser, Bü. zu Klausen, verkauft an Christoph von Mayrhofen zu Koburg zu Gufidaun um 320 fl den Weingarten Außergan im Gt. Verdings. Grhr.: fb. Hofamt<cei:lb/>
+S: Zyprian von Thun (Hptm. auf Säben)<cei:lb/>
+SB an: Rudolf Zoppolt (StGt.-Schr. zu Klausen)<cei:lb/>
+Z der SB: Kaspar Rech (StRi. zu Klausen), Erasmus Waffner, Quirin Peisser (Bü. zu Klausen), Valentin Meier von Freising zu Lajen, Valentin Meier von Viersch (HGt. Brixen)</cei:abstract>
+            <cei:issued>
+              <cei:date value="15530311">1553.03.11</cei:date>
+            </cei:issued>
+            <cei:witnessOrig>
+              <cei:archIdentifier>
+                <cei:settlement>Brixen</cei:settlement>
+                <cei:arch>Diözesanarchiv</cei:arch>
+                <cei:archFond>Hofarchiv</cei:archFond>
+                <cei:idno id="1523">Urk. 1523</cei:idno>
+                <cei:altIdentifier type="old">MA</cei:altIdentifier>
+              </cei:archIdentifier>
+              <cei:auth>
+                <cei:sealDesc>
+                  <cei:seal>
+                    <cei:sigillant>Zyprian von Thun (Hptm. auf Säben)</cei:sigillant>
+                  </cei:seal>
+                </cei:sealDesc>
+              </cei:auth>
+              <cei:figure>
+                <cei:graphic url="DAB_H.A._U1523_r.JPG"/>
+              </cei:figure>
+              <cei:figure>
+                <cei:graphic url="DAB_H.A._U1523_v.JPG"/>
+              </cei:figure>
+            </cei:witnessOrig>
+            <cei:diplomaticAnalysis>
+              <cei:p>Or. Perg., 1 Siegel fehlt</cei:p>
+            </cei:diplomaticAnalysis>
+          </cei:chDesc>
+        </cei:body>
+        <cei:back>
+          <cei:persName type="Zeuge">Kaspar Rech (StRi. zu Klausen)</cei:persName>
+          <cei:persName type="Zeuge">Erasmus Waffner</cei:persName>
+          <cei:persName type="Zeuge">Quirin Peisser (Bü. zu Klausen)</cei:persName>
+          <cei:persName type="Zeuge">Valentin Meier von Freising zu Lajen</cei:persName>
+          <cei:persName type="Zeuge">Valentin Meier von Viersch (HGt. Brixen)</cei:persName>
+          <cei:persName>Rudolf Zoppolt (StGt.-Schr. zu Klausen)</cei:persName>
+        </cei:back>
+      </cei:text></atom:content></atom:entry>

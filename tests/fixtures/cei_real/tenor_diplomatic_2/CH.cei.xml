@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atom:entry xmlns:atom="http://www.w3.org/2005/Atom"><atom:id>tag:www.monasterium.net,2011:/charter/TramutolaOrsoleo/22</atom:id><atom:title/><atom:published>2026-05-12T11:15:37.371+02:00</atom:published><atom:updated>2026-05-12T11:15:37.371+02:00</atom:updated><atom:author><atom:email>niklas.tscherne@gmail.com</atom:email></atom:author><app:control xmlns:app="http://www.w3.org/2007/app"><app:draft>no</app:draft></app:control><atom:content type="application/xml"><cei:text xmlns:cei="http://www.monasterium.net/NS/cei" type="charter">
+                <cei:front>
+                    <cei:sourceDesc>
+                        <cei:sourceDescVolltext>
+                            <cei:bibl>Edizione a cura di Domenico Scarfiello.</cei:bibl>
+                        </cei:sourceDescVolltext>
+                        <cei:sourceDescRegest>
+                            <cei:bibl>Domenico Scarfiello</cei:bibl>
+                        </cei:sourceDescRegest>
+                    </cei:sourceDesc>
+                </cei:front>
+                <cei:body>
+                    <cei:idno id="22">22</cei:idno>
+                    <cei:chDesc>
+                        <cei:class>Venditio, traditio et obligatio</cei:class>
+                        <cei:abstract>Alessio, figlio di Leone Fargali di Sant’Arcangelo, vende al 
+                        <cei:quote>miles</cei:quote> Daniele una terra con una 
+                        <cei:quote>cripta sculpta</cei:quote> per il bestiame nella valle di Orsoleo, dove Daniele con il proprio fratello, il prete Zaccaria, ha intenzione di costruire una chiesa dedicata a S. Maria.
+                    </cei:abstract>
+                        <cei:issued>
+                            <cei:date value="11960399">1196 (?) marzo</cei:date>
+                        </cei:issued>
+                        <cei:witnessOrig>
+                            <cei:traditioForm>Originale</cei:traditioForm>
+                            <cei:archIdentifier>
+                                <cei:country>Italia</cei:country>, 
+                            <cei:settlement>Cava de' Tirreni</cei:settlement>, 
+                            <cei:arch>AC</cei:arch>, 
+                            <cei:idno>XLIII 51</cei:idno>
+                            </cei:archIdentifier>
+                            <cei:physicalDesc>
+                                <cei:decoDesc>
+                                    <cei:p/>
+                                </cei:decoDesc>
+                                <cei:condition>L’inchiostro è sbiadito in tutto il documento, leggibile solo con la luce di Wood; lungo tutto il margine destro è presente una macchia bruna. I danni materiali sono tali da non aver permesso a Mattei Cerasoli di leggere la pergamena, motivo per cui egli ha semplicemente tradotto il regesto del verso.</cei:condition>
+                                <cei:dimensions>360x190</cei:dimensions>
+                            </cei:physicalDesc>
+                            <cei:auth>
+                                <cei:notariusDesc>
+                                    <cei:persName>Iohannes</cei:persName>
+                                </cei:notariusDesc>
+                            </cei:auth>
+                            <cei:nota/>
+                            <cei:rubrum>Sul verso, mano secc. XIIIex.-XIV: «Carta vendicionis de terra cum cripta in qua 
+                            <cei:damage>construc</cei:damage>t<cei:expan>a</cei:expan> est ecclesia sancte Marie de Ursoleone de Sancto Archangelo»; mano Venereo: «Venditio petię terrę cum quadam crypta in valle de tenimento civitatis S. Archangeli pro constructione ecclesię in honorem S. Marię virginis quę hodie dicitur de Ursoleone facta domno Danielo militi de civitate pręd<cei:expan>ictę</cei:expan> ab Algio filio Leonis pro ducatis 12. Anno 1192», «Arca 52 n. 30»; mano sec. XVII: «Sancti Egidii»; mani sec. XIX: «Arca XLVIII, 39» con il primo numerale depennato, «Arca XLIII n. 51».</cei:rubrum>
+                        </cei:witnessOrig>
+                        <cei:diplomaticAnalysis>
+                            <cei:listBiblErw>
+                                <cei:bibl>Mattei Cerasoli 1947, p. 98 n. 1 (con data 1192 marzo)</cei:bibl>
+                            </cei:listBiblErw>
+                            <cei:p>Le due sottoscrizioni in prima persona sono autografe. L’anno dell’incarnazione non è leggibile nemmeno con la luce di Wood. L’attergato rimanda al 1192, ma l’indizione e l’anno di regno di Enrico VI sarebbero del tutto sbagliati, perché rimandano entrambi al 1196. Evidentemente la pergamena era già danneggiata quando è stato scritto il regesto (che infatti sbaglia la lettura del nome dell’autore): Venereo potrebbe aver interpretato se[...] come secundo invece di sexto. Dal momento che gli altri elementi sembrano ricondurre al 1196, sembra questa la data corretta.</cei:p>
+                        </cei:diplomaticAnalysis>
+                        <cei:lang_MOM>lat.</cei:lang_MOM>
+                    </cei:chDesc>
+                    <cei:tenor>
+                        <cei:pTenor>
+                            <cei:invocatio type="Invocatio simbolica">+</cei:invocatio>
+                            <cei:invocatio type="Invocatio verbale">In nomine sancte et individue Trinitatis.</cei:invocatio>
+                            <cei:datatio type="Datatio cronica">Anno ab incarnacione domini nostri Iesu
+                            <cei:damage>Christi</cei:damage> millesimo centesimo nonagesimo se<cei:damage>xto</cei:damage>
+                                <cei:lb/>mense marcii, quartedecime indic<cei:expan>ionis</cei:expan>, regnante domno nostro
+                            <cei:persName reg="Henricus IV romanorum imperator et rege Sicilie">Henrico</cei:persName>, Romanorumimperatore invictissimo semper agusto et rege
+                            <cei:lb/>Sicilie, anno regni eius secundo
+                        </cei:datatio>feliciter, de c<cei:damage>...</cei:damage>te.
+                        <cei:intitulatio>Ego
+                            <cei:persName reg="Alexius f. Leonis Fargali">Alexius</cei:persName> filius 
+                            <cei:persName reg="Leo Fargalis, /v./ Alexius f. Leonis Fargali">Leonis Fargali</cei:persName>, de civitate 
+                            <cei:placeName reg="Sanctum Archangelum">Sancti Archangeli</cei:placeName>,
+                        </cei:intitulatio>in p<cei:damage>resencia</cei:damage>
+                            <cei:lb/>
+                            <cei:persName reg="Rogerius iud.">Rogerii</cei:persName> et
+                        <cei:persName reg="Iohannes iud.">Iohannis</cei:persName> curialium iudicus dicte civitatis 
+                        <cei:damage>et</cei:damage> ali<cei:damage>orum</cei:damage> proborum hominum testium subscriptorum,
+                        <cei:dispositio>voluntarie vendo et per fustem <cei:damage>trado</cei:damage>
+                            </cei:dispositio>
+                            <cei:lb/>tibi 
+                        <cei:damage>....</cei:damage>
+                            <cei:persName reg="Danielis m. fr. Zacharie pbr., fr. Chure Marie f. Nicolai Bulterini">Danieli</cei:persName> militi de civitate predicta unam meam peciam terre cum quadam cripta sculpta ibidem sub quodam obe<cei:damage>....</cei:damage>
+                            <cei:lb/>in valle scilicet 
+                        <cei:placeName reg="Orsoleum">Orsoley</cei:placeName> de tenimento dicte civitatis iusta terras tuas et presbiteri 
+                        <cei:persName reg="Zacharia pbr. fr. Danieli m., fr. Chure Marie f. Nicolai Bulterini">Zacharie</cei:persName> fratris tui. Cuius fines sunt <cei:damage>hii</cei:damage>: 
+                        <cei:lb/>primus finis et secundus sunt terre tue et predicti fratris tui, et medius limes terre
+                        <cei:persName reg="Iohannes Cursanus">Iohannis Cursani</cei:persName>; tercius finis est fossat<cei:damage>um quod ..</cei:damage>
+                            <cei:lb/>
+                            <cei:damage>..</cei:damage>cipiet filiorum presbiteri
+                        <cei:persName reg="Benedictus (filii de)">Benedicti</cei:persName>; quartus vero finis est medius limes terre 
+                        <cei:persName reg="Iohannes Churosi">Iohannis Churosi</cei:persName> et medius limes vinee presbiteri 
+                        <cei:persName reg="[.....]chimbelli pbr.">
+                                <cei:damage>.....</cei:damage>
+                                <cei:lb/>chi<cei:expan>m</cei:expan>belli</cei:persName> et redit primo fini. Infra hos vero fines integre prenominatam terram cum cripta ibidem facta pro
+                        <cei:damage>....</cei:damage>ptandis in ea omnibus 
+                        <cei:lb/>
+                            <cei:damage>v</cei:damage>igital<cei:expan>ibus</cei:expan> et animalibus meis tempore yemali tibi voluntarie vendidi et per fustem tradidi cum transitu et exitu suo et eciam cum omnibus
+                        <cei:lb/>infra se habentibus et continentibus; de qua terra non mihi, non meis heredibus neque alicui hominum partem aliquam reservavi, set quia prop<cei:damage>ter ...</cei:damage>
+                            <cei:lb/>to tuo et predicti fratris tui esse cognovi quod volebatis in loco ubi est dicta cripta construere ecclesiam ad honorem
+                        <cei:placeName reg="S. Marie Orsolei, eccl. Sancti Archangeli">sancte <cei:lb/>Marie virginis</cei:placeName> cum maiore devocione et voluntate recepi a te predicto domno 
+                        <cei:persName reg="Danielis m. fr. Zacharie pbr., fr. Chure Marie f. Nicolai Bulterini">Daniele</cei:persName> pro vendicione p<cei:damage>redicta</cei:damage> ducatos
+                        <cei:lb/>duodecim mihi bene placentes. U<cei:damage>nde</cei:damage> voluntariam vadiam dedi tibi, mediatore posito 
+                        <cei:persName reg="Nicolaus f. Leonis">Nicolao</cei:persName> filio 
+                        <cei:persName reg="Leo, /v./ Nicolaus f. Leonis">L<cei:damage>e</cei:damage>onis <cei:damage>....</cei:damage>
+                                <cei:lb/>chuci</cei:persName> de predicta civitate. Tali t<cei:damage>enore</cei:damage>, ut a modo et in antea omni futuro tempore dicta terra cum cripta et omnibus perti<cei:damage>nenciis</cei:damage>
+                            <cei:lb/>suis securiter habeas et possideas tu et tui heredes et ex eis faciatis quicquid volueritis sine mea meorumque 
+                        <cei:lb/>heredum contrarietate et requisicione omnium hominum vos inde per legem que<cei:damage>sierimus aut</cei:damage> si taliter t<cei:damage>ibi</cei:damage> tuisque heredibus
+                        <cei:damage>ego</cei:damage>
+                            <cei:lb/>vel mei heredes non adimpleverimus et hanc vendicionem vobis per legem non defensaverimus, set contra vos inde vener<cei:damage>imus</cei:damage>
+                            <cei:lb/>per causacionem vel legem quolibet ingenio excogitato, obligo me meosque heredes componere tibi tuisque heredibus  reg<cei:expan>ales</cei:expan>
+                            <cei:lb/>aureos decem totidemque in puplico et in antea defendamus eadem vendicionem vobis omni futuro tempore contra omnem personam 
+                        <cei:lb/>vobiscum inde per legem vel causacionem litigare volentem districto mediatore predicto licenciam vobis tribuente<cei:damage>m</cei:damage> pig<cei:lb/>nerandi se suosque heredes per omnes res et pignera eorum licita et inlicita sine calumpnia et appellatione, sicut et ego
+                        <cei:lb/>
+                            <cei:damage>obli</cei:damage>gavi eis nos, nostros et nostrorum her<cei:expan>edes</cei:expan> donec quod prelegitur compleamus inviti. 
+                        <cei:setPhrase type="Declaratio notarii">Et hoc breve vendicionis, 
+                            <cei:lb/>tradicionis et obligacionis scripto 
+                            <cei:persName reg="Iohannes curialis not.">Iohannes</cei:persName> predicte civitatis puplicus et curialis notarius qui p<cei:damage>redictis</cei:damage>
+                                <cei:lb/>omnibus interfuit;
+                        </cei:setPhrase>anno, mense et indictione pretitulatis.
+                        <cei:figure>
+                                <cei:figDesc>[notarial sign]</cei:figDesc>
+                            </cei:figure>
+                            <cei:lb/>
+                            <cei:subscriptio type="Subscriptio iudicis">+ Hoc iudex verus firmat racione 
+                            <cei:persName reg="Rogerius iud.">Rog<cei:expan>erius</cei:expan>
+                                </cei:persName>.
+                        </cei:subscriptio>
+                            <cei:lb/>
+                            <cei:subscriptio type="Subscriptio testis">+ 
+                            <cei:persName reg="Bonicius, /v./ Iohannes iud. f. Bonicii">Bonicio</cei:persName> genit<cei:expan>us</cei:expan> iudex hec firmo
+                            <cei:persName reg="Iohannes iud. f. Bonicii">Ioh<cei:expan>ann</cei:expan>es</cei:persName>.
+                        </cei:subscriptio>
+                            <cei:lb/>
+                            <cei:subscriptio type="Subscriptio testis">+ Signum manus 
+                            <cei:persName reg="Iohannes f. Goffridi iud.">Iohannis</cei:persName> filii
+                            <cei:persName reg="Goffridus iud. /v./ Iohannes f. Goffridi iud.">Goffridi</cei:persName> iudicis.
+                        </cei:subscriptio>
+                            <cei:lb/>
+                            <cei:subscriptio type="Subscriptio testis">+ Signum manus 
+                            <cei:persName reg="Michael m. f. Theodori">Michaelis</cei:persName> militis filii
+                            <cei:persName reg="Theodorus, /v./ Michael m. f. Theodori">Theodori</cei:persName>.
+                        </cei:subscriptio>
+                        </cei:pTenor>
+                    </cei:tenor>
+                </cei:body>
+                <cei:back>
+                    <cei:persName/>
+                    <cei:placeName/>
+                    <cei:index/>
+                    <cei:divNotes>
+                        <cei:note/>
+                    </cei:divNotes>
+                    <cei:class/>
+                </cei:back>
+            </cei:text></atom:content></atom:entry>

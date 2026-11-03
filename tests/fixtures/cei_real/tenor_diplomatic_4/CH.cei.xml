@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atom:entry xmlns:atom="http://www.w3.org/2005/Atom">
+            <atom:id>tag:www.monasterium.net,2011:/charter/ca0f8ea7-3cc6-48cc-8f8e-a73cc618cc34/2b9741e8-01b8-459c-9741-e801b8d59c29</atom:id>
+            <atom:title/>
+            <atom:published>2024-07-01T16:23:38.847+02:00</atom:published>
+            <atom:updated>2024-07-01T16:23:38.847+02:00</atom:updated>
+            <atom:author>
+                <atom:email>zarko.vujosevic@bi.sanu.ac.rs</atom:email>
+            </atom:author>
+            <app:control xmlns:app="http://www.w3.org/2007/app">
+                <app:draft>no</app:draft>
+            </app:control>
+            <atom:content type="application/xml">
+                <cei:text xmlns:cei="http://www.monasterium.net/NS/cei" type="charter">
+                    <cei:front>
+                        <cei:sourceDesc>
+                            <cei:sourceDescVolltext>
+                                <cei:bibl/>
+                            </cei:sourceDescVolltext>
+                            <cei:sourceDescRegest>
+                                <cei:bibl/>
+                            </cei:sourceDescRegest>
+                        </cei:sourceDesc>
+                    </cei:front>
+                    <cei:body>
+                        <cei:idno id="2b9741e8-01b8-459c-9741-e801b8d59c29">1212-99-99 F Stefan Nemanjic</cei:idno>
+                        <cei:chDesc>                            
+                            <cei:abstract>König Stefan Nemanjic gründet drei Kirchen in der Stadt Cattaro (St. Tryphon, Mariä Tempelgang und St. Lukas) und baut Wehrmauer sowie Paläste in der Stadt auf; daraufhin gründet er das Kloster St. Michael auf einer Insel des Archipels von Cartolle in der Bucht von Cattaro, setzt den Abt(?) Arsenius ein und schenkt dem Kloster fünf umliegende Dörfer; ebenso gründet er das Kloster St. Georg auf der Insel gegenüber Perasto, setzt den Abt und Mönche ein, schenkt dem Kloster acht (zehn?) umliegende Dörfer und verfügt den Einwohnern von Perasto, dieses und seine Besitzungen zu schützen (unecht).</cei:abstract>
+                            <cei:issued>
+                                <cei:placeName>(Cattaro?)</cei:placeName>
+                                <cei:dateRange from="12129999" to="12129999" certainty="niedrig">1212(?)</cei:dateRange>
+                            </cei:issued>
+                            <cei:witnessOrig>
+                                <cei:traditioForm>A Späte Abschrift (Mitte 18. Jh.) als Transsumpt(?) im Kopialbuch</cei:traditioForm>
+                                <cei:figure/>
+                                <cei:archIdentifier>Cetinje, Cetinje-Kloster, Museum (Schatzkammer), Kopialbuch "Annalen von Cetinje" (Цетињски љетопис), f. 62-63.</cei:archIdentifier>
+                                <cei:physicalDesc>
+                                    <cei:decoDesc>
+                                        <cei:p/>
+                                    </cei:decoDesc>
+                                    <cei:material>Papier (zwei Seiten)</cei:material>
+                                    <cei:dimensions>320 x 215 mm</cei:dimensions>
+                                    <cei:condition>Keine Schäden</cei:condition>
+                                </cei:physicalDesc>
+                                <cei:auth>
+                                    <cei:notariusDesc/>
+                                    <cei:sealDesc>Erwähnung eines goldenen(?) Siegels des Königs Stefan Nemanjic (Z. 50-51).</cei:sealDesc>
+                                </cei:auth>
+                                <cei:nota/>
+                                <cei:rubrum/>
+                            </cei:witnessOrig>
+                            <cei:witListPar>
+                                <cei:witness><cei:traditioForm>B Späte Abschrift (Mitte 18. Jh.) einer gedruckten Fassung als Transsumpt(?) im Kopialbuch</cei:traditioForm>
+                                    <cei:figure/>
+                                    <cei:archIdentifier>Cetinje, Nationalmuseum, Bibliothek-archivische Abteilung, Kopialbuch "Crnojevic-Epoche" (Епоха Црнојевића), 8/XII.</cei:archIdentifier>
+                                    <cei:physicalDesc>
+                                        <cei:material>Papier (ein Blatt beidseitig beschrieben)</cei:material>
+                                        <cei:dimensions>350 x 245 mm</cei:dimensions>
+                                        <cei:condition>Starke Schäden im oberen rechten Ecke des Blattes (fehlende Teile, Nässeflecken), teilweise entrissene Marginen unten rechts. Dadurch Teile der Zeilen 2-5 sowie 25-32 kaum oder gar nicht leserlich (stellenweise rekonstruierbar nach Textzeuge A).</cei:condition>
+                                    </cei:physicalDesc>
+                                    <cei:auth>
+                                        <cei:sealDesc>Erwähnung mehrerer (goldenen?) Siegel des Kaisers Stefan Dusan zur Bestätigung des Transsumpts(?)</cei:sealDesc>
+                                        <cei:notariusDesc/>
+                                    </cei:auth>
+                                    <cei:nota/>
+                                    <cei:rubrum/>
+                                </cei:witness><cei:witness>C Italienische Übersetzung (aus B?), beglaubigt durch den Venezianischen Provveditore in Castel Nuovo, Domenico Pizzamano, am 20. Oktober 1754 (Historisches Archiv von Cattaro, Nachlass von Ilija Sindik).</cei:witness>
+                            </cei:witListPar>
+                            <cei:diplomaticAnalysis>
+                                <cei:listBibl>
+                                    <cei:bibl>Б. Шекуларац, Дукљанско-зетске повеље, Титоград (Подгорица) 1987, 43-49 (Beschreibung und Kommentar des Textzeugen B mit Verweisen auf weitere allgemeine Literatur; als Empfänger wird die Stadt Cattaro bezeichnet).</cei:bibl>
+                                </cei:listBibl>
+                                <cei:listBiblEdition>
+                                    <cei:bibl>Б. Шекуларац, Дукљанско-зетске повеље, 50 (Textzeuge B)</cei:bibl>
+                                </cei:listBiblEdition>
+                                <cei:listBiblRegest>
+                                    <cei:bibl/>
+                                </cei:listBiblRegest>
+                                <cei:listBiblFaksimile>
+                                    <cei:bibl/>
+                                </cei:listBiblFaksimile>
+                                <cei:listBiblErw>
+                                    <cei:bibl>П. Ровинскιй, Черногорιя въ ея прошломъ и настоящемъ I, Санктпетербургъ 1888, 435 (Textzeuge B als Fälschung für das Kloster St. Michael)</cei:bibl>
+                                </cei:listBiblErw>
+                                <cei:p>Die überlieferten, voneinender leicht abweichenden Textzeugen A und B enthalten eine oder zwei angebliche Urkunden des Königs Stefan Nemanjic (1217-23) für die Klöster St. Michael und St. Georg in der Bucht von Cattaro, wodurch die genannten Empfänger fünf bzw. acht (in B zehn) Dörfer geschenkt bekommen und der Letztere unter den Schutz der Stadt Perasto gestellt wird. Laut A wird der betreffende Dokument (die betreffenden Dokumente?) dem St. Michael zum Aufbewahren übergeben. Die Verordnungen des Königs scheinen als ein Transsumpt in einer angeblichen Bestätigungsurkunde des Kaisers Stefan Dusan (1346-55) überliefert zu werden. Der "Urkundentext" ist mit einer historischen Narration umrahmt, die zunächst den Besuch des Stefan Nemanjic zu Cattaro und die Errichtung seiner (übrigens schon bestehenden) drei (in B zwei) Kirchen sowie Wehrmauer und Paläste, sodann zu den genannten beiden Klöstern, beschreibt. Der Rahmen wird durch die Erzählung von Stefans Alter und seinen Söhnen abgeschlossen, von denen der zweite, König Vladislav (1233/34-42/43), das Kloster Mileseva bauen ließ und ihm die Gründungsurkunde ausgestellt hatte (was ein wichtiger Hinweis auf dieses Deperditum ist). Weiterhin wird die unklare Verknüpfung der Mileseva-Urkunde mit der Urkunde von Stefan in Bezug auf das Kloster St. Georg aufgenommen, in B noch eine Verordnung für die Stadt Perasto hinzugefügt, und eine Bestätigung des Kaisers Dusan angedeutet (in A mittelbar, in B ausdrücklich mit Erwähnung seiner Siegel). Die Datierung in A nennt das Jahr 6720 (=1212), was dem Stefans Königstitel nicht entspricht, während sich in B zwei zahlwörtliche Datierungsvermerke finden: Der erste nur teils leserlich vor und der zweite, das Jahr 675 (möglicherweise die falsche Deutung des in Zahlenschrift angegebenen Jahres in A - .҂ƨ҃.ѱ.к҃.) nennende, nach der zweiten historischen Narration.<cei:lb/>Die Vorlage, auf der die wohl in einer "Überlieferungskette" entstandenen Textzeugen A und B beruhen, mag eine gefälschte Bestätigung des Kaisers Dusan einer angeblichen Urkunde von Stefan Nemanjic an St. Michael (und St. Georg?) gewesen sein. Als Verfassungszeit dieses verschollenen Dokuments voll historischer Unstimmigkeiten ("Errichtung" der schon bestehenden Kirchen in Cattaro und der beiden beschenkten Klöster, Erwähnung in B des "Patriarchen" Arsenius als Vorsteher von St. Michael - immerhin des zeitweiligen Sitzes der Metropolie von Zeta -, unpassende Ausstellungsjahr) kämen die Jahrzehnten vor dem endgültigen Verfall des Klosters St. Michael Mitte des 15. Jahrhunderts.<cei:lb/>Die unmittelbare(n) Vorlage(n) beider überlieferten zeitnahen Textzeugen A und B sowie ihre Beziehung zueinander sind nur schwer zu erschließen, wobei die leichten Abweichungen je im "Urkundentext", in der umrahmenden historischen Narration und in der "Bestätigungsvermerk" Kaisers Dusan vorhanden sind. Der in die historisch-diplomatische Sammlung "Annalen von Cetinje" eingetragene Textzeuge A, der übrigens mehr als B einer "Urkundenfassung" ähnelt, mag vom Metropoliten Basilius III. (1750-66) geschrieben worden sein, der auch weitere darin enthaltene Texte abschrieb oder verfasste (s. Н. Мартиновић, Цетињски љетопис. Предговор фототипском издању, Цетиње 1962. - http://www.rastko.rs/rastko-cg/povijest/nmartinovic-letopis_c.html). Dabei wären seine eigene Einschübe in die historische Narration nicht auszuschließen (z.B. Stefans Heiligengebeine "in Studenica"). Der Textzeuge B wurde wohl aus einer Druckfassung abgeschrieben, der laut abschließendem Vermerk (Z. 38-41) im Kloster Mileseva(?) nach Beschluss des dortigen Hegumenos Basilius in Absprache mit der "ganzen kirchlichen Synode" angefertigt wurde (hinsichtlich der Aktivität der Druckerei von Mileseva - Mitte 16., hinsichtlich der Erwähnung eines Hegumenos Basilius, nach Б. Шекуларац, Дукљанско-зетске повеље, 48 - Mitte 17. Jahrhunderts).<cei:lb/>Aus diplomatischer Sicht kann in den vorliegenden Textzeugen von einem überlieferten Urkundentext von Stefan Nemanjic, (und auch von Dusan) keine Rede sein, wobei sowohl der historische Inhalt als auch der "undiplomatische" Formular auf eine unechte Vorlage hinweisen. Möglicherweise wäre nur in der "Dispositio" eine Spur einer verschollenen Urkunde des Königs Stefan Nemanjic an die Klöster St. Michael und St. Georg zu vermuten.</cei:p>
+                                <cei:quoteOriginaldatierung>Das war im Jahr der Erschaffung (der Welt) 6720 (=1212). (A)</cei:quoteOriginaldatierung>
+                                <cei:nota/>
+                            </cei:diplomaticAnalysis>
+                            <cei:lang_MOM>Serbisch</cei:lang_MOM>
+                        </cei:chDesc>
+                        <cei:tenor>|1| Ѡ Котору и первовѣнчанному || кралю Стефану Сербскомь   |2| <cei:invocatio>Благоволѣнïемь Ѡца ï сапоспешенïемь |3| Сина и савершенïемь Светаго Духа</cei:invocatio>, <cei:invocatio>Стефань, |4| мïлостию Бѡжиею первовенчанни краль |5| сербски, синь Симеѡна Неманѣ</cei:invocatio>.  По преставлѣ|6|ни моего ѡца и вѣнчанïю на кралѥвство |7| серские(!) земли ѡт своего брата первосвети|8|телïа Савве, проидохь землю держави своее |9| и придохь ва градь Которь. И не ѡбретохь |10| ва немь храма, но саздахь усредь Котора |11| саборну велïку црькву ва име светаго вели|12|комученика Трифона. Такожде саздахь |13| вторую црькву, храмь Ваведенïе пре|14|светие Богородице на черногорскаꙗ врата. И тре|15|тïю саздахь црькву, ва име светаго апостола |16| еѵангелиста Луке. И Которь зело ѹтврьдихь |17| и ѡружахь и полате ва нѥмь саградихь. |18| И придохь на Превлаку и саградихь храмь |19| ва име светаго архистратïга Мïхаила и мана|20|стирь ѹстроихь и архиереꙗ Арсенïа ва нѣи |21| поставихь. И приложихь тои светои црькви Архи|22|стратïга Мïхаила .е҃. селахь на службу: Лушти|23|цу и Крьтоле и Лѣшевићѥ и Богдашïћѥ |24| и Кавачь. И придохь ва село Перасть и саздахь |25| црькву ва име светаго велïкомученïка Геѡр|26|гиа ѹ ѡтокь и поставихь игумена са брати|27|ꙗми. И дахь црькви Светаго Геѡргиа на службу: |28| Бïелу до потока и Иошïцу до Веригахь и До|29|ни Моринь до Високе Стиене и Лïпце и Барну |30| и Леденïце вïше Рисна и Столивь страномь |31| до Иргакова и Мирчеваць. И заповедахь Пера|32|сту да то пази и ѡву црькву Светаго Геѡргïа |33| да нагледуе и послухь сваки да чïни ѡ|34| д овïехь селахь.  И тако тои свети первовѣнча|35|нни краль Стефань свето преживова и на смер|36|ти покалућѥрï га брать светитель Савва. |37| И ѡтïде ка Богу, емуже ѹгоди добрïми дели |38| и данас му свете мощи почïеваю ва Студенïци. |39| А ѡстави по себе свое .д҃. сина: Радослава, |40| Предислава, Владислава и Уроша. И Владислꙗвь |41| краль сагради црькву Мïлешево, храмь Светаго |42| Христова вазнесенïа, и даде тои светои црькви на |43| службу .о҃. селахь. И сихь васехь имена напи|44|санна суть ва царскому хрисофолю са гранïца|45|ми и мећꙗми. Ихже зде не ѡбретохь, тачïю церь|46|кви Светаго архистратïга Михаила на Превлаку, |47| села и метехе и землю манастирску вишеписань|48|ную. Такожде ѡбретохь села и землю манастира |49| Светаго Геѡргиа ѹ ѡтокь под Перасть, еже |50| ѹтврди свети краль Стефань своиемь печа|51|томь и златнïемь хрисофоломь и предаде церь|52|кви архистратïга Мïхаила, Архиепископии на |53| Превлаку, на сахранѣнïе ва веки века. И ни|54|которимь кралѥмь благочастивимь непременно |55| ва веки, амïнь.  <cei:datatio>Сиеже бисть ва лѣто |56| битиа .҂ƨ҃.ѱ.к҃.</cei:datatio></cei:tenor>
+                    </cei:body>
+                    <cei:back>
+                        <cei:class>Urkunde</cei:class>
+                        <cei:persName/>
+                        <cei:placeName/>
+                        <cei:index/>
+                        <cei:divNotes>
+                            <cei:note/>
+                        </cei:divNotes>
+                    </cei:back>
+                </cei:text>
+            </atom:content>
+        </atom:entry>

@@ -89,7 +89,7 @@ A fix there changes bodies and hashes; ANNIE then re-anchors its annotations (se
   documents added to the propagation pool; dictionaries: import (and propagate), export. TBD: dictionary
   import and the session memory of pre-annotation reach the working set only, not the pool.
 - Pre-annotation of a text from the session memory and a language model with TF-IDF-selected
-  few-shot examples; providers Anthropic, OpenAI, Together AI, Hugging Face, the DH infrastructure of the University of Graz.
+  few-shot examples; provider: the DH infrastructure of the University of Graz.
 
 ### 4.2 Decided
 
@@ -100,8 +100,7 @@ A fix there changes bodies and hashes; ANNIE then re-anchors its annotations (se
 | What is annotated | `ddp_api` document texts, not CEI files (section 3.2). |
 | Where the logic runs | In Python (`annie_core`), called through stateless routes; the client sends the texts. |
 | Language model keys | On the server, in environment variables; never in the browser. |
-| Claude | Through the official `anthropic` SDK, default `claude-opus-5-5`, server-side refusal fallback. |
-| Other providers | Their OpenAI-style chat completion endpoints, through the standard library. |
+| Language model provider | The DH infrastructure of the University of Graz, through its OpenAI-style chat completion endpoint and the standard library. |
 | The desktop application | Legacy, in `annie_legacy/`: no longer developed, kept as it is; its behaviour is pinned by tests and is the reference. |
 
 ### 4.3 Not in the first web version
@@ -122,7 +121,7 @@ ddp_api  --include_router-->  annie_api.router  --calls-->  annie_core (propagat
 
 | Part | Path | Depends on | What it is |
 |---|---|---|---|
-| `annie_core` | `annie_core/` | `anthropic` | The logic, no GUI, no web framework; offsets are characters of a body. |
+| `annie_core` | `annie_core/` | | The logic, no GUI, no web framework; offsets are characters of a body. |
 | `annie_api` | `annie_api/` | `fastapi`, `annie_core` | `router`, an `APIRouter` with prefix `/annie`; `annie_api.dev`, a development app. |
 | web components | `web/src/lib/` | `svelte` | `Annotator` and its parts in `components/annie/`, the store and the API client in `annie/`; copied into `ddp_web` at the same paths. |
 | demo page | `web/src/routes/annotator/` | the components | Lists the documents of the development app; the clicked one is the working set. Not shipped. |
@@ -206,12 +205,9 @@ Routes of `annie_api.router`, under `/api/v1` once included:
 | `POST /annie/suggest` | `{text, examples, tags, provider, model?, example_count, allow_overlap}` | `{data: [{start, end, tag, text, source}]}`, `source` is `memory` or `llm` |
 
 - A span is `{start, end, tag, text}`. Offsets count Python code points (section 10).
-- `provider` is `anthropic` (default), `openai`, `together`, `huggingface` or `dhinfra`. Default
-  models: `claude-opus-5-5`, `gpt-4o-mini`, `meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo`,
-  `HuggingFaceH4/zephyr-7b-alpha`, `deepseek-v4.1-flash`. `dhinfra` is sent `reasoning_effort: none`:
+- `provider` is `dhinfra` (default), default model `deepseek-v4.1-flash`. It is sent `reasoning_effort: none`:
   its model otherwise reasons through the whole token budget on a charter and answers nothing.
-- Keys: `DDP_ANNIE_ANTHROPIC_KEY`, `DDP_ANNIE_OPENAI_KEY`, `DDP_ANNIE_TOGETHER_KEY`,
-  `DDP_ANNIE_HUGGINGFACE_KEY`, `DDP_ANNIE_DHINFRA_KEY`. `providers` tells whether a key is set, never the key.
+- Key: `DDP_ANNIE_DHINFRA_KEY`. `providers` tells whether the key is set, never the key.
 - Errors in `ddp_api`'s shape: a provider without a key, unreachable, refusing, or answering no
   readable list is 503 `unavailable`; a malformed request is 422 `invalid_request` (from `ddp_api`'s
   handler once included).

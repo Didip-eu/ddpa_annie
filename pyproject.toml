@@ -5,7 +5,6 @@ description = "ANNIE for Monasterium NG: the annotation logic (annie_core) and i
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "anthropic>=1",
     "fastapi>=0.141.1",
 ]
 

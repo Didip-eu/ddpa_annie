@@ -18,7 +18,7 @@ const FIRST: Text = { id: 'a:abstract', kind: 'abstract', language: 'de', hash: 
 const SECOND: Text = { id: 'b:abstract', kind: 'abstract', language: 'de', hash: 'h', mentions: [], body: 'Bürger zu Gmünd.' };
 
 const fakeApi = (calls: unknown[]): AnnieApi => ({
-	providers: async () => [{ id: 'anthropic', default_model: 'claude-opus-5-5', configured: true }],
+	providers: async () => [{ id: 'dhinfra', default_model: 'deepseek-v4.1-flash', configured: true }],
 	propagate: async (texts, terms) => {
 		calls.push({ texts: texts.map((item) => item.text.id), terms });
 		return new Map([['b:abstract', [{ start: 10, end: 15, tag: 'LOC', text: 'Gmünd' }]]]);
