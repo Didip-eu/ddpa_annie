@@ -1,6 +1,6 @@
 [project]
 name = "ddpa_annie"
-version = "0.1.0"
+version = "0.1.5"
 description = "ANNIE for Monasterium NG: the annotation logic (annie_core) and its API routes (annie_api)"
 readme = "README.md"
 requires-python = ">=3.12"
