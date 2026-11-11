@@ -11,7 +11,7 @@ from annie_core import llm
 from annie_core.propagation import Entity, propagate
 
 type Provider = Literal["dhinfra"]
-KEY_VARIABLES = {provider: f"DDP_ANNIE_{provider.upper()}_KEY" for provider in llm.DEFAULT_MODELS}
+KEY_VARIABLES = {provider: f"DDP_LLM_KEY" for provider in llm.DEFAULT_MODELS}
 UNAVAILABLE = {503: {"description": "The provider has no key on this server, cannot be reached, or answered no entity list"}}
 
 router = APIRouter(prefix="/annie", tags=["annie"])
